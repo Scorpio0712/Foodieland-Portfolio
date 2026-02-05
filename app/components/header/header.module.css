@@ -1,0 +1,29 @@
+.headerMain {
+    background-color: gray;
+    color: white;
+}
+
+.headerLogo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav {
+    margin: 0 2rem;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navMenuList {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.navSocialList {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
