@@ -10,7 +10,7 @@ function Header() {
     <header className={style.headerMain}>
       <nav className={style.nav}>
         <Image
-          src="/images/image.png"
+          src="/images/logo.png"
           width={1000}
           height={500}
           alt="Foodieland Logo"

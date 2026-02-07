@@ -1,5 +1,4 @@
 .footerMain {
-    border: 1px solid black;
     margin: 0 3rem;
 }
 
@@ -16,10 +15,14 @@
     justify-content: space-between;
 }
 
+.navDetail{
+    font-size: 14px;
+}
+
 .navMenuList {
     display: flex;
     text-decoration: none;
-    gap: 2rem;
+    gap: 2.5rem;
 }
 
 .navMenuList li {
@@ -30,4 +33,45 @@
 
 .navMenuList li:hover {
     transform: scale(1.1);
+}
+
+.copyRightContainer {
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footerDetail {
+    font-size: 14px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    align-items: center;
+    display: flex;
+}
+
+.footerDetail span{
+    color: #FF7967;
+}
+
+.navSocialList {
+    justify-content: end;
+    align-items: center;
+    list-style: none;
+    display: flex;
+    gap: 1.25rem;
+}
+
+.facebookIcon, .twitterIcon, .instagramIcon {
+    
+    
+    padding: 0 1rem;
+    width: 20px;
+    height: 20px;
+}
+
+.facebookIcon svg, .twitterIcon svg, .instagramIcon svg {
+    width: 18px;
+    height: 18px;
 }
