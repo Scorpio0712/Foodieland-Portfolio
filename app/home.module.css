@@ -58,8 +58,46 @@
     height: 20px;
 }
 
-.featureRecipeProfile {
+.featureRecipeBlog {
     margin-top: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.featureRecipeProfile {
+    display: flex;
+    flex: 1;
+    gap: 1rem;
+}
+
+.featureRecipeProfile div h1 {
+    font-size: 16;
+    font-weight: 600;
+}
+
+.featureRecipeProfile div h2 {
+    font-size: 14;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.viewRCButton {
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    background-color: black;
+    color: white;
+    font-size: 16;
+    font-weight: 500;
+    border-radius: 1rem;
+}
+
+.viewRCButton svg{
+    fill:white;
+    width: 25px;
+    height: 25px;
 }
 
 
