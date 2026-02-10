@@ -264,3 +264,27 @@
     display: block;
     margin-left: 42px;
 }
+
+/* Simple and tasty recipes */
+.simpleAndTastyContainer {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.simpleAndTastyContainer h1 {
+    font-size: 48px;
+    font-weight: 600;
+    margin-bottom: 24px;
+}
+
+.simpleAndTastyContainer p {
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.6);
+    margin-bottom: 24px;
+}
+
+.simpleAndTastyCardContainer {
+    border: 1px solid black;
+    flex: 1;
+}

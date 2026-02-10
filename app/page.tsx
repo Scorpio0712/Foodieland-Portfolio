@@ -1,6 +1,7 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import style from "./home.module.css";
+import Card from "./components/card/page"
 import Image from "next/image";
 
 export default function Home() {
@@ -9,27 +10,27 @@ export default function Home() {
   const recipes = [
     {
       id: 1,
-      hotRecipesImage: "/images/image.png",
+      hotRecipesImage: "/images/icon/recipe-icon.png",
       title: "Spicy delicious chicken wings",
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam est unde ut culpa modi iste.",
       cookTime: "30 minutes",
       category: "Chicken",
-      authorImage: "/images/John-Smith.png",
+      authorImage: "/images/author/John-Smith.png",
       authorName: "John Smith",
-      recipeImage: "/images/chick-dish.png",
+      recipeImage: "/images/food/chick-dish.png",
     },
     {
       id: 1,
-      hotRecipesImage: "/images/image.png",
+      hotRecipesImage: "/images/icon/recipe-icon.png",
       title: "Chicken Ramen Soup with Mushroom",
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam est unde ut culpa modi iste.",
       cookTime: "30 minutes",
       category: "Japanese",
-      authorImage: "/images/John-Smith.png",
+      authorImage: "/images/author/John-Smith.png",
       authorName: "John Smith",
-      recipeImage: "/images/chick-ramen.png",
+      recipeImage: "/images/food/chick-ramen.png",
     },
   ];
 
@@ -49,11 +50,12 @@ export default function Home() {
 
   return (
     <div className={style.homeContainer}>
+      {/* Carousel Wrapper */}
       <div className={style.carouselWrapper}>
         {/* Recipes Badge */}
         <div className={style.recipesBadge}>
           <Image
-            src="/images/badge.png"
+            src="/images/icon/badge.png"
             width={300}
             height={500}
             alt="Handpicked Recipes"
@@ -148,6 +150,7 @@ export default function Home() {
           </div>
         </div>
       </div>
+      {/* Categories Container */}
       <div className={style.categoriesContainer}>
         <div className={style.categoriesTopic}>
           <h1>Categories</h1>
@@ -157,17 +160,17 @@ export default function Home() {
           <ul>
             <li className={style.categoriesBreakfast}>
               <Image
-                src="/images/breakfast-image.png"
+                src="/images/icon/breakfast-image.png"
                 width={300}
                 height={500}
                 alt="Breakfast Image"
-                style={{ width: "150px", height: "150px"}}
+                style={{ width: "150px", height: "150px" }}
               />
               Breakfast
             </li>
             <li className={style.categoriesVegan}>
               <Image
-                src="/images/vegan-image.png"
+                src="/images/icon/vegan-image.png"
                 width={300}
                 height={500}
                 alt="Vegan Image"
@@ -177,7 +180,7 @@ export default function Home() {
             </li>
             <li className={style.categoriesMeat}>
               <Image
-                src="/images/meat-image.png"
+                src="/images/icon/meat-image.png"
                 width={300}
                 height={500}
                 alt="Meat Image"
@@ -187,7 +190,7 @@ export default function Home() {
             </li>
             <li className={style.categoriesDessert}>
               <Image
-                src="/images/dessert-image.png"
+                src="/images/icon/dessert-image.png"
                 width={300}
                 height={500}
                 alt="Dessert Image"
@@ -197,7 +200,7 @@ export default function Home() {
             </li>
             <li className={style.categoriesLunch}>
               <Image
-                src="/images/lunch-image.png"
+                src="/images/icon/lunch-image.png"
                 width={300}
                 height={500}
                 alt="Lunch Image"
@@ -207,7 +210,7 @@ export default function Home() {
             </li>
             <li className={style.categoriesChocolate}>
               <Image
-                src="/images/chocolate-image.png"
+                src="/images/icon/chocolate-image.png"
                 width={300}
                 height={500}
                 alt="Chocolate Image"
@@ -216,6 +219,22 @@ export default function Home() {
               Chocolate
             </li>
           </ul>
+        </div>
+      </div>
+      {/* Simple and tasty */}
+      <div className={style.simpleAndTastyContainer}>
+        <h1>Simple and tasty recipes</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate
+          distinctio ut nam pariatur,
+          <br /> quia sint animi molestiae officiis optio id!
+        </p>
+        <div className={style.simpleAndTastyCardContainer}>
+          <div className={style.simpleAndTastyCardListOne}>
+            <Card title="Big and Juicy Wagyu Beef Cheeseburger" image="/images/food/hamburger-image.png" typeOne="30 Minutes" typeTwo="Snack"/>
+          </div>
+          <div className={style.simpleAndTastyCardListTwo}></div>
+          <div className={style.simpleAndTastyCardListThree}></div>
         </div>
       </div>
     </div>
