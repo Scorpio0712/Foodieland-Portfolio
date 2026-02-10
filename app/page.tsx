@@ -139,7 +139,7 @@ export default function Home() {
                       backgroundSize: "cover",
                       backgroundPosition: "center",
                       backgroundRepeat: "no-repeat",
-                      minHeight: '400px',
+                      minHeight: "400px",
                     }}
                   ></div>
                 </div>
@@ -147,8 +147,76 @@ export default function Home() {
             ))}
           </div>
         </div>
-
-        
+      </div>
+      <div className={style.categoriesContainer}>
+        <div className={style.categoriesTopic}>
+          <h1>Categories</h1>
+          <button>View All Categories</button>
+        </div>
+        <div className={style.categoriesList}>
+          <ul>
+            <li className={style.categoriesBreakfast}>
+              <Image
+                src="/images/breakfast-image.png"
+                width={300}
+                height={500}
+                alt="Breakfast Image"
+                style={{ width: "150px", height: "150px"}}
+              />
+              Breakfast
+            </li>
+            <li className={style.categoriesVegan}>
+              <Image
+                src="/images/vegan-image.png"
+                width={300}
+                height={500}
+                alt="Vegan Image"
+                style={{ width: "150px", height: "150px" }}
+              />
+              Vegan
+            </li>
+            <li className={style.categoriesMeat}>
+              <Image
+                src="/images/meat-image.png"
+                width={300}
+                height={500}
+                alt="Meat Image"
+                style={{ width: "150px", height: "150px" }}
+              />
+              Meat
+            </li>
+            <li className={style.categoriesDessert}>
+              <Image
+                src="/images/dessert-image.png"
+                width={300}
+                height={500}
+                alt="Dessert Image"
+                style={{ width: "150px", height: "150px" }}
+              />
+              Dessert
+            </li>
+            <li className={style.categoriesLunch}>
+              <Image
+                src="/images/lunch-image.png"
+                width={300}
+                height={500}
+                alt="Lunch Image"
+                style={{ width: "150px", height: "150px" }}
+              />
+              Lunch
+            </li>
+            <li className={style.categoriesChocolate}>
+              <Image
+                src="/images/chocolate-image.png"
+                width={300}
+                height={500}
+                alt="Chocolate Image"
+                style={{ width: "150px", height: "150px" }}
+              />
+              Chocolate
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   );
