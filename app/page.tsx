@@ -252,8 +252,58 @@ export default function Home() {
             typeTwo="Breakfast"
           />
         </div>
-        <div className={style.simpleAndTastyCardListTwo}></div>
-        <div className={style.simpleAndTastyCardListThree}></div>
+        <div className={style.simpleAndTastyCardListTwo}>
+          <Card
+            title="Fresh and Healthy Mixed Mayonnaise Salad"
+            image="/images/food/mixedsalad-image.png"
+            typeOne="30 Minutes"
+            typeTwo="Healthy"
+          />
+          <Card
+            title="Chicken Meatballs with Cream Cheese"
+            image="/images/food/meatball-image.png"
+            typeOne="30 Minutes"
+            typeTwo="Meat"
+          />
+          <div className={style.adsBadge}>
+            <div className={style.adsBadgeBackGround}>
+              <Image
+                src="/images/icon/star-image.png"
+                width={600}
+                height={600}
+                alt=""
+              />
+            </div>
+            <h1>Don&apos;t forget to eat<br /> healthy food</h1>
+            <Image
+              src="/images/food/salmonsalad-image.png"
+              width={600}
+              height={600}
+              alt="Salmon Salad"
+            />
+            <p>www.foodieland.com</p>
+          </div>
+        </div>
+        <div className={style.simpleAndTastyCardListThree}>
+          <Card
+            title="Fruity Pancake with Orange & Blueberry"
+            image="/images/food/orangepancake-image.png"
+            typeOne="30 Minutes"
+            typeTwo="Sweet"
+          />
+          <Card
+            title="The Best Easy One Pot Chicken and Rice"
+            image="/images/food/chickandrice-image.png"
+            typeOne="30 Minutes"
+            typeTwo="Snack"
+          />
+          <Card
+            title="The Creamiest Creamy Chicken and Bacon Pasta"
+            image="/images/food/orangepancake-image.png"
+            typeOne="30 Minutes"
+            typeTwo="Noodles"
+          />
+        </div>
       </section>
     </div>
   );
