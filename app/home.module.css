@@ -10,14 +10,6 @@
     margin-bottom: 160px;
 }
 
-.recipesBadge {
-    position: absolute;
-    top: 50;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 10;
-}
-
 .carouselContainer {
     overflow: hidden;
     border-radius: 24px;
@@ -34,6 +26,14 @@
     min-width: 100%;
     align-items: center;
     background: #E7FAFE;
+    position: relative;
+}
+
+.recipesBadge {
+    position: absolute;
+    top: 50px;
+    left: 44%;
+    z-index: 10;
 }
 
 .featureRecipeFirstCol {
@@ -266,25 +266,30 @@
 }
 
 /* Simple and tasty recipes */
-.simpleAndTastyContainer {
+.simpleAndTastyHeader {
     justify-content: center;
     align-items: center;
     text-align: center;
 }
 
-.simpleAndTastyContainer h1 {
+.simpleAndTastyHeader h1 {
     font-size: 48px;
     font-weight: 600;
     margin-bottom: 24px;
 }
 
-.simpleAndTastyContainer p {
+.simpleAndTastyHeader p {
     font-size: 16px;
     color: rgba(0, 0, 0, 0.6);
     margin-bottom: 24px;
 }
 
-.simpleAndTastyCardContainer {
+.simpleAndTastyCardListOne {
     border: 1px solid black;
     flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
+
+

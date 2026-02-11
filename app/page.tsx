@@ -1,7 +1,7 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import style from "./home.module.css";
-import Card from "./components/card/page"
+import Card from "./components/card/page";
 import Image from "next/image";
 
 export default function Home() {
@@ -10,6 +10,7 @@ export default function Home() {
   const recipes = [
     {
       id: 1,
+      recipeBadge: "/images/icon/badge.png",
       hotRecipesImage: "/images/icon/recipe-icon.png",
       title: "Spicy delicious chicken wings",
       description:
@@ -21,7 +22,8 @@ export default function Home() {
       recipeImage: "/images/food/chick-dish.png",
     },
     {
-      id: 1,
+      id: 2,
+      recipeBadge: "/images/icon/badge.png",
       hotRecipesImage: "/images/icon/recipe-icon.png",
       title: "Chicken Ramen Soup with Mushroom",
       description:
@@ -52,17 +54,6 @@ export default function Home() {
     <div className={style.homeContainer}>
       {/* Carousel Wrapper */}
       <div className={style.carouselWrapper}>
-        {/* Recipes Badge */}
-        <div className={style.recipesBadge}>
-          <Image
-            src="/images/icon/badge.png"
-            width={300}
-            height={500}
-            alt="Handpicked Recipes"
-            style={{ width: "150px", height: "150px" }}
-          />
-        </div>
-
         {/* Carousel Container */}
         <div className={style.carouselContainer}>
           <div
@@ -71,6 +62,16 @@ export default function Home() {
           >
             {recipes.map((recipe, index) => (
               <div key={recipe.id} className={style.featureRecipeContainer}>
+                {/* Recipes Badge */}
+                <div className={style.recipesBadge}>
+                  <Image
+                    src={recipe.recipeBadge}
+                    width={300}
+                    height={500}
+                    alt="Handpicked Recipes"
+                    style={{ width: "150px", height: "150px" }}
+                  />
+                </div>
                 <div className={style.featureRecipeFirstCol}>
                   <div className={style.hotRecipesTopic}>
                     <Image
@@ -151,7 +152,7 @@ export default function Home() {
         </div>
       </div>
       {/* Categories Container */}
-      <div className={style.categoriesContainer}>
+      <section className={style.categoriesContainer}>
         <div className={style.categoriesTopic}>
           <h1>Categories</h1>
           <button>View All Categories</button>
@@ -220,23 +221,40 @@ export default function Home() {
             </li>
           </ul>
         </div>
-      </div>
+      </section>
       {/* Simple and tasty */}
-      <div className={style.simpleAndTastyContainer}>
-        <h1>Simple and tasty recipes</h1>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate
-          distinctio ut nam pariatur,
-          <br /> quia sint animi molestiae officiis optio id!
-        </p>
-        <div className={style.simpleAndTastyCardContainer}>
-          <div className={style.simpleAndTastyCardListOne}>
-            <Card title="Big and Juicy Wagyu Beef Cheeseburger" image="/images/food/hamburger-image.png" typeOne="30 Minutes" typeTwo="Snack"/>
-          </div>
-          <div className={style.simpleAndTastyCardListTwo}></div>
-          <div className={style.simpleAndTastyCardListThree}></div>
+      <section>
+        <div className={style.simpleAndTastyHeader}>
+          <h1>Simple and tasty recipes</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate
+            distinctio ut nam pariatur,
+            <br /> quia sint animi molestiae officiis optio id!
+          </p>
         </div>
-      </div>
+        <div className={style.simpleAndTastyCardListOne}>
+          <Card
+            title="Big and Juicy Wagyu Beef Cheeseburger"
+            image="/images/food/hamburger-image.png"
+            typeOne="30 Minutes"
+            typeTwo="Snack"
+          />
+          <Card
+            title="Fresh Lime Roasted Salmon with Ginger Sauce"
+            image="/images/food/roastsalmon-image.png"
+            typeOne="30 Minutes"
+            typeTwo="Fish"
+          />
+          <Card
+            title="Strawberry Oatmeal Pancake with Honey Syrup"
+            image="/images/food/oatmealpancake-image.png"
+            typeOne="30 Minutes"
+            typeTwo="Breakfast"
+          />
+        </div>
+        <div className={style.simpleAndTastyCardListTwo}></div>
+        <div className={style.simpleAndTastyCardListThree}></div>
+      </section>
     </div>
   );
 }
