@@ -51,9 +51,9 @@ export default function Home() {
   };
 
   return (
-    <div className={style.homeContainer}>
+    <section className={style.homeContainer}>
       {/* Carousel Wrapper */}
-      <div className={style.carouselWrapper}>
+      <section className={style.carouselWrapper}>
         {/* Carousel Container */}
         <div className={style.carouselContainer}>
           <div
@@ -150,7 +150,7 @@ export default function Home() {
             ))}
           </div>
         </div>
-      </div>
+      </section>
       {/* Categories Container */}
       <section className={style.categoriesContainer}>
         <div className={style.categoriesTopic}>
@@ -274,7 +274,10 @@ export default function Home() {
                 alt=""
               />
             </div>
-            <h1>Don&apos;t forget to eat<br /> healthy food</h1>
+            <h1>
+              Don&apos;t forget to eat
+              <br /> healthy food
+            </h1>
             <Image
               src="/images/food/salmonsalad-image.png"
               width={600}
@@ -305,6 +308,26 @@ export default function Home() {
           />
         </div>
       </section>
-    </div>
+      <section className={style.learnMoreContainer}>
+        <div className={style.learnMoreFirstCol}>
+          <h1>Everyone can be a<br /> chef in their own kitchen</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. In eum
+            alias architecto autem nobis mollitia, accusamus dignissimos
+            repellat voluptatum ex.
+          </p>
+          <button>Learn More</button>
+        </div>
+        <div className={style.learnMoreSecCol}>
+          <div className={style.learnMoreSecColBackGround}></div>
+          <Image
+              src="/images/design/chief-image.png"
+              width={660}
+              height={597}
+              alt="Salmon Salad"
+            />
+        </div>
+      </section>
+    </section>
   );
 }
