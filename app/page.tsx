@@ -238,18 +238,21 @@ export default function Home() {
             image="/images/food/hamburger-image.png"
             typeOne="30 Minutes"
             typeTwo="Snack"
+            imageHeight="250px"
           />
           <Card
             title="Fresh Lime Roasted Salmon with Ginger Sauce"
             image="/images/food/roastsalmon-image.png"
             typeOne="30 Minutes"
             typeTwo="Fish"
+            imageHeight="250px"
           />
           <Card
             title="Strawberry Oatmeal Pancake with Honey Syrup"
             image="/images/food/oatmealpancake-image.png"
             typeOne="30 Minutes"
             typeTwo="Breakfast"
+            imageHeight="250px"
           />
         </div>
         <div className={style.simpleAndTastyCardListTwo}>
@@ -258,12 +261,14 @@ export default function Home() {
             image="/images/food/mixedsalad-image.png"
             typeOne="30 Minutes"
             typeTwo="Healthy"
+            imageHeight="250px"
           />
           <Card
             title="Chicken Meatballs with Cream Cheese"
             image="/images/food/meatball-image.png"
             typeOne="30 Minutes"
             typeTwo="Meat"
+            imageHeight="250px"
           />
           <div className={style.adsBadge}>
             <div className={style.adsBadgeBackGround}>
@@ -293,18 +298,21 @@ export default function Home() {
             image="/images/food/orangepancake-image.png"
             typeOne="30 Minutes"
             typeTwo="Sweet"
+            imageHeight="250px"
           />
           <Card
             title="The Best Easy One Pot Chicken and Rice"
             image="/images/food/chickandrice-image.png"
             typeOne="30 Minutes"
             typeTwo="Snack"
+            imageHeight="250px"
           />
           <Card
             title="The Creamiest Creamy Chicken and Bacon Pasta"
             image="/images/food/orangepancake-image.png"
             typeOne="30 Minutes"
             typeTwo="Noodles"
+            imageHeight="250px"
           />
         </div>
       </section>
@@ -374,8 +382,87 @@ export default function Home() {
       </section>
       {/* Delicious Recipe Container */}
       <section className={style.deliRecipeContainer}>
-        <div className={style.deliRecipeTopic}></div>
-        <div className={style.deliRecipeBody}></div>
+        <div className={style.deliRecipeTopic}>
+          <h1>Try this delicious recipe to make your day</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur
+            minima libero, corrupti esse mollitia ullam. Itaque tempore alias
+            quaerat doloremque!
+          </p>
+        </div>
+        <div className={style.deliRecipeBody}>
+          <div className={style.deliRecipeBodyFirstRow}>
+            <Card
+              title="Mixed Tropical Fruit Salad with Superfood Boots"
+              image="/images/food/mixedtropifruit-image.png"
+              typeOne="30 Minutes"
+              typeTwo="Healthy"
+              imageHeight="200px"
+            />
+            <Card
+              title="Big and Juicy Wagyu Beef Cheeseburger"
+              image="/images/food/wagyucheese-image.png"
+              typeOne="30 Minutes"
+              typeTwo="Western"
+              imageHeight="200px"
+            />
+            <Card
+              title="Healthy Japanese Fried Rice with Asparagus"
+              image="/images/food/japanesefiredrice-image.png"
+              typeOne="30 Minutes"
+              typeTwo="Healthy"
+              imageHeight="200px"
+            />
+            <Card
+              title="Cauliflower Walnut Vegetarian Taco Meat"
+              image="/images/food/vegantaco-image.png"
+              typeOne="30 Minutes"
+              imageHeight="200px"
+              typeTwo="Eastern"
+            />
+          </div>
+          <div className={style.deliRecipeBodySecRow}>
+            <Card
+              title="Rainbow Chicken Salad with Almond Honey Mustard Dressing"
+              image="/images/food/rainbowchick-image.png"
+              typeOne="30 Minutes"
+              typeTwo="Healthy"
+              imageHeight="200px"
+            />
+            <Card
+              title="Barbeque Spicy Sandwiches with Chips"
+              image="/images/food/spicysandwiches-image.png"
+              typeOne="30 Minutes"
+              typeTwo="Snack"
+              imageHeight="200px"
+            />
+            <Card
+              title="Firecracker Vegan Lettuce Wraps - Spicy!"
+              image="/images/food/spicysandwiches-image.png"
+              typeOne="30 Minutes"
+              typeTwo="Seafood"
+              imageHeight="200px"
+            />{" "}
+            <Card
+              title="Chicken Ramen Soup with Mushroom "
+              image="/images/food/chick-ramen.png"
+              typeOne="30 Minutes"
+              imageHeight="200px"
+              typeTwo="Noodles"
+            />
+          </div>
+        </div>
+      </section>
+      {/* Inbox Container  */}
+      <section className={style.inBoxContainer}>
+        <div className={style.inBoxTopic}>
+          <h1>Deliciousness to your inbox</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, hic?
+            Doloribus porro nesciunt<br /> perspiciatis minus repellat ratione quo!
+            Accusantium, quae?
+          </p>
+        </div>
       </section>
     </section>
   );

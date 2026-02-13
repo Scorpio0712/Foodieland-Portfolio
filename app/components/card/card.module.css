@@ -3,7 +3,7 @@
     background: linear-gradient(180deg, white 0%, #E7F9FD 100%);
     border-radius: 30px;
     min-width: 400px;
-    min-height: 434px;
+    height: 434px;
     margin-right: 40px;
 }
 
@@ -15,7 +15,6 @@
     background-repeat: no-repeat;
     margin-bottom: 24px;
     width: 100%;
-    height: 250px;
 }
 
 .cardImageHeart{

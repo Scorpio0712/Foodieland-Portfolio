@@ -370,8 +370,8 @@
     justify-content: space-between;
     align-items: center;
     margin-top: 143px;
+    margin-bottom: 160px ;
     width: 1280px;
-
 }
 
 .learnMoreFirstCol {
@@ -436,9 +436,8 @@
 /* Check Out Container */
 .checkOutContainer {
     background: linear-gradient(180deg, white 0%, #E7F9FD 100%);
-    margin: 80px auto;
     text-align: center;
-    border: 1px solid black;
+    margin-bottom: 160px;
     width: 100vw;
     margin-left: calc(-50vw + 50%);
     padding: 0 calc(50vw - 640px);
@@ -461,7 +460,7 @@
     align-items: center;
 }
 
-.checkOutInstagram img{
+.checkOutInstagram img {
     width: 290px;
     height: auto;
 }
@@ -479,11 +478,91 @@
     border-radius: 16px;
     width: 230px;
     padding: 16px 32px;
-    margin: 60px auto 80px;
+    margin-bottom: 80px;
 }
 
-.visitInstagramBtn svg{
-   fill: white;
-   width: 24px;
-   height: 24px;
+.visitInstagramBtn svg {
+    fill: white;
+    width: 24px;
+    height: 24px;
+}
+
+/* Delicious Recipe Container */
+
+.deliRecipeContainer {
+    margin-bottom: 160px;
+}
+
+.deliRecipeTopic {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 80px;
+    gap: 153px;
+}
+
+.deliRecipeTopic h1 {
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 1.1;
+}
+
+.deliRecipeTopic p {
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.6);
+
+}
+
+.deliRecipeBodyFirstRow,
+.deliRecipeBodySecRow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.deliRecipeBodyFirstRow {
+    margin-bottom: 40px;
+}
+
+.deliRecipeBodyFirstRow > div,
+.deliRecipeBodySecRow > div {
+    min-width: 290px !important;
+    height: 316px !important;
+    background: white !important;
+    padding: 0 !important;
+}
+
+.deliRecipeBodyFirstRow h1, .deliRecipeBodySecRow h1  {
+    font-size: 18px !important;
+}
+
+.deliRecipeBodyFirstRow div, .deliRecipeBodySecRow div {
+    font-size: 14px !important;
+}
+
+/* Inbox Container */
+.inBoxContainer {
+    margin-bottom: 160px;
+    background: #E7F9FD;
+    border-radius: 60px;
+    padding: 80px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inBoxTopic {
+    text-align: center;
+    padding: 80px auto;
+}
+
+.inBoxTopic h1{
+    font-size: 48px;
+    font-weight: 600;
+    margin-bottom: 24px;
+}
+
+.inBoxTopic p{
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.6);
 }
