@@ -1,9 +1,13 @@
 .headerMain {
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    justify-content: center;
+    align-items: center;
+    display: flex;
 }
 
 .nav {
     height: 5rem;
+    width: 1280px;
     margin: 0 5rem;
     padding: 1rem 0;
     display: flex;

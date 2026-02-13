@@ -1,12 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 
 .homeContainer {
-    margin: 30px 80px;
+    margin: 30px auto;
+    width: 1280px;
 }
 
 /* Carousel Container */
 .carouselWrapper {
     position: relative;
+    justify-content: center;
     width: 100%;
     max-width: 1280px;
     margin-bottom: 160px;
@@ -418,7 +420,6 @@
     right: 50px;
     z-index: 2;
     height: 100%;
-
 }
 
 .learnMoreSecColBackGround {
@@ -430,5 +431,59 @@
     height: 500px;
     border-radius: 30px;
     z-index: 1;
+}
 
+/* Check Out Container */
+.checkOutContainer {
+    background: linear-gradient(180deg, white 0%, #E7F9FD 100%);
+    margin: 80px auto;
+    text-align: center;
+    border: 1px solid black;
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    padding: 0 calc(50vw - 640px);
+}
+
+.checkOutContainer h1 {
+    font-size: 48px;
+    font-weight: 600;
+}
+
+.checkOutContainer p {
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.checkOutInstagram {
+    margin: 80px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.checkOutInstagram img{
+    width: 290px;
+    height: auto;
+}
+
+.visitInstagramBtn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    font-size: 14px;
+    font-weight: 500;
+    color: white;
+    cursor: pointer;
+    background: black;
+    border-radius: 16px;
+    width: 230px;
+    padding: 16px 32px;
+    margin: 60px auto 80px;
+}
+
+.visitInstagramBtn svg{
+   fill: white;
+   width: 24px;
+   height: 24px;
 }

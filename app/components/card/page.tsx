@@ -1,7 +1,6 @@
 "use client";
 import { useState } from "react";
 import React from "react";
-import Image from "next/image";
 import style from "./card.module.css";
 
 interface CardProps {
