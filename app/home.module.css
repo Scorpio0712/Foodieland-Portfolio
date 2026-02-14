@@ -542,13 +542,33 @@
 
 /* Inbox Container */
 .inBoxContainer {
+    position: relative;
     margin-bottom: 160px;
     background: #E7F9FD;
     border-radius: 60px;
     padding: 80px 0;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+}
+
+.inBoxContainer > *{
+    position: relative;
+    z-index: 2;
+}
+
+.inBoxBackGroundLeft {
+    border-bottom-left-radius: 60px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+}
+.inBoxBackGroundRight {
+    border-bottom-right-radius: 60px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
 }
 
 .inBoxTopic {
@@ -565,4 +585,8 @@
 .inBoxTopic p{
     font-size: 16px;
     color: rgba(0, 0, 0, 0.6);
+}
+
+.inBoxBody {
+    margin: 64px auto 0;
 }

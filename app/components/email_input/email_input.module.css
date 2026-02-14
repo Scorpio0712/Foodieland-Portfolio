@@ -1,0 +1,53 @@
+.emailContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.emailBox {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 24px;
+    padding: 6px;
+    width: 480px;
+    max-width: 100%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.emailInput {
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 14px 20px;
+    font-size: 16px;
+    background: transparent;
+}
+
+.emailInput::placeholder {
+    color: #9ca3af;
+}
+
+.subscribeButton {
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 18px;
+    padding: 14px 32px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: background-color 0.3s;
+}
+
+.subscribeButton:hover {
+    background-color: #333333;
+}
+
+.error {
+    color: #ef4444;
+    font-size: 14px;
+    margin-top: 8px;
+}

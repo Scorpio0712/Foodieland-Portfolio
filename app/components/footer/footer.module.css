@@ -1,43 +1,42 @@
 .footerMain {
     margin: 0 auto;
     width: 1280px;
-    border: 1px solid black;
 }
 
 .navContainer {
-    height: 110px;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-}
-
-.nav {
     display: flex;
-    padding: 1rem 0;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
+    margin-bottom: 48px;
 }
 
-.navDetail{
+.navFirstCol img {
+    margin-bottom: 16px;
+}
+
+.navFirstCol p {
     font-size: 14px;
 }
 
-.navMenuList {
+.navSecCol ul {
     display: flex;
     text-decoration: none;
-    gap: 2.5rem;
+    gap: 48px;
 }
 
-.navMenuList li {
+.navSecCol ul li {
     font-weight: 500;
     font-size: 14px;
     transition: all 0.3s ease;
 }
 
-.navMenuList li:hover {
+.navSecCol ul li:hover {
     transform: scale(1.1);
 }
 
 .copyRightContainer {
-    height: 5rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    height: 80px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -48,31 +47,28 @@
     position: relative;
     left: 50%;
     transform: translateX(-50%);
-    align-items: center;
-    display: flex;
 }
 
-.footerDetail span{
+.footerDetailSpan {
     color: #FF7967;
 }
 
 .navSocialList {
-    justify-content: end;
-    align-items: center;
-    list-style: none;
     display: flex;
-    gap: 1.25rem;
+    gap: 32px;
 }
 
-.facebookIcon, .twitterIcon, .instagramIcon {
-    
-    
-    padding: 0 1rem;
+.facebookIcon,
+.twitterIcon,
+.instagramIcon {
+    padding: 0 16px;
     width: 20px;
     height: 20px;
 }
 
-.facebookIcon svg, .twitterIcon svg, .instagramIcon svg {
+.facebookIcon svg,
+.twitterIcon svg,
+.instagramIcon svg {
     width: 18px;
     height: 18px;
 }
