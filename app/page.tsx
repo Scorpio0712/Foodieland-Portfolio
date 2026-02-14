@@ -1,12 +1,13 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import EmailInput from "./components/email_input/page";
-import style from "./home.module.css";
+import style from "./style/home.module.css";
 import Card from "./components/card/page";
 import Image from "next/image";
 
 export default function Home() {
   const [currentSlide, setCurrentSlide] = useState(0);
+  const [isTransitioning, setIsTransitioning] = useState(true);
   const handleEmailSubmit = (email: string) => {
     console.log("Email submitted: ", email);
   };
@@ -40,18 +41,48 @@ export default function Home() {
     },
   ];
 
+  // ทำซ้ำ Carousel วนได้แบบไม่มีสิ้นสุด
+  const extendedRecipes = [...recipes, ...recipes, ...recipes];
+
+  //Auto slide ไปทางขวา (เพิ่มค่า currentSlide)
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentSlide((prev) => (prev + 1) % recipes.length);
+      setIsTransitioning(true);
+      setCurrentSlide((prev) => prev + 1);
     }, 5000);
-  }, [recipes.length]);
+
+    return () => clearInterval(interval);
+  }, []);
+
+  //Reset Position เมื่อถึงจุดกลาง
+  useEffect(() => {
+    if (currentSlide >= recipes.length * 2) {
+      const timeout = setTimeout(() => {
+        setIsTransitioning(false);
+        setCurrentSlide(recipes.length);
+      }, 500);
+
+      return () => clearTimeout(timeout);
+    }
+
+    if (currentSlide <= 0) {
+      const timeout = setTimeout(() => {
+        setIsTransitioning(false);
+        setCurrentSlide(recipes.length);
+      }, 500);
+
+      return () => clearTimeout(timeout);
+    }
+  }, [currentSlide, recipes.length]);
 
   const nextSlide = () => {
-    setCurrentSlide((prev) => (prev + 1) % recipes.length);
+    setIsTransitioning(true);
+    setCurrentSlide((prev) => prev + 1);
   };
 
   const prevSlide = () => {
-    setCurrentSlide((prev) => (prev - 1 + recipes.length) % recipes.length);
+    setIsTransitioning(true);
+    setCurrentSlide((prev) => prev - 1);
   };
 
   return (
@@ -62,10 +93,18 @@ export default function Home() {
         <div className={style.carouselContainer}>
           <div
             className={style.carouselTrack}
-            style={{ transform: `translateX(-${currentSlide * 100}%)` }}
+            style={{
+              transform: `translateX(-${currentSlide * 100}%)`,
+              transition: isTransitioning
+                ? "transform 0.5s ease-in-out"
+                : "none",
+            }}
           >
-            {recipes.map((recipe, index) => (
-              <div key={recipe.id} className={style.featureRecipeContainer}>
+            {extendedRecipes.map((recipe, index) => (
+              <div
+                key={`${recipe.id} - ${index}`}
+                className={style.featureRecipeContainer}
+              >
                 {/* Recipes Badge */}
                 <div className={style.recipesBadge}>
                   <Image
@@ -458,36 +497,12 @@ export default function Home() {
         </div>
       </section>
       {/* Inbox Container  */}
-      <section className={style.inBoxContainer}>
-        <Image
-          className={style.inBoxBackGroundLeft}
-          src="/images/design/inBox-design-image.png"
-          width={350}
-          height={400}
-          alt=""
+      <section>
+        <EmailInput
+          placeholder="Your email address..."
+          buttonText="Subscribe"
+          onSubmit={handleEmailSubmit}
         />
-        <Image
-          className={style.inBoxBackGroundRight}
-          src="/images/design/inBox-design2-image.png"
-          width={350}
-          height={400}
-          alt=""
-        />
-        <div className={style.inBoxTopic}>
-          <h1>Deliciousness to your inbox</h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, hic?
-            Doloribus porro nesciunt
-            <br /> perspiciatis minus repellat ratione quo! Accusantium, quae?
-          </p>
-        </div>
-        <div className={style.inBoxBody}>
-          <EmailInput
-            placeholder="Your email address..."
-            buttonText="Subscribe"
-            onSubmit={handleEmailSubmit}
-          />
-        </div>
       </section>
     </section>
   );

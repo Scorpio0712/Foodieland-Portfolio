@@ -21,7 +21,7 @@ function Footer() {
         <nav className={style.navSecCol}>
           <ul>
             <li>
-              <Link href={"../"}>Recipes</Link>
+              <Link href={"../../recipe/"}>Recipes</Link>
             </li>
             <li>
               <Link href={"../"}>Blog</Link>
