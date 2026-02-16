@@ -3,3 +3,106 @@
     max-width: 1280px;
     border: 1px solid black;
 }
+
+.recipeDetailMain {
+    width: 100%;
+
+}
+
+.recipeDetailTopic {
+    flex: 1;
+    max-width: 700px;
+}
+
+.recipeDetailTopic h1 {
+    font-size: 54px;
+    font-weight: 600;
+}
+
+.recipeDetailAuthor {
+    margin-top: 48px;
+    max-width: 600px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.recipeDetailAuthorName {
+    display: flex;
+    gap: 16px;
+}
+
+.recipeDetailAuthorInfo h1 {
+    font-size: 16px;
+    font-weight: 800;
+}
+
+.recipeDetailAuthorInfo p {
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.recipeDetailPrepTime {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.recipeDetailPrepTime svg {
+    width: 24px;
+    height: 24px;
+}
+
+.recipeDetailPrepTimeInfo h1 {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.recipeDetailPrepTimeInfo p {
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.recipeDetailCookTime {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.recipeDetailCookTime svg {
+    width: 24px;
+    height: 24px;
+}
+
+.recipeDetailCookTimeInfo h1 {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.recipeDetailCookTimeInfo p {
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.recipeDetailCategory {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.recipeDetailCategory svg {
+    width: 24px;
+    height: 24px;
+}
+
+.recipeDetailCategory p {
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.recipeDetailPrintShare {
+    flex: 1;
+}
