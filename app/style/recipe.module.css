@@ -1,15 +1,15 @@
 .recipeDetailContainer {
     margin: 80px auto;
     max-width: 1280px;
-    border: 1px solid black;
 }
 
-.recipeDetailMain {
+/* Recipe Detail */
+.recipeDetailHeader {
     display: flex;
+    margin-bottom: 64px;
     justify-content: space-between;
     align-items: center;
     width: 100%;
-
 }
 
 .recipeDetailTopic {
@@ -125,6 +125,7 @@
     width: 70px;
     height: 70px;
     margin-bottom: 16px;
+    cursor: pointer;
 }
 
 .recipeDetailPrintBtn div svg {
@@ -146,6 +147,7 @@
     width: 70px;
     height: 70px;
     margin-bottom: 16px;
+    cursor: pointer;
 }
 
 .recipeDetailShareBtn div svg {
@@ -156,4 +158,122 @@
 .recipeDetailShareBtn p {
     font-size: 12px;
     font-weight: 500;
+}
+
+/* Recipe Detail Body */
+.recipeDetailBody_Header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.recipeDetailBody_Header img {
+    width: 840px;
+    height: 600px;
+    border-radius: 30px;
+}
+
+.nutritionInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #E7FAFE;
+    padding: 32px;
+    border-radius: 30px;
+    width: 400px;
+    height: 600px;
+}
+
+.nutritionInfo h1 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 24px;
+}
+
+
+.nutritionInfo_Calories,
+.nutritionInfo_TotalFat,
+.nutritionInfo_Protein,
+.nutritionInfo_Carbohydrate,
+.nutritionInfo_Cholesterol {
+    display: flex;
+    padding-bottom: 16px;
+    justify-content: space-between;
+    margin-bottom: 16px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.nutritionInfo_CaloriesTopic,
+.nutritionInfo_TotalFatTopic,
+.nutritionInfo_ProteinTopic,
+.nutritionInfo_CarbohydrateTopic,
+.nutritionInfo_CholesterolTopic {
+    font-size: 18px;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.nutritionInfo_CaloriesDetail,
+.nutritionInfo_TotalFatDetail,
+.nutritionInfo_ProteinDetail,
+.nutritionInfo_CarbohydrateDetail,
+.nutritionInfo_CholesterolDetail {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.nutritionInfo_DetailDeScript {
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.6);
+    margin-top: auto;
+    text-align: center;
+}
+
+.recipeDetail_BodyDetail {
+    margin-top: 80px;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+/* Recipe Detail Section 2 */
+.recipeDetail_SectionTwo {
+    margin-top: 80px;
+    display: flex;
+    gap: 40px;
+}
+
+.recipeDetail_Ingredients {
+    flex: 1;
+    max-width: 840px;
+}
+
+.recipeDetail_Ingredients h1 {
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.recipeDetail_ForMainDish {
+    margin-top: 48px;
+}
+
+.recipeDetail_ForMainDish h1 {
+    font-size: 24px;
+
+}
+
+.recipeDetail_OtherRecipe {
+    flex: 1;
+    max-width: 400px;
+}
+
+.recipeDetail_OtherRecipe h1 {
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.recipeDetail_ForTheSauce {
+    margin-top: 64px;
+    flex: 1;
+    max-width: 840px;
 }
