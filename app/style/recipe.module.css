@@ -1,10 +1,10 @@
-.recipeDetailContainer {
+.rd_Container {
     margin: 80px auto;
     max-width: 1280px;
 }
 
 /* Recipe Detail */
-.recipeDetailHeader {
+.rd_Header {
     display: flex;
     margin-bottom: 64px;
     justify-content: space-between;
@@ -12,17 +12,17 @@
     width: 100%;
 }
 
-.recipeDetailTopic {
+.rd_Topic {
     flex: 1;
     max-width: 800px;
 }
 
-.recipeDetailTopic h1 {
+.rd_Topic h1 {
     font-size: 54px;
     font-weight: 600;
 }
 
-.recipeDetailAuthor {
+.rd_Author {
     margin-top: 48px;
     max-width: 600px;
     display: flex;
@@ -30,83 +30,83 @@
     align-items: center;
 }
 
-.recipeDetailAuthorName {
+.rd_AuthorName {
     display: flex;
     gap: 16px;
 }
 
-.recipeDetailAuthorInfo h1 {
+.rd_AuthorInfo h1 {
     font-size: 16px;
     font-weight: 800;
 }
 
-.recipeDetailAuthorInfo p {
+.rd_AuthorInfo p {
     font-size: 14px;
     color: rgba(0, 0, 0, 0.6);
 }
 
-.recipeDetailPrepTime {
+.rd_PrepTime {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 16px;
 }
 
-.recipeDetailPrepTime svg {
+.rd_PrepTime svg {
     width: 24px;
     height: 24px;
 }
 
-.recipeDetailPrepTimeInfo h1 {
+.rd_PrepTimeInfo h1 {
     font-size: 14px;
     font-weight: 500;
 }
 
-.recipeDetailPrepTimeInfo p {
+.rd_PrepTimeInfo p {
     font-size: 14px;
     color: rgba(0, 0, 0, 0.6);
 }
 
-.recipeDetailCookTime {
+.rd_CookTime {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 16px;
 }
 
-.recipeDetailCookTime svg {
+.rd_CookTime svg {
     width: 24px;
     height: 24px;
 }
 
-.recipeDetailCookTimeInfo h1 {
+.rd_CookTimeInfo h1 {
     font-size: 14px;
     font-weight: 500;
 }
 
-.recipeDetailCookTimeInfo p {
+.rd_CookTimeInfo p {
     font-size: 14px;
     color: rgba(0, 0, 0, 0.6);
 }
 
-.recipeDetailCategory {
+.rd_Category {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
 }
 
-.recipeDetailCategory svg {
+.rd_Category svg {
     width: 24px;
     height: 24px;
 }
 
-.recipeDetailCategory p {
+.rd_Category p {
     font-size: 14px;
     color: rgba(0, 0, 0, 0.6);
 }
 
-.recipeDetailPrintShare {
+.rd_PrintShare {
     flex: 1;
     max-width: 200px;
     display: flex;
@@ -116,7 +116,7 @@
     margin-top: 24px;
 }
 
-.recipeDetailPrintBtn div {
+.rd_PrintBtn div {
     background: #E7FAFE;
     border-radius: 50%;
     display: flex;
@@ -128,17 +128,17 @@
     cursor: pointer;
 }
 
-.recipeDetailPrintBtn div svg {
+.rd_PrintBtn div svg {
     width: 24px;
     height: 24px;
 }
 
-.recipeDetailPrintBtn p {
+.rd_PrintBtn p {
     font-size: 12px;
     font-weight: 500;
 }
 
-.recipeDetailShareBtn div {
+.rd_ShareBtn div {
     background: #E7FAFE;
     border-radius: 50%;
     display: flex;
@@ -150,25 +150,25 @@
     cursor: pointer;
 }
 
-.recipeDetailShareBtn div svg {
+.rd_ShareBtn div svg {
     width: 24px;
     height: 24px;
 }
 
-.recipeDetailShareBtn p {
+.rd_ShareBtn p {
     font-size: 12px;
     font-weight: 500;
 }
 
 /* Recipe Detail Body */
-.recipeDetailBody_Header {
+.rd_BodyHeader {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 40px;
 }
 
-.recipeDetailBody_Header img {
+.rd_BodyHeader img {
     width: 840px;
     height: 600px;
     border-radius: 30px;
@@ -230,25 +230,25 @@
     text-align: center;
 }
 
-.recipeDetail_BodyDetail {
+.rd_BodyDetail {
     margin-top: 80px;
     font-size: 16px;
     color: rgba(0, 0, 0, 0.6);
 }
 
 /* Recipe Detail Section 2 */
-.recipeDetail_SectionTwo {
+.rd_SectionTwo {
     margin-top: 80px;
     display: flex;
     gap: 40px;
 }
 
-.recipeDetail_Ingredients {
+.rd_Ingredients {
     flex: 1;
     max-width: 840px;
 }
 
-.recipeDetail_Ingredients h1 {
+.rd_Ingredients h1 {
     font-size: 36px;
     font-weight: 600;
 }
@@ -257,23 +257,57 @@
     margin-top: 48px;
 }
 
-.recipeDetail_ForMainDish h1 {
+.rd_ForMainDish h1 {
     font-size: 24px;
 
 }
 
-.recipeDetail_OtherRecipe {
-    flex: 1;
-    max-width: 400px;
-}
-
-.recipeDetail_OtherRecipe h1 {
-    font-size: 32px;
-    font-weight: 600;
-}
-
-.recipeDetail_ForTheSauce {
+.rd_ForTheSauce {
     margin-top: 64px;
     flex: 1;
     max-width: 840px;
 }
+
+.rd_OtherRecipe {
+    flex: 1;
+    max-width: 400px;
+}
+
+.rd_OtherRecipe h1 {
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.rd_OtherRecipeList {
+    margin-top: 32px;
+}
+
+.rd_OtherRecipeOne, .rd_OtherRecipeTwo, .rd_OtherRecipeThree {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin-bottom: 24px;
+}
+
+.rd_OtherRecipeOne img, .rd_OtherRecipeTwo img, .rd_OtherRecipeThree img {
+    width: 180px;
+    height: 120px;
+    border-radius: 20px;
+}
+
+.rd_OtherRecipeOneDetail h1, .rd_OtherRecipeTwoDetail h1, .rd_OtherRecipeThreeDetail h1 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+.rd_OtherRecipeOneDetail p, .rd_OtherRecipeTwoDetail p, .rd_OtherRecipeThreeDetail p {
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
