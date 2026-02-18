@@ -3,7 +3,9 @@ import React, { useState } from "react";
 import Image from "next/image";
 import CircleCheckBoxComp from "../components/checkbox/page";
 import CardThumbnailComp from "../components/card_thumbnail/page";
+import CardComp from "../components/card/page";
 import AdsBadgeComp from "../components/ads_badge/page";
+import EmailInputComp from "../components/email_input/page";
 import style from "../style/recipe.module.css";
 
 function RecipeDetailPage() {
@@ -313,6 +315,16 @@ function RecipeDetailPage() {
               checked={directions.directionTwo}
               onChange={handleDirectionsChange("directionTwo")}
             />
+            <div className={style.rd_DirectionsListTwoDetail}>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima
+                debitis sit sed eius impedit quis esse omnis quasi illo, modi
+                numquam dicta porro, rerum doloremque reiciendis cumque quidem
+                praesentium perspiciatis architecto odit? Autem, maiores fugit
+                optio distinctio ipsam officia incidunt mollitia aliquid tempore
+                minima rerum totam, nobis, illo sequi? Enim.
+              </p>
+            </div>
           </div>
           <div className={style.rd_DirectionsListThree}>
             <CircleCheckBoxComp
@@ -322,7 +334,53 @@ function RecipeDetailPage() {
               checked={directions.directionThree}
               onChange={handleDirectionsChange("directionThree")}
             />
+            <div className={style.rd_DirectionsListThreeDetail}>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima
+                debitis sit sed eius impedit quis esse omnis quasi illo, modi
+                numquam dicta porro, rerum doloremque reiciendis cumque quidem
+                praesentium perspiciatis architecto odit? Autem, maiores fugit
+                optio distinctio ipsam officia incidunt mollitia aliquid tempore
+                minima rerum totam, nobis, illo sequi? Enim.
+              </p>
+            </div>
           </div>
+        </div>
+      </section>
+      <section className={style.rd_SectionFour}>
+        <EmailInputComp />
+      </section>
+      <section className={style.rd_SectionFive}>
+        <h1 className={style.rd_SectionFiveTopic}>You may like these recipe too</h1>
+        <div className={style.rd_RecipeTooDetail}>
+          <CardComp
+              title="Rainbow Chicken Salad with Almond Honey Mustard Dressing"
+              image="/images/food/rainbowchick-image.png"
+              typeOne="30 Minutes"
+              typeTwo="Healthy"
+              imageHeight="200px"
+            />
+            <CardComp
+              title="Barbeque Spicy Sandwiches with Chips"
+              image="/images/food/spicysandwiches-image.png"
+              typeOne="30 Minutes"
+              typeTwo="Snack"
+              imageHeight="200px"
+            />
+            <CardComp
+              title="Firecracker Vegan Lettuce Wraps - Spicy!"
+              image="/images/food/spicysandwiches-image.png"
+              typeOne="30 Minutes"
+              typeTwo="Seafood"
+              imageHeight="200px"
+            />{" "}
+            <CardComp
+              title="Chicken Ramen Soup with Mushroom "
+              image="/images/food/chick-ramen.png"
+              typeOne="30 Minutes"
+              imageHeight="200px"
+              typeTwo="Noodles"
+            />
         </div>
       </section>
     </main>

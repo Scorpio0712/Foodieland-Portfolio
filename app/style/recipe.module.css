@@ -294,18 +294,62 @@
     font-weight: 600;
 }
 
-.rd_DirectionsListOne {
+.rd_DirectionsListOne, .rd_DirectionsListTwo, .rd_DirectionsListThree {
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-}
-
-.rd_DirectionsListOneDetail {
-    padding: 0 0 48px 48px;
 }
 
 .checkBox_DirectionOne, .checkBox_DirectionTwo, .checkBox_DirectionThree {
     border-bottom: 0;
     font-size: 24px;
     font-weight: 600;
+}
+
+.rd_DirectionsListOneDetail, .rd_DirectionsListTwoDetail, .rd_DirectionsListThreeDetail {
+    padding: 0 0 48px 48px;
+}
+
+.rd_DirectionsListOneDetail img {
+    margin: 48px 0 48px 0;
+    width: 100%;
+}
+
+/* Recipe Detail Section Four */
+.rd_SectionFour {
+    margin-top: 160px;
+}
+
+/* Recipe Detail Section Five */
+.rd_SectionFive {
+    margin: 160px 0 160px 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.rd_SectionFiveTopic{
+    font-size: 36px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.rd_RecipeTooDetail {
+    display: flex;
+    margin-top: 80px;
+}
+
+.rd_RecipeTooDetail > div{
+    min-width: 290px !important;
+    height: 316px !important;
+    background: white !important;
+    padding: 0 !important;
+}
+
+.rd_RecipeTooDetail h1 {
+    font-size: 18px !important;
+    font-weight: 600 !important;
+}
+
+.rd_RecipeTooDetail div {
+    font-size: 14px !important;
 }
 
 

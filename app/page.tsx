@@ -87,7 +87,7 @@ export default function Home() {
   };
 
   return (
-    <section className={style.homeContainer}>
+    <main className={style.homeContainer}>
       {/* Carousel Wrapper */}
       <section className={style.carouselWrapper}>
         {/* Carousel Container */}
@@ -478,13 +478,13 @@ export default function Home() {
         </div>
       </section>
       {/* Inbox Container  */}
-      <section>
+      <section className={style.inbox_Container}>
         <EmailInputComp
           placeholder="Your email address..."
           buttonText="Subscribe"
           onSubmit={handleEmailSubmit}
         />
       </section>
-    </section>
+    </main>
   );
 }

@@ -9,7 +9,6 @@
     justify-content: center;
     width: 100%;
     max-width: 1280px;
-    margin-bottom: 160px;
 }
 
 .carouselContainer {
@@ -176,8 +175,7 @@
 
 /* Categories Container */
 .categoriesContainer {
-    margin: 120px auto;
-
+    margin-top: 162px;
 }
 
 .categoriesTopic {
@@ -269,6 +267,7 @@
 
 /* Simple and tasty recipes */
 .simpleAndTastyHeader {
+    margin-top: 183px;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -301,8 +300,6 @@
     margin: 40px 0;
 }
 
-
-
 .simpleAndTastyCardListThree {
     display: flex;
     justify-content: space-between;
@@ -316,7 +313,6 @@
     justify-content: space-between;
     align-items: center;
     margin-top: 143px;
-    margin-bottom: 160px ;
     width: 1280px;
 }
 
@@ -383,8 +379,8 @@
 .checkOutContainer {
     background: linear-gradient(180deg, white 0%, #E7F9FD 100%);
     text-align: center;
-    margin-bottom: 160px;
     width: 100vw;
+    margin-top: 240px;
     margin-left: calc(-50vw + 50%);
     padding: 0 calc(50vw - 640px);
 }
@@ -434,9 +430,8 @@
 }
 
 /* Delicious Recipe Container */
-
 .deliRecipeContainer {
-    margin-bottom: 160px;
+    margin-top: 160px;
 }
 
 .deliRecipeTopic {
@@ -486,5 +481,8 @@
     font-size: 14px !important;
 }
 
-
-
+/* Inbox Container */
+.inbox_Container {
+    margin-top: 160px; 
+    margin-bottom: 180px;
+}
