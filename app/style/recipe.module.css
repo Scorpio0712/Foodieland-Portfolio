@@ -253,11 +253,11 @@
     font-weight: 600;
 }
 
-.recipeDetail_ForMainDish {
+.rd_ForMainDish {
     margin-top: 48px;
 }
 
-.rd_ForMainDish h1 {
+.rd_ForMainDish h1, .rd_ForTheSauce h1 {
     font-size: 24px;
 
 }
@@ -279,35 +279,34 @@
 }
 
 .rd_OtherRecipeList {
-    margin-top: 32px;
+    margin: 32px 0 80px;
+    
 }
 
-.rd_OtherRecipeOne, .rd_OtherRecipeTwo, .rd_OtherRecipeThree {
-    display: flex;
-    align-items: center;
-    gap: 24px;
-    margin-bottom: 24px;
+/* Recipe Detail Section Three */
+.rd_SectionThree {
+    margin-top: 88px;
+    width: 840px;
 }
 
-.rd_OtherRecipeOne img, .rd_OtherRecipeTwo img, .rd_OtherRecipeThree img {
-    width: 180px;
-    height: 120px;
-    border-radius: 20px;
-}
-
-.rd_OtherRecipeOneDetail h1, .rd_OtherRecipeTwoDetail h1, .rd_OtherRecipeThreeDetail h1 {
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    font-size: 20px;
+.rd_DirectionsTopic {
+    font-size: 36px;
     font-weight: 600;
-    margin-bottom: 16px;
 }
 
-.rd_OtherRecipeOneDetail p, .rd_OtherRecipeTwoDetail p, .rd_OtherRecipeThreeDetail p {
-    font-size: 14px;
-    color: rgba(0, 0, 0, 0.6);
+.rd_DirectionsListOne {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
+
+.rd_DirectionsListOneDetail {
+    padding: 0 0 48px 48px;
+}
+
+.checkBox_DirectionOne, .checkBox_DirectionTwo, .checkBox_DirectionThree {
+    border-bottom: 0;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+
 

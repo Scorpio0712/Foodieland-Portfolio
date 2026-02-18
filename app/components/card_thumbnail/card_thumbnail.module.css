@@ -1,0 +1,28 @@
+.cardThumbnail_Container {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin-bottom: 24px;
+}
+
+.cardThumbnail_Image {
+    width: 180px;
+    height: 120px;
+    border-radius: 20px;
+}
+
+.cardThumbnail_Topic {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+.cardThumbnail_Author {
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.6);
+}

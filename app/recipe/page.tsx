@@ -1,7 +1,9 @@
 "use client";
 import React, { useState } from "react";
 import Image from "next/image";
-import CircleCheckBox from "../components/checkbox/page";
+import CircleCheckBoxComp from "../components/checkbox/page";
+import CardThumbnailComp from "../components/card_thumbnail/page";
+import AdsBadgeComp from "../components/ads_badge/page";
 import style from "../style/recipe.module.css";
 
 function RecipeDetailPage() {
@@ -19,6 +21,12 @@ function RecipeDetailPage() {
     sauceThree: false,
   });
 
+  const [directions, setDirections] = useState({
+    directionOne: false,
+    directionTwo: false,
+    directionThree: false,
+  });
+
   const handleIngredientsChange =
     (name: string) => (e: React.ChangeEvent<HTMLInputElement>) => {
       setIngredients((prev) => ({
@@ -30,6 +38,14 @@ function RecipeDetailPage() {
   const handleSaucesChange =
     (name: string) => (e: React.ChangeEvent<HTMLInputElement>) => {
       setSauces((prev) => ({
+        ...prev,
+        [name]: e.target.checked,
+      }));
+    };
+
+  const handleDirectionsChange =
+    (name: string) => (e: React.ChangeEvent<HTMLInputElement>) => {
+      setDirections((prev) => ({
         ...prev,
         [name]: e.target.checked,
       }));
@@ -166,35 +182,35 @@ function RecipeDetailPage() {
           <div className={style.rd_ForMainDish}>
             <h1>For main dish</h1>
             <div className={style.rd_ForMainDishDetail}>
-              <CircleCheckBox
+              <CircleCheckBoxComp
                 label="Lorem ipsum dolor sit amet."
                 id="ingredientOne"
                 checked={ingredients.ingredientOne}
                 onChange={handleIngredientsChange("ingredientOne")}
               />
 
-              <CircleCheckBox
+              <CircleCheckBoxComp
                 label="Lorem ipsum dolor sit amet."
                 id="ingredientTwo"
                 checked={ingredients.ingredientTwo}
                 onChange={handleIngredientsChange("ingredientTwo")}
               />
 
-              <CircleCheckBox
+              <CircleCheckBoxComp
                 label="Lorem ipsum dolor sit amet."
                 id="ingredientThree"
                 checked={ingredients.ingredientThree}
                 onChange={handleIngredientsChange("ingredientThree")}
               />
 
-              <CircleCheckBox
+              <CircleCheckBoxComp
                 label="Lorem ipsum dolor sit amet."
                 id="ingredientFour"
                 checked={ingredients.ingredientFour}
                 onChange={handleIngredientsChange("ingredientFour")}
               />
 
-              <CircleCheckBox
+              <CircleCheckBoxComp
                 label="Lorem ipsum dolor sit amet."
                 id="ingredientFive"
                 checked={ingredients.ingredientFive}
@@ -205,19 +221,19 @@ function RecipeDetailPage() {
           <div className={style.rd_ForTheSauce}>
             <h1>For the sauce</h1>
             <div className={style.rd_ForTheSauceDetail}>
-              <CircleCheckBox
+              <CircleCheckBoxComp
                 label="Lorem ipsum dolor sit amet."
                 id="sauceOne"
                 checked={sauces.sauceOne}
                 onChange={handleSaucesChange("sauceOne")}
               />
-              <CircleCheckBox
+              <CircleCheckBoxComp
                 label="Lorem ipsum dolor sit amet."
                 id="sauceTwo"
                 checked={sauces.sauceTwo}
                 onChange={handleSaucesChange("sauceTwo")}
               />
-              <CircleCheckBox
+              <CircleCheckBoxComp
                 label="Lorem ipsum dolor sit amet."
                 id="sauceThree"
                 checked={sauces.sauceThree}
@@ -229,27 +245,83 @@ function RecipeDetailPage() {
         <div className={style.rd_OtherRecipe}>
           <h1>Other Recipe</h1>
           <div className={style.rd_OtherRecipeList}>
-            <div className={style.rd_OtherRecipeOne}>
-              <Image src="/images/food/meatball-image.png" alt="" width={400} height={300} />
-              <div className={style.rd_OtherRecipeOneDetail}>
-                <h1>Chicken Meatball with Creamy Cheese</h1>
-                <p>By Andreas Paula</p>
-              </div>
+            <CardThumbnailComp
+              imageCard="/images/food/meatball-image.png"
+              imageNameCard="Chicken Meatball with Creamy Cheese"
+              topicCard="Chicken Meatball with Creamy Cheese"
+              authorCard="By Andreas Paula"
+            />
+
+            <CardThumbnailComp
+              imageCard="/images/food/chickandbacpasta-image.png"
+              imageNameCard="The Creamiest Creamy Chicken and Bacon Pasta"
+              topicCard="The Creamiest Creamy Chicken and Bacon Pasta"
+              authorCard="By Andreas Paula"
+            />
+
+            <CardThumbnailComp
+              imageCard="/images/food/chickandrice-image.png"
+              imageNameCard="The Best Easy One Pot Chicken and Rice"
+              topicCard="The Best Easy One Pot Chicken and Rice"
+              authorCard="By Andreas Paula"
+            />
+          </div>
+          <AdsBadgeComp />
+        </div>
+      </section>
+      <section className={style.rd_SectionThree}>
+        <h1 className={style.rd_DirectionsTopic}>Directions</h1>
+        <div className={style.rd_DirectionsList}>
+          <div className={style.rd_DirectionsListOne}>
+            <CircleCheckBoxComp
+              className={style.checkBox_DirectionOne}
+              label="1. Lorem ipsum dolor sit amet."
+              id="directionOne"
+              checked={directions.directionOne}
+              onChange={handleDirectionsChange("directionOne")}
+            />
+            <div className={style.rd_DirectionsListOneDetail}>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima
+                debitis sit sed eius impedit quis esse omnis quasi illo, modi
+                numquam dicta porro, rerum doloremque reiciendis cumque quidem
+                praesentium perspiciatis architecto odit? Autem, maiores fugit
+                optio distinctio ipsam officia incidunt mollitia aliquid tempore
+                minima rerum totam, nobis, illo sequi? Enim.
+              </p>
+              <Image
+                src="/images/design/checkBox_One.png"
+                alt=""
+                width={400}
+                height={200}
+              />
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima
+                debitis sit sed eius impedit quis esse omnis quasi illo, modi
+                numquam dicta porro, rerum doloremque reiciendis cumque quidem
+                praesentium perspiciatis architecto odit? Autem, maiores fugit
+                optio distinctio ipsam officia incidunt mollitia aliquid tempore
+                minima rerum totam, nobis, illo sequi? Enim.
+              </p>
             </div>
-            <div className={style.rd_OtherRecipeTwo}>
-              <Image src="/images/food/chickandbacpasta-image.png" alt="" width={400} height={300} />
-              <div className={style.rd_OtherRecipeTwoDetail}>
-                <h1>The Creamiest Creamy Chicken and Bacon Pasta</h1>
-                <p>By Andreas Paula</p>
-              </div>
-            </div>
-            <div className={style.rd_OtherRecipeThree}>
-              <Image src="/images/food/chickandrice-image.png" alt="" width={400} height={300} />
-              <div className={style.rd_OtherRecipeThreeDetail}>
-                <h1>The Best Easy One Pot Chicken and Rice</h1>
-                <p>By Andreas Paula</p>
-              </div>
-            </div>
+          </div>
+          <div className={style.rd_DirectionsListTwo}>
+            <CircleCheckBoxComp
+              className={style.checkBox_DirectionTwo}
+              label="2. Lorem ipsum dolor sit amet."
+              id="directionTwo"
+              checked={directions.directionTwo}
+              onChange={handleDirectionsChange("directionTwo")}
+            />
+          </div>
+          <div className={style.rd_DirectionsListThree}>
+            <CircleCheckBoxComp
+              className={style.checkBox_DirectionThree}
+              label="3. Lorem ipsum dolor sit amet."
+              id="directionThree"
+              checked={directions.directionThree}
+              onChange={handleDirectionsChange("directionThree")}
+            />
           </div>
         </div>
       </section>

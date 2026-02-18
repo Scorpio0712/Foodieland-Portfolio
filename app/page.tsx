@@ -1,8 +1,9 @@
 "use client";
 import React, { useState, useEffect } from "react";
-import EmailInput from "./components/email_input/page";
+import EmailInputComp from "./components/email_input/page";
 import style from "./style/home.module.css";
-import Card from "./components/card/page";
+import CardComp from "./components/card/page";
+import AdsBadgeComp from "./components/ads_badge/page";
 import Image from "next/image";
 
 export default function Home() {
@@ -276,21 +277,21 @@ export default function Home() {
           </p>
         </div>
         <div className={style.simpleAndTastyCardListOne}>
-          <Card
+          <CardComp
             title="Big and Juicy Wagyu Beef Cheeseburger"
             image="/images/food/hamburger-image.png"
             typeOne="30 Minutes"
             typeTwo="Snack"
             imageHeight="250px"
           />
-          <Card
+          <CardComp
             title="Fresh Lime Roasted Salmon with Ginger Sauce"
             image="/images/food/roastsalmon-image.png"
             typeOne="30 Minutes"
             typeTwo="Fish"
             imageHeight="250px"
           />
-          <Card
+          <CardComp
             title="Strawberry Oatmeal Pancake with Honey Syrup"
             image="/images/food/oatmealpancake-image.png"
             typeOne="30 Minutes"
@@ -299,58 +300,38 @@ export default function Home() {
           />
         </div>
         <div className={style.simpleAndTastyCardListTwo}>
-          <Card
+          <CardComp
             title="Fresh and Healthy Mixed Mayonnaise Salad"
             image="/images/food/mixedsalad-image.png"
             typeOne="30 Minutes"
             typeTwo="Healthy"
             imageHeight="250px"
           />
-          <Card
+          <CardComp
             title="Chicken Meatballs with Cream Cheese"
             image="/images/food/meatball-image.png"
             typeOne="30 Minutes"
             typeTwo="Meat"
             imageHeight="250px"
           />
-          <div className={style.adsBadge}>
-            <div className={style.adsBadgeBackGround}>
-              <Image
-                src="/images/icon/star-image.png"
-                width={600}
-                height={600}
-                alt=""
-              />
-            </div>
-            <h1>
-              Don&apos;t forget to eat
-              <br /> healthy food
-            </h1>
-            <Image
-              src="/images/food/salmonsalad-image.png"
-              width={600}
-              height={600}
-              alt="Salmon Salad"
-            />
-            <p>www.foodieland.com</p>
-          </div>
+          <AdsBadgeComp />
         </div>
         <div className={style.simpleAndTastyCardListThree}>
-          <Card
+          <CardComp
             title="Fruity Pancake with Orange & Blueberry"
             image="/images/food/orangepancake-image.png"
             typeOne="30 Minutes"
             typeTwo="Sweet"
             imageHeight="250px"
           />
-          <Card
+          <CardComp
             title="The Best Easy One Pot Chicken and Rice"
             image="/images/food/chickandrice-image.png"
             typeOne="30 Minutes"
             typeTwo="Snack"
             imageHeight="250px"
           />
-          <Card
+          <CardComp
             title="The Creamiest Creamy Chicken and Bacon Pasta"
             image="/images/food/orangepancake-image.png"
             typeOne="30 Minutes"
@@ -435,28 +416,28 @@ export default function Home() {
         </div>
         <div className={style.deliRecipeBody}>
           <div className={style.deliRecipeBodyFirstRow}>
-            <Card
+            <CardComp
               title="Mixed Tropical Fruit Salad with Superfood Boots"
               image="/images/food/mixedtropifruit-image.png"
               typeOne="30 Minutes"
               typeTwo="Healthy"
               imageHeight="200px"
             />
-            <Card
+            <CardComp
               title="Big and Juicy Wagyu Beef Cheeseburger"
               image="/images/food/wagyucheese-image.png"
               typeOne="30 Minutes"
               typeTwo="Western"
               imageHeight="200px"
             />
-            <Card
+            <CardComp
               title="Healthy Japanese Fried Rice with Asparagus"
               image="/images/food/japanesefiredrice-image.png"
               typeOne="30 Minutes"
               typeTwo="Healthy"
               imageHeight="200px"
             />
-            <Card
+            <CardComp
               title="Cauliflower Walnut Vegetarian Taco Meat"
               image="/images/food/vegantaco-image.png"
               typeOne="30 Minutes"
@@ -465,28 +446,28 @@ export default function Home() {
             />
           </div>
           <div className={style.deliRecipeBodySecRow}>
-            <Card
+            <CardComp
               title="Rainbow Chicken Salad with Almond Honey Mustard Dressing"
               image="/images/food/rainbowchick-image.png"
               typeOne="30 Minutes"
               typeTwo="Healthy"
               imageHeight="200px"
             />
-            <Card
+            <CardComp
               title="Barbeque Spicy Sandwiches with Chips"
               image="/images/food/spicysandwiches-image.png"
               typeOne="30 Minutes"
               typeTwo="Snack"
               imageHeight="200px"
             />
-            <Card
+            <CardComp
               title="Firecracker Vegan Lettuce Wraps - Spicy!"
               image="/images/food/spicysandwiches-image.png"
               typeOne="30 Minutes"
               typeTwo="Seafood"
               imageHeight="200px"
             />{" "}
-            <Card
+            <CardComp
               title="Chicken Ramen Soup with Mushroom "
               image="/images/food/chick-ramen.png"
               typeOne="30 Minutes"
@@ -498,7 +479,7 @@ export default function Home() {
       </section>
       {/* Inbox Container  */}
       <section>
-        <EmailInput
+        <EmailInputComp
           placeholder="Your email address..."
           buttonText="Subscribe"
           onSubmit={handleEmailSubmit}
