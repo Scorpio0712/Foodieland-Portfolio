@@ -18,13 +18,13 @@
 }
 
 .rd_Topic h1 {
-    font-size: 54px;
+    font-size: 64px;
     font-weight: 600;
 }
 
 .rd_Author {
     margin-top: 48px;
-    max-width: 600px;
+    max-width: 700px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -33,6 +33,7 @@
 .rd_AuthorName {
     display: flex;
     gap: 16px;
+    padding-right: 58px;
 }
 
 .rd_AuthorInfo h1 {
@@ -46,6 +47,8 @@
 }
 
 .rd_PrepTime {
+    padding: 5px 32px;
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -68,6 +71,8 @@
 }
 
 .rd_CookTime {
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 5px 32px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -90,6 +95,8 @@
 }
 
 .rd_Category {
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 13px 0 13px 32px;
     display: flex;
     justify-content: center;
     align-items: center;

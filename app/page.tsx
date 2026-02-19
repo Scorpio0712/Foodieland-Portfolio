@@ -466,7 +466,7 @@ export default function Home() {
               typeOne="30 Minutes"
               typeTwo="Seafood"
               imageHeight="200px"
-            />{" "}
+            />
             <CardComp
               title="Chicken Ramen Soup with Mushroom "
               image="/images/food/chick-ramen.png"

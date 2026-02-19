@@ -1,0 +1,43 @@
+.blogList_Container {
+    margin: 0 auto;
+    max-width: 1280px;
+}
+
+.blogList_Header {
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.blogList_Header h1 {
+    font-size: 64px;
+    font-weight: 600;
+    margin-bottom: 24px;
+}
+
+.blogList_Header p {
+    font-size: 16px;
+    margin-bottom: 80px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.blogList_Body {
+    margin-top: 80px;
+    display: flex;
+    gap: 40px;
+}
+
+.blogList_BodyList {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    max-width: 840px;
+}
+
+.blogList_BodyTastyRecipes {
+    flex: 1;
+    max-width: 400px;
+}
