@@ -1,3 +1,4 @@
+/* Vertical */
 .card {
     padding: 16px;
     background: linear-gradient(180deg, white 0%, #E7F9FD 100%);
@@ -17,8 +18,8 @@
     width: 100%;
 }
 
-.cardImageHeart{
-    display:flex;
+.cardImageHeart {
+    display: flex;
     justify-content: center;
     align-items: center;
     position: absolute;
@@ -76,4 +77,61 @@
 .cardInfoTypeTwo svg {
     width: 20px;
     height: 20px;
+}
+
+/* Horizontal */
+.cardHorizontal {
+    display: flex;
+    max-width: 840px;
+    align-items: center;
+    gap: 40px;
+}
+
+.cardHorizontal_Image {
+    position: relative;
+    width: 290px;
+    height: 200px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.cardHorizontal_Image img{
+    object-fit: cover;
+}
+
+.cardHorizontal_Topic {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+.cardHorizontal_Detail {
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.6);
+    margin-bottom: 32px;
+}
+
+.cardHorizontal_Footer {
+    display: flex;
+    align-items: center;
+}
+
+.cardHorizontal_Author {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+    padding-right: 24px;
+}
+
+.cardHorizontal_Author span {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.cardHorizontal_Date {
+    display: flex;
+    align-items: center;
+    color: rgba(0, 0, 0, 0.6);
+    padding-Left: 24px;
 }

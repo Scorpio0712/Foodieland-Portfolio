@@ -37,17 +37,23 @@ function Card({
     setIsLiked(!isLiked);
   };
 
+  //Horizontal
   if (variant === "horizontal") {
     return (
       <div className={`${style.cardHorizontal} ${className || ""}`}>
+        {/* Image */}
         <div className={style.cardHorizontal_Image}>
-          <Image src={image} alt={title} fill style={{objectFit: "cover", borderRadius: "8px"}}/>
+          <Image src={image} alt={title} fill/>
         </div>
+
+        {/* Content */}
         <div className={style.cardHorizontal_Content}>
           <h2 className={style.cardHorizontal_Topic}>{title}</h2>
           {detail && (
             <div className={style.cardHorizontal_Detail}>{detail}</div>
           )}
+
+          {/* Author & Date */}
           <div className={style.cardHorizontal_Footer}>
             {author && (
               <div className={style.cardHorizontal_Author}>
@@ -55,8 +61,8 @@ function Card({
                   <Image
                     src={authorImage}
                     alt={author}
-                    width={32}
-                    height={32}
+                    width={40}
+                    height={40}
                     style={{ borderRadius: "50%" }}
                   />
                 )}
@@ -70,6 +76,7 @@ function Card({
     );
   }
 
+  //Vertical
   return (
     <div className={`${style.card} ${className || ""}`}>
       <div

@@ -1,0 +1,68 @@
+.pagination_Container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+.pagination_PrevBtn {
+    cursor: pointer;
+    width: 64px;
+    height: 64px;
+    border: 1px solid rgba(0, 0, 0, 0.6);
+    border-radius: 16px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.pagination_PrevBtn:disabled {
+    cursor: not-allowed;
+    visibility: hidden;
+}
+
+.pagination_Dots {
+    width: 64px;
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: 1px solid rgba(0, 0, 0, 0.6);
+    border-radius: 16px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.pagination_PageBtn {
+   width: 64px;
+    height: 64px;
+    cursor: pointer;
+    border: 1px solid rgba(0, 0, 0, 0.6);
+    border-radius: 16px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.active {
+    color: white;
+    cursor: not-allowed;
+    background: black;
+}
+.pagination_PageBtn:disabled {
+    color: white;
+    cursor: not-allowed;
+    background: black;
+}
+.pagination_NextBtn {
+    cursor: pointer;
+    width: 64px;
+    height: 64px;
+    border: 1px solid rgba(0, 0, 0, 0.6);
+    border-radius: 16px;
+    font-size: 18px;
+    font-weight: bold;
+} 
+.pagination_NextBtn:disabled {
+    visibility: hidden;
+    cursor: not-allowed;
+}

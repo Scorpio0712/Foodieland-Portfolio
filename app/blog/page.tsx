@@ -1,10 +1,16 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import style from "../style/blog.module.css";
 import SearchComp from "../components/search/page";
 import CardComp from "../components/card/page";
+import PaginationComp from "../components/pagination/page";
 
 function BlogListPage() {
+  const [currentPage, setCurrentPage] = useState(1);
+  const totalPages = 10;
+
+  const handlePageChange = (page: number) => setCurrentPage(page);
+
   const handleSearch = (searchTerm: string) => {
     console.log("Searching for: ", searchTerm);
   };
@@ -27,26 +33,70 @@ function BlogListPage() {
       <section className={style.blogList_Body}>
         <div className={style.blogList_BodyList}>
           <CardComp
-            title="Firecracker Vegan Lettuce Wraps - Spicy!"
-            image="/images/food/spicysandwiches-image.png"
-            typeOne="30 Minutes"
-            typeTwo="Seafood"
-            imageHeight="200px"
-          />
-          <CardComp
             variant="horizontal"
             title="Chicken Ramen Soup with Mushroom"
             image="/images/food/chick-ramen.png"
-            detail="Lorem ipsum dolor sit amet consectetur"
-            author="John Doe"
-            authorImage="/images/avatar.png"
-            date="Feb 19, 2026"
+            detail="Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqut enim "
+            author="Wade Warren"
+            authorImage="/images/author/Wade-Warren.png"
+            date="12 November 2021"
+          />
+          <CardComp
+            variant="horizontal"
+            title="10 Vegetarian Recipes To Eat This Month"
+            image="/images/food/mixedtropifruit-image.png"
+            detail="Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqut enim "
+            author="Robert Fox"
+            authorImage="/images/author/Robert-Fox.png"
+            date="12 November 2021"
+          />
+          <CardComp
+            variant="horizontal"
+            title="Full Guide to Becoming a Professional Chef"
+            image="/images/design/fullguide-image.png"
+            detail="Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqut enim "
+            author="Dianne Russell"
+            authorImage="/images/author/Dianne-Russell.png"
+            date="12 November 2021"
+          />
+          <CardComp
+            variant="horizontal"
+            title="Simple & Delicious Vegetarian Lasagna"
+            image="/images/food/veganlasagna-image.png"
+            detail="Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqut enim "
+            author="Leslie Alexander"
+            authorImage="/images/author/Leslie-Alexander.png"
+            date="12 November 2021"
+          />
+          <CardComp
+            variant="horizontal"
+            title="Plantain and Pinto Stew with Aji Verde"
+            image="/images/food/pintostew-image.png"
+            detail="Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqut enim "
+            author="Courtney Henry"
+            authorImage="/images/author/Courtney-Henry.png"
+            date="12 November 2021"
+          />
+          <CardComp
+            variant="horizontal"
+            title="We’re Hiring a Communications Assistant!"
+            image="/images/design/comassis-image.png"
+            detail="Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqut enim "
+            author="Albert Flores"
+            authorImage="/images/author/Albert-Flores.png"
+            date="12 November 2021"
           />
         </div>
         <div className={style.blogList_BodyTastyRecipes}>
           <h1>Tasty Recipes</h1>
         </div>
       </section>
+      <PaginationComp
+          totalPages={totalPages}
+          currentPage={currentPage}
+          onPageChange={handlePageChange}
+          className={style.blogList_Pagination}
+        />
     </main>
   );
 }
