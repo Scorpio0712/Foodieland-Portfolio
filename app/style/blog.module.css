@@ -37,7 +37,25 @@
     gap: 32px;
 }
 
-.blogList_BodyTastyRecipes {
+.blogList_TastyRecipes {
     flex: 1;
     max-width: 400px;
+}
+
+.blogList_TastyRecipes h1 {
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.blogList_TastyRecipesContent {
+    margin: 32px 0 80px;
+    
+}
+
+.blogList_TastyRecipesPagination {
+    margin-top: 80px;
+}
+
+.blogList_InboxContainer {
+    margin: 160px 0;
 }
