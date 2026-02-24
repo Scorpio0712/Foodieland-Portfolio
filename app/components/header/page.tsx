@@ -27,7 +27,7 @@ function Header() {
             <Link href={"../../blog/"}>Blog</Link>
           </li>
           <li>
-            <Link href={"../"}>Contact</Link>
+            <Link href={"../../contact/"}>Contact</Link>
           </li>
           <li>
             <Link href={"../"}>About Us</Link>

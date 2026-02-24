@@ -359,7 +359,7 @@ export default function Home() {
             src="/images/design/chief-image.png"
             width={660}
             height={597}
-            alt="Salmon Salad"
+            alt=""
           />
         </div>
       </section>
