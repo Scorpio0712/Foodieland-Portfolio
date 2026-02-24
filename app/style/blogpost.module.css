@@ -176,7 +176,7 @@
 
 /* Check out the delicious recipe Container */
 .blogPost_DeliciousRecipe {
-    margin-bottom: 160px;    
+    margin-bottom: 160px;
 }
 
 .blogPost_DeliciousRecipe h1 {
@@ -189,7 +189,6 @@
 
 .blogPost_DeliciousRecipeContent {
     display: flex;
-    justify-content: center;
     align-items: center;
 }
 
@@ -208,5 +207,4 @@
 
 .blogPost_DeliciousRecipeContent div{ 
     font-size: 14px !important;
-    
 }
