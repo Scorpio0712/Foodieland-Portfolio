@@ -52,7 +52,7 @@
     margin-top: 48px;
 }
 
-.blogPost_DeScript span{
+.blogPost_DeScript span {
     font-size: 16px;
     color: rgba(0, 0, 0, 0.6);
 }
@@ -73,7 +73,7 @@
 }
 
 /* Blog Post Body */
-.blogPost_BodyContent{
+.blogPost_BodyContent {
     margin-top: 80px;
     display: flex;
     justify-self: center;
@@ -97,9 +97,116 @@
 
 .blogPost_SocialBtn {
     max-width: 131px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.blogPost_SocialBtn span{
+.blogPost_SocialBtn span {
     font-size: 14px;
     font-weight: 600;
+    margin-bottom: 32px;
+}
+
+.blogPost_FacebookIcon,
+.blogPost_TwitterIcon,
+.blogPost_InstagramIcon {
+    margin-bottom: 48px;
+    width: 24px;
+    height: 24px;
+    
+}
+
+.blogPost_FacebookIcon svg,
+.blogPost_TwitterIcon svg,
+.blogPost_InstagramIcon svg {
+    width: 24px;
+    height: 24px;
+}
+
+.blogPost_ContentOne,
+.blogPost_ContentTwo,
+.blogPost_ContentThree,
+.blogPost_ContentFour,
+.blogPost_ContentSix {
+    margin-right: 40px;
+    margin-left: 40px;
+}
+
+.blogPost_ContentTwo,
+.blogPost_ContentThree,
+.blogPost_ContentFour,
+.blogPost_ContentFive,
+.blogPost_ContentSix {
+    margin-top: 64px;
+}
+
+.blogPost_ContentThreeImage {
+    width: 840px;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+    margin: 32px 0;
+    border-radius: 20px;
+}
+
+.blogPost_ContentThreeImage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.blogPost_ContentFive {
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.1), white);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 48px 40px;
+}
+
+.blogPost_ContentFive h1 {
+    font-size: 36px;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.blogPost_EmailInbox {
+    margin: 160px 0;
+}
+
+/* Check out the delicious recipe Container */
+.blogPost_DeliciousRecipe {
+    margin-bottom: 160px;    
+}
+
+.blogPost_DeliciousRecipe h1 {
+    font-size: 36px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 80px;
+}
+
+.blogPost_DeliciousRecipeContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.blogPost_DeliciousRecipeContent > div{
+    min-width: 290px !important;
+    height: 316px !important;
+    background: white !important;
+    padding: 0 !important;
+}
+
+.blogPost_DeliciousRecipeContent h1{ 
+    font-size: 18px !important;
+    font-weight: 600 !important;
+    margin-bottom: 24px !important;
+}
+
+.blogPost_DeliciousRecipeContent div{ 
+    font-size: 14px !important;
+    
 }

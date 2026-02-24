@@ -92,7 +92,6 @@ function Card({
           </svg>
         </button>
       </div>
-
       <div className={style.cardContent}>
         <h1>{title}</h1>
       </div>
