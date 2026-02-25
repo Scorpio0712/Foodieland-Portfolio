@@ -6,10 +6,8 @@
 }
 
 .nav {
-    height: 5rem;
+    height: 80px;
     width: 1280px;
-    margin: 0 5rem;
-    padding: 1rem 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -21,14 +19,14 @@
     gap: 2rem;
 }
 
-.navMenuList li{
+.navMenuList li {
     color: black;
     font-weight: 500;
     font-size: 14px;
     transition: all 0.3s ease;
 }
 
-.navMenuList li:hover{
+.navMenuList li:hover {
     transform: scale(1.1);
 }
 
@@ -39,7 +37,9 @@
 }
 
 /* สไตล์สำหรับ Social Icon button */
-.facebookIcon, .twitterIcon, .instagramIcon {
+.facebookIcon,
+.twitterIcon,
+.instagramIcon {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -51,14 +51,23 @@
 }
 
 /* เมื่อ hover (เลื่อนเมาส์ไปที่ปุ่ม) */
-.facebookIcon:hover, .twitterIcon:hover, .instagramIcon:hover{
+.facebookIcon:hover,
+.twitterIcon:hover,
+.instagramIcon:hover {
     transform: scale(1.1);
 }
 
 
 /* SVG icon styling */
-.facebookIcon svg, .twitterIcon svg, .instagramIcon svg {
+.facebookIcon svg,
+.twitterIcon svg,
+.instagramIcon svg {
     width: 18px;
     height: 18px;
 }
 
+@media screen and (max-width: 1280px) {
+    .nav {
+        width: 1024px;
+    }
+}
