@@ -4,11 +4,13 @@
 }
 
 .contact_Header {
+    margin-top: 84px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content:center ;
+    justify-content: center;
 }
+
 .contact_Header h1 {
     font-size: 64px;
     font-weight: 600;
@@ -36,7 +38,7 @@
     bottom: 0;
 }
 
-.contact_ContentImage img{
+.contact_ContentImage img {
     position: absolute;
     bottom: 0;
     height: 100%;
@@ -44,7 +46,111 @@
     justify-self: center;
 }
 
+.contact_ContentForm{
+    display: flex;
+    margin-top: 8px;
+}
+
+.contact_FormContainerOne {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.contact_FormGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 24px;
+}
+
+.contact_FormLabel {
+    font-size: 12px;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.6);
+    margin-bottom: 6px;
+}
+
+.contact_FormLabelInput {
+    width: 400px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
+    padding: 18px 20px;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.contact_FormSelectInput {
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
+    padding: 18px 20px;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.6);
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 16px center;
+    background-size: 20px;
+    cursor: pointer;
+}
+
+.contact_FormTextarea {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
+    padding: 18px 20px;
+    min-height: 200px;
+    resize: vertical;
+    font-size: 14px;
+}
+
+.contact_SubmitBtn {
+    margin-top: 24px;
+    background: black;
+    padding: 20px 63px;
+    color: white;
+    border-radius: 16px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+
 /* Email Inbox Container */
 .contact_EmailInbox {
     margin-top: 160px;
+}
+
+/* Delicious Recipe Container */
+.contact_DeliciousRecipe {
+    margin: 160px 0 ;
+}
+
+.contact_DeliciousRecipe h1{
+   font-size: 36px;
+   font-weight: 600;
+   margin-bottom: 80px;
+   display: flex;
+   justify-content: center;
+}
+.contact_DeliciousRecipeContent {
+    display: flex;
+    align-items: center;
+}
+
+.contact_DeliciousRecipeContent > div {
+    min-width: 290px !important;
+    height: 316px !important;
+    background: white !important;
+    padding: 0 !important;
+}
+
+.contact_DeliciousRecipeContent h1 {
+    font-size: 18px !important;
+    font-weight: 600 !important;
+    margin-bottom: 24px !important;
+}
+
+.contact_DeliciousRecipeContent div{
+    font-size: 14px !important;
 }
