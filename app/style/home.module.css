@@ -273,6 +273,8 @@
 .categoriesDessert img,
 .categoriesLunch img,
 .categoriesChocolate img {
+    width: 150px;
+    height: 150px;
     object-fit: cover;
     border-radius: 12px;
     display: block;
@@ -329,7 +331,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 143px;
+    margin: 143px auto 0;
     width: 1280px;
 }
 
@@ -476,6 +478,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    --card-image-height: 200px;
 }
 
 .deliRecipeBodyFirstRow {
@@ -624,5 +627,46 @@
         justify-content: space-between;
         align-items: center;
         margin-top: 20px;
+    }
+
+    /* Learn More Container */
+    .learnMoreContainer {
+        max-width: 1024px;
+        gap: 40px;
+    }
+
+    .learnMoreFirstCol {
+        max-width: 400px;
+    }
+
+    .learnMoreSecCol {
+        max-width: 660px;
+        height: 547px;
+    }
+
+    .learnMoreFirstCol h1 {
+        font-size: 34px;
+
+    }
+
+    .learnMoreFirstCol p {
+        font-size: 14px;
+
+    }
+
+    .learnMoreFirstCol button {
+        padding: 18px 40px;
+        font-size: 12px;
+    }
+
+    .learnMoreSecCol img {
+        right: 25px;
+    }
+
+    .learnMoreSecColBackGround {
+        
+        width: 560px;
+        height: 450px;
+       
     }
 }

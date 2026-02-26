@@ -9,7 +9,8 @@
 }
 
 .cardImage {
-    height: 250px;
+    height: 100%;
+    max-height: var(--card-image-height, 250px);
     position: relative;
     border-radius: 20px;
     background-size: cover;
