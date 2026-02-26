@@ -9,6 +9,7 @@
 }
 
 .cardImage {
+    height: 250px;
     position: relative;
     border-radius: 20px;
     background-size: cover;
@@ -60,8 +61,8 @@
 
 .cardInfo {
     display: flex;
-    gap: 16px;
-    margin-bottom: 16px;
+    gap: 24px;
+    margin-bottom: 32px;
 }
 
 .cardInfoTypeOne,
@@ -95,7 +96,8 @@
     border-radius: 20px;
     overflow: hidden;
 }
-.cardHorizontal_Image img{
+
+.cardHorizontal_Image img {
     object-fit: cover;
 }
 
@@ -134,4 +136,30 @@
     align-items: center;
     color: rgba(0, 0, 0, 0.6);
     padding-Left: 24px;
+}
+
+@media screen and (max-width: 1280px) {
+
+    /* Vertical */
+    .card {
+        min-width: 320px;
+        height: 364px;
+        margin-right: 40px;
+    }
+
+    .cardImage {
+        height: 200px;
+    }
+
+    .cardImageHeart {
+        top: 12px;
+        right: 12px;
+        width: 42px;
+        height: 42px;
+    }
+
+    .cardContent h1 {
+        font-size: 20px;
+    }
+ 
 }

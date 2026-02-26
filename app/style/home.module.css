@@ -9,6 +9,7 @@
     justify-content: center;
     width: 100%;
     max-width: 1280px;
+    margin: 0 auto;
 }
 
 .carouselContainer {
@@ -37,12 +38,17 @@
     z-index: 10;
 }
 
+.recipesBadge img {
+    width: 150px;
+    height: 150px;
+}
+
 .featureRecipeFirstCol {
     flex: 1;
     max-width: 620px;
     width: 100%;
     height: 100%;
-    padding: 45px 45px;
+    padding: 50px 50px;
 }
 
 .featureRecipeSecCol {
@@ -65,28 +71,33 @@
     border-radius: 24px;
     gap: 8px;
     padding: 8px 16px;
-    margin-bottom: 16px;
+    margin-bottom: 32px;
     background-color: white;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
 .hotRecipesTopic p {
     font-size: 14px;
-    font-weight: 500;
+    font-weight: 600;
+}
+
+.hotRecipesTopic img {
+    width: 24px;
+    height: 24px;
 }
 
 .featureRecipeTopic {
     font-size: 60px;
     font-weight: 600;
     line-height: 1.2;
-    margin-bottom: 20px;
+    margin-bottom: 24px;
 }
 
 .featureRecipeDetail {
     font-size: 16px;
     color: #666;
     line-height: 1.5;
-    margin-bottom: 24px;
+    margin-bottom: 30px;
 }
 
 .featureRecipeType {
@@ -127,6 +138,8 @@
 }
 
 .featureRecipeProfile img {
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     object-fit: cover;
 }
@@ -175,7 +188,8 @@
 
 /* Categories Container */
 .categoriesContainer {
-    margin-top: 162px;
+    max-width: 1280px;
+    margin: 160px auto 0;
 }
 
 .categoriesTopic {
@@ -266,10 +280,13 @@
 }
 
 /* Simple and tasty recipes */
-.simpleAndTastyHeader {
-    margin-top: 183px;
+.simpleAndTastyContainer {
+    margin: 183px auto 0;
     justify-content: center;
     align-items: center;
+}
+
+.simpleAndTastyHeader {
     text-align: center;
 }
 
@@ -282,7 +299,7 @@
 .simpleAndTastyHeader p {
     font-size: 16px;
     color: rgba(0, 0, 0, 0.6);
-    margin-bottom: 76px;
+    margin-bottom: 96px;
 }
 
 .simpleAndTastyCardListOne {
@@ -490,65 +507,14 @@
 }
 
 @media screen and (max-width: 1280px) {
+
     .home_Container {
-        margin: 0 auto;
         max-width: 1024px;
     }
 
     /* Carousel Container */
     .carouselWrapper {
-        position: relative;
-        justify-content: center;
-        width: 100%;
-        width: 1024px;
-        margin: 0 auto;
-    }
-
-    .carouselContainer {
-        overflow: hidden;
-        border-radius: 24px;
-        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-    }
-
-    .carouselTrack {
-        display: flex;
-        transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
-    }
-
-    .featureRecipeContainer {
-        display: flex;
-        min-width: 100%;
-        align-items: center;
-        background: #E7FAFE;
-        position: relative;
-    }
-
-    .recipesBadge {
-        position: absolute;
-        top: 50px;
-        left: 44%;
-        z-index: 10;
-    }
-
-    .featureRecipeFirstCol {
-        flex: 1;
-        max-width: 620px;
-        width: 100%;
-        height: 100%;
-        padding: 45px 45px;
-    }
-
-    .featureRecipeSecCol {
-        flex: 1;
-        max-width: 660px;
-        width: 100%;
-        height: 100%;
-    }
-
-    .recipeImageContainer {
-        width: 100%;
-        height: 100%;
-        border-radius: 0 24px 24px 0;
+        max-width: 1024px;
     }
 
     .hotRecipesTopic {
@@ -558,28 +524,28 @@
         border-radius: 24px;
         gap: 8px;
         padding: 8px 16px;
-        margin-bottom: 16px;
         background-color: white;
         box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     }
 
-    .hotRecipesTopic p {
-        font-size: 14px;
-        font-weight: 500;
+    .featureRecipeFirstCol {
+        flex: 1;
+        max-width: 500px;
+    }
+
+    .featureRecipeSecCol {
+        flex: 1;
+        max-width: 560px;
+        width: 100%;
+        height: 100%;
     }
 
     .featureRecipeTopic {
-        font-size: 60px;
-        font-weight: 600;
-        line-height: 1.2;
-        margin-bottom: 20px;
+        font-size: 54px;
     }
 
     .featureRecipeDetail {
-        font-size: 16px;
-        color: #666;
-        line-height: 1.5;
-        margin-bottom: 24px;
+        font-size: 14px;
     }
 
     .featureRecipeType {
@@ -590,15 +556,7 @@
 
     .firstTypeButton,
     .secondTypeButton {
-        display: flex;
-        align-items: center;
-        gap: 8px;
-        padding: 8px 16px;
-        background: rgba(0, 0, 0, 0.1);
-        border-radius: 24px;
-        font-size: 14px;
-        font-weight: 500;
-        color: #333;
+        color: rgba(0, 0, 0, 0.6);
     }
 
     .firstTypeButton svg,
@@ -607,62 +565,64 @@
         height: 20px;
     }
 
-    .featureRecipeBlog {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .featureRecipeProfile {
-        display: flex;
-        align-items: center;
-        gap: 1rem;
-    }
-
-    .featureRecipeProfile img {
-        border-radius: 50%;
-        object-fit: cover;
-    }
-
-    .authorInfo {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .authorName {
-        font-size: 14px;
-        font-weight: 600;
-        margin: 0;
-        color: #333;
-    }
-
-    .recipeDate {
-        font-size: 12px;
-        color: #999;
-        margin: 2px 0 0 0;
-    }
-
     .viewRCButton {
-        display: flex;
-        align-items: center;
-        padding: 12px 24px;
-        gap: 8px;
-        background-color: black;
-        color: white;
-        font-size: 16;
-        font-weight: 500;
-        cursor: pointer;
-        transition: all 0.3s ease;
-        border-radius: 12px;
+        font-size: 14px;
     }
 
     .viewRCButton svg {
-        fill: white;
-        width: 25px;
-        height: 25px;
+        width: 20px;
+        height: 20px;
     }
 
-    .viewRCButton:hover {
-        transform: scale(1.1);
+    /* Categories Container */
+    .categoriesContainer {
+        max-width: 1024px;
+    }
+
+    .categoriesBreakfast,
+    .categoriesVegan,
+    .categoriesMeat,
+    .categoriesDessert,
+    .categoriesLunch,
+    .categoriesChocolate {
+        font-size: 18px;
+    }
+
+    .categoriesBreakfast img,
+    .categoriesVegan img,
+    .categoriesMeat img,
+    .categoriesDessert img,
+    .categoriesLunch img,
+    .categoriesChocolate img {
+        margin-left: 40px;
+        width: 115px;
+        height: 115px;
+    }
+
+    /* Simple and tasty recipes */
+    .simpleAndTastyContainer {
+        max-width: 1024px;
+    }
+
+    .simpleAndTastyCardListOne {
+        flex: 1;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 40px 0;
+    }
+
+    .simpleAndTastyCardListTwo {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 40px 0;
+    }
+
+    .simpleAndTastyCardListThree {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 20px;
     }
 }

@@ -23,7 +23,6 @@ function Card({
   image,
   typeOne,
   typeTwo,
-  imageHeight,
   variant = "vertical",
   detail,
   author,
@@ -43,7 +42,7 @@ function Card({
       <div className={`${style.cardHorizontal} ${className || ""}`}>
         {/* Image */}
         <div className={style.cardHorizontal_Image}>
-          <Image src={image} alt={title} fill/>
+          <Image src={image} alt={title} fill />
         </div>
 
         {/* Content */}
@@ -81,7 +80,7 @@ function Card({
     <div className={`${style.card} ${className || ""}`}>
       <div
         className={style.cardImage}
-        style={{ backgroundImage: `url(${image})`, height: imageHeight }}
+        style={{ backgroundImage: `url(${image})` }}
       >
         <button
           className={`${style.cardImageHeart} ${isLiked ? style.liked : ""}`}

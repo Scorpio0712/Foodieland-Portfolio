@@ -113,7 +113,6 @@ export default function Home() {
                     width={300}
                     height={500}
                     alt="Handpicked Recipes"
-                    style={{ width: "150px", height: "150px" }}
                   />
                 </div>
                 <div className={style.featureRecipeFirstCol}>
@@ -123,7 +122,6 @@ export default function Home() {
                       width={300}
                       height={500}
                       alt="Foodieland Logo"
-                      style={{ width: "24px", height: "24" }}
                     />
                     <p>Hot Recipes</p>
                   </div>
@@ -157,7 +155,6 @@ export default function Home() {
                         src={recipe.authorImage}
                         width={400}
                         height={400}
-                        style={{ width: "50px", height: "50px" }}
                         alt={`${recipe.authorName} Profile`}
                       />
                       <div className={style.authorInfo}>
@@ -209,7 +206,6 @@ export default function Home() {
                 width={300}
                 height={500}
                 alt="Breakfast Image"
-                style={{ width: "150px", height: "150px" }}
               />
               Breakfast
             </li>
@@ -219,7 +215,6 @@ export default function Home() {
                 width={300}
                 height={500}
                 alt="Vegan Image"
-                style={{ width: "150px", height: "150px" }}
               />
               Vegan
             </li>
@@ -229,7 +224,6 @@ export default function Home() {
                 width={300}
                 height={500}
                 alt="Meat Image"
-                style={{ width: "150px", height: "150px" }}
               />
               Meat
             </li>
@@ -239,7 +233,6 @@ export default function Home() {
                 width={300}
                 height={500}
                 alt="Dessert Image"
-                style={{ width: "150px", height: "150px" }}
               />
               Dessert
             </li>
@@ -249,7 +242,6 @@ export default function Home() {
                 width={300}
                 height={500}
                 alt="Lunch Image"
-                style={{ width: "150px", height: "150px" }}
               />
               Lunch
             </li>
@@ -259,7 +251,6 @@ export default function Home() {
                 width={300}
                 height={500}
                 alt="Chocolate Image"
-                style={{ width: "150px", height: "150px" }}
               />
               Chocolate
             </li>
@@ -267,7 +258,7 @@ export default function Home() {
         </div>
       </section>
       {/* Simple and tasty */}
-      <section>
+      <section className={style.simpleAndTastyContainer}>
         <div className={style.simpleAndTastyHeader}>
           <h1>Simple and tasty recipes</h1>
           <p>
@@ -282,21 +273,21 @@ export default function Home() {
             image="/images/food/hamburger-image.png"
             typeOne="30 Minutes"
             typeTwo="Snack"
-            imageHeight="250px"
+            
           />
           <CardComp
             title="Fresh Lime Roasted Salmon with Ginger Sauce"
             image="/images/food/roastsalmon-image.png"
             typeOne="30 Minutes"
             typeTwo="Fish"
-            imageHeight="250px"
+            
           />
           <CardComp
             title="Strawberry Oatmeal Pancake with Honey Syrup"
             image="/images/food/oatmealpancake-image.png"
             typeOne="30 Minutes"
             typeTwo="Breakfast"
-            imageHeight="250px"
+            
           />
         </div>
         <div className={style.simpleAndTastyCardListTwo}>
@@ -305,14 +296,14 @@ export default function Home() {
             image="/images/food/mixedsalad-image.png"
             typeOne="30 Minutes"
             typeTwo="Healthy"
-            imageHeight="250px"
+            
           />
           <CardComp
             title="Chicken Meatballs with Cream Cheese"
             image="/images/food/meatball-image.png"
             typeOne="30 Minutes"
             typeTwo="Meat"
-            imageHeight="250px"
+            
           />
           <AdsBadgeComp />
         </div>
@@ -329,14 +320,14 @@ export default function Home() {
             image="/images/food/chickandrice-image.png"
             typeOne="30 Minutes"
             typeTwo="Snack"
-            imageHeight="250px"
+            
           />
           <CardComp
             title="The Creamiest Creamy Chicken and Bacon Pasta"
             image="/images/food/orangepancake-image.png"
             typeOne="30 Minutes"
             typeTwo="Noodles"
-            imageHeight="250px"
+            
           />
         </div>
       </section>

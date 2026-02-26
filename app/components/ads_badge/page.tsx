@@ -21,7 +21,7 @@ function AdsBadge() {
         src="/images/food/salmonsalad-image.png"
         width={600}
         height={600}
-        alt="Salmon Salad"
+        alt=""
       />
       <p>www.foodieland.com</p>
     </div>
