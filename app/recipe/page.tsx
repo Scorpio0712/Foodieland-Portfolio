@@ -65,7 +65,6 @@ function RecipeDetailPage() {
                   src="/images/author/John-Smith.png"
                   width={400}
                   height={400}
-                  style={{ width: "50px", height: "50px" }}
                   alt=""
                 />
                 <div className={style.rd_AuthorInfo}>
@@ -351,36 +350,34 @@ function RecipeDetailPage() {
         <EmailInputComp />
       </section>
       <section className={style.rd_SectionFive}>
-        <h1 className={style.rd_SectionFiveTopic}>You may like these recipe too</h1>
+        <h1 className={style.rd_SectionFiveTopic}>
+          You may like these recipe too
+        </h1>
         <div className={style.rd_RecipeTooDetail}>
           <CardComp
-              title="Rainbow Chicken Salad with Almond Honey Mustard Dressing"
-              image="/images/food/rainbowchick-image.png"
-              typeOne="30 Minutes"
-              typeTwo="Healthy"
-              imageHeight="200px"
-            />
-            <CardComp
-              title="Barbeque Spicy Sandwiches with Chips"
-              image="/images/food/spicysandwiches-image.png"
-              typeOne="30 Minutes"
-              typeTwo="Snack"
-              imageHeight="200px"
-            />
-            <CardComp
-              title="Firecracker Vegan Lettuce Wraps - Spicy!"
-              image="/images/food/spicysandwiches-image.png"
-              typeOne="30 Minutes"
-              typeTwo="Seafood"
-              imageHeight="200px"
-            />{" "}
-            <CardComp
-              title="Chicken Ramen Soup with Mushroom "
-              image="/images/food/chick-ramen.png"
-              typeOne="30 Minutes"
-              imageHeight="200px"
-              typeTwo="Noodles"
-            />
+            title="Rainbow Chicken Salad with Almond Honey Mustard Dressing"
+            image="/images/food/rainbowchick-image.png"
+            typeOne="30 Minutes"
+            typeTwo="Healthy"
+          />
+          <CardComp
+            title="Barbeque Spicy Sandwiches with Chips"
+            image="/images/food/spicysandwiches-image.png"
+            typeOne="30 Minutes"
+            typeTwo="Snack"
+          />
+          <CardComp
+            title="Firecracker Vegan Lettuce Wraps - Spicy!"
+            image="/images/food/spicysandwiches-image.png"
+            typeOne="30 Minutes"
+            typeTwo="Seafood"
+          />{" "}
+          <CardComp
+            title="Chicken Ramen Soup with Mushroom "
+            image="/images/food/chick-ramen.png"
+            typeOne="30 Minutes"
+            typeTwo="Noodles"
+          />
         </div>
       </section>
     </main>

@@ -36,6 +36,11 @@
     padding-right: 58px;
 }
 
+.rd_AuthorName img {
+    width: 50px;
+    height: 50px;
+}
+
 .rd_AuthorInfo h1 {
     font-size: 16px;
     font-weight: 800;
@@ -264,7 +269,8 @@
     margin-top: 48px;
 }
 
-.rd_ForMainDish h1, .rd_ForTheSauce h1 {
+.rd_ForMainDish h1,
+.rd_ForTheSauce h1 {
     font-size: 24px;
 
 }
@@ -287,7 +293,6 @@
 
 .rd_OtherRecipeList {
     margin: 32px 0 80px;
-    
 }
 
 /* Recipe Detail Section Three */
@@ -301,17 +306,23 @@
     font-weight: 600;
 }
 
-.rd_DirectionsListOne, .rd_DirectionsListTwo, .rd_DirectionsListThree {
+.rd_DirectionsListOne,
+.rd_DirectionsListTwo,
+.rd_DirectionsListThree {
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-.checkBox_DirectionOne, .checkBox_DirectionTwo, .checkBox_DirectionThree {
+.checkBox_DirectionOne,
+.checkBox_DirectionTwo,
+.checkBox_DirectionThree {
     border-bottom: 0;
     font-size: 24px;
     font-weight: 600;
 }
 
-.rd_DirectionsListOneDetail, .rd_DirectionsListTwoDetail, .rd_DirectionsListThreeDetail {
+.rd_DirectionsListOneDetail,
+.rd_DirectionsListTwoDetail,
+.rd_DirectionsListThreeDetail {
     padding: 0 0 48px 48px;
 }
 
@@ -332,18 +343,19 @@
     justify-content: center;
 }
 
-.rd_SectionFiveTopic{
+.rd_SectionFiveTopic {
     font-size: 36px;
     font-weight: 600;
     text-align: center;
 }
 
 .rd_RecipeTooDetail {
+    --card-image-height: 200px;
     display: flex;
     margin-top: 80px;
 }
 
-.rd_RecipeTooDetail > div{
+.rd_RecipeTooDetail>div {
     min-width: 290px !important;
     height: 316px !important;
     background: white !important;
@@ -359,5 +371,179 @@
     font-size: 14px !important;
 }
 
+@media screen and (max-width: 1280px) {
+    .rd_Container {
+        max-width: 1024px;
+    }
 
+    /* Recipe Detail */
+    .rd_Topic {
+        max-width: 775px;
+    }
 
+    .rd_Topic h1 {
+        font-size: 54px;
+    }
+
+    .rd_Author {
+        margin-top: 40px;
+        max-width: 625px;
+    }
+
+    .rd_AuthorName {
+        padding-right: 28px;
+    }
+
+    .rd_AuthorName img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .rd_AuthorInfo h1 {
+        font-size: 15px;
+        font-weight: 800;
+    }
+
+    .rd_AuthorInfo p {
+        font-size: 13px;
+    }
+
+    .rd_PrepTime {
+        padding: 5px 28px;
+        gap: 12px;
+    }
+
+    .rd_PrepTimeInfo h1,
+    .rd_CookTimeInfo h1 {
+        font-size: 14px;
+    }
+
+    .rd_PrepTimeInfo p,
+    .rd_CookTimeInfo p,
+    .rd_Category p {
+        font-size: 14px;
+    }
+
+    .rd_CookTime {
+        padding: 5px 28px;
+        gap: 12px;
+    }
+
+    .rd_CookTime svg,
+    .rd_PrepTime svg,
+    .rd_Category svg {
+        width: 22px;
+        height: 22px;
+    }
+
+    .rd_Category {
+        padding: 13px 0 13px 28px;
+        gap: 12px;
+    }
+
+    .rd_PrintShare {
+        gap: 28px;
+    }
+
+    .rd_PrintBtn div,
+    .rd_ShareBtn div {
+        width: 60px;
+        height: 60px;
+    }
+
+    .rd_PrintBtn div svg,
+    .rd_ShareBtn div svg {
+        width: 22px;
+        height: 22px;
+    }
+
+    /* Recipe Detail Body */
+    .rd_BodyHeader {
+        gap: 24px;
+    }
+
+    .rd_BodyHeader img {
+        width: 680px;
+        height: 500px;
+    }
+
+    .nutritionInfo {
+        padding: 28px;
+        width: 320px;
+        height: 500px;
+    }
+
+    .nutritionInfo h1 {
+        font-size: 18px;
+    }
+
+    .nutritionInfo_Calories,
+    .nutritionInfo_TotalFat,
+    .nutritionInfo_Protein,
+    .nutritionInfo_Carbohydrate,
+    .nutritionInfo_Cholesterol {
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+    }
+
+    .nutritionInfo_CaloriesTopic,
+    .nutritionInfo_TotalFatTopic,
+    .nutritionInfo_ProteinTopic,
+    .nutritionInfo_CarbohydrateTopic,
+    .nutritionInfo_CholesterolTopic {
+        font-size: 14px;
+
+    }
+
+    .nutritionInfo_CaloriesDetail,
+    .nutritionInfo_TotalFatDetail,
+    .nutritionInfo_ProteinDetail,
+    .nutritionInfo_CarbohydrateDetail,
+    .nutritionInfo_CholesterolDetail {
+        font-size: 14px;
+    }
+
+    .nutritionInfo_DetailDeScript {
+        font-size: 14px;
+    }
+
+    .rd_BodyDetail {
+        font-size: 14px;
+    }
+
+    /* Recipe Detail Section 2 */
+    .rd_SectionTwo {
+        gap: 24px;
+    }
+
+    .rd_Ingredients {
+        max-width: 680px;
+    }
+
+    .rd_Ingredients h1 {
+        font-size: 32px;
+    }
+
+    .rd_ForMainDish {
+        margin-top: 40px;
+    }
+
+    .rd_ForMainDish h1,
+    .rd_ForTheSauce h1 {
+        font-size: 22px;
+    }
+
+    .rd_ForTheSauce {
+        margin-top: 60px;
+        max-width: 680px;
+    }
+
+    .rd_OtherRecipe {
+        max-width: 320px;
+    }
+
+    .rd_OtherRecipe h1 {
+        font-size: 28px;
+    }
+
+}
