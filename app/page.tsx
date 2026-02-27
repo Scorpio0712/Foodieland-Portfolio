@@ -273,21 +273,18 @@ export default function Home() {
             image="/images/food/hamburger-image.png"
             typeOne="30 Minutes"
             typeTwo="Snack"
-            
           />
           <CardComp
             title="Fresh Lime Roasted Salmon with Ginger Sauce"
             image="/images/food/roastsalmon-image.png"
             typeOne="30 Minutes"
             typeTwo="Fish"
-            
           />
           <CardComp
             title="Strawberry Oatmeal Pancake with Honey Syrup"
             image="/images/food/oatmealpancake-image.png"
             typeOne="30 Minutes"
             typeTwo="Breakfast"
-            
           />
         </div>
         <div className={style.simpleAndTastyCardListTwo}>
@@ -296,14 +293,12 @@ export default function Home() {
             image="/images/food/mixedsalad-image.png"
             typeOne="30 Minutes"
             typeTwo="Healthy"
-            
           />
           <CardComp
             title="Chicken Meatballs with Cream Cheese"
             image="/images/food/meatball-image.png"
             typeOne="30 Minutes"
             typeTwo="Meat"
-            
           />
           <AdsBadgeComp />
         </div>
@@ -320,14 +315,12 @@ export default function Home() {
             image="/images/food/chickandrice-image.png"
             typeOne="30 Minutes"
             typeTwo="Snack"
-            
           />
           <CardComp
             title="The Creamiest Creamy Chicken and Bacon Pasta"
             image="/images/food/orangepancake-image.png"
             typeOne="30 Minutes"
             typeTwo="Noodles"
-            
           />
         </div>
       </section>
@@ -412,27 +405,23 @@ export default function Home() {
               image="/images/food/mixedtropifruit-image.png"
               typeOne="30 Minutes"
               typeTwo="Healthy"
-              imageHeight="200px"
             />
             <CardComp
               title="Big and Juicy Wagyu Beef Cheeseburger"
               image="/images/food/wagyucheese-image.png"
               typeOne="30 Minutes"
               typeTwo="Western"
-              imageHeight="200px"
             />
             <CardComp
               title="Healthy Japanese Fried Rice with Asparagus"
               image="/images/food/japanesefiredrice-image.png"
               typeOne="30 Minutes"
               typeTwo="Healthy"
-              imageHeight="200px"
             />
             <CardComp
               title="Cauliflower Walnut Vegetarian Taco Meat"
               image="/images/food/vegantaco-image.png"
               typeOne="30 Minutes"
-              imageHeight="200px"
               typeTwo="Eastern"
             />
           </div>
@@ -442,27 +431,23 @@ export default function Home() {
               image="/images/food/rainbowchick-image.png"
               typeOne="30 Minutes"
               typeTwo="Healthy"
-              imageHeight="200px"
             />
             <CardComp
               title="Barbeque Spicy Sandwiches with Chips"
               image="/images/food/spicysandwiches-image.png"
               typeOne="30 Minutes"
               typeTwo="Snack"
-              imageHeight="200px"
             />
             <CardComp
               title="Firecracker Vegan Lettuce Wraps - Spicy!"
               image="/images/food/spicysandwiches-image.png"
               typeOne="30 Minutes"
               typeTwo="Seafood"
-              imageHeight="200px"
             />
             <CardComp
               title="Chicken Ramen Soup with Mushroom "
               image="/images/food/chick-ramen.png"
               typeOne="30 Minutes"
-              imageHeight="200px"
               typeTwo="Noodles"
             />
           </div>

@@ -4,13 +4,16 @@
     background: linear-gradient(180deg, white 0%, #E7F9FD 100%);
     border-radius: 30px;
     min-width: 400px;
-    height: 434px;
+    height: auto;
     margin-right: 40px;
+    display: flex;
+    flex-direction: column;
 }
 
 .cardImage {
-    height: 100%;
-    max-height: var(--card-image-height, 250px);
+    height: var(--card-image-height);
+    max-height: var(--card-image-height);
+    flex-shrink: 0;
     position: relative;
     border-radius: 20px;
     background-size: cover;
@@ -51,6 +54,7 @@
 
 .cardContent {
     margin-bottom: 24px;
+    flex: 1;
 }
 
 .cardContent h1 {
@@ -144,12 +148,13 @@
     /* Vertical */
     .card {
         min-width: 320px;
-        height: 364px;
+        height: auto;
         margin-right: 40px;
     }
 
     .cardImage {
-        height: 200px;
+        height: var(--card-image-height);
+        max-height: var(--card-image-height);
     }
 
     .cardImageHeart {
@@ -162,5 +167,9 @@
     .cardContent h1 {
         font-size: 20px;
     }
- 
+
+    .cardInfo {
+        margin-bottom: 16px;
+    }
+
 }

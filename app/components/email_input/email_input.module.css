@@ -96,3 +96,25 @@
     font-size: 14px;
     margin-top: 8px;
 }
+
+@media screen and (max-width: 1280px) {
+    .inBoxBackGroundLeft {
+        width: 280px;
+    }
+
+    .inBoxBackGroundRight {
+        width: 280px;
+    }
+
+    .inBoxTopic h1 {
+        font-size: 44px;
+    }
+
+    .inBoxTopic p {
+        font-size: 14px;
+    }
+
+    .emailBox {
+        width: 430px;
+    }
+}

@@ -305,10 +305,10 @@
 }
 
 .simpleAndTastyCardListOne {
-    flex: 1;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    --card-image-height: 250px;
     margin: 40px 0;
 }
 
@@ -316,6 +316,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    --card-image-height: 250px;
     margin: 40px 0;
 }
 
@@ -323,6 +324,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    --card-image-height: 250px;
     margin-top: 20px;
 }
 
@@ -477,8 +479,9 @@
 .deliRecipeBodySecRow {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: stretch;
     --card-image-height: 200px;
+    gap: 24px;
 }
 
 .deliRecipeBodyFirstRow {
@@ -487,10 +490,15 @@
 
 .deliRecipeBodyFirstRow>div,
 .deliRecipeBodySecRow>div {
-    min-width: 290px !important;
-    height: 316px !important;
+    min-width: 0 !important;
+    min-height: 316px !important;
+    height: auto !important;
     background: white !important;
     padding: 0 !important;
+    overflow: hidden;
+    flex: 1;
+    flex-shrink: 1;
+    margin-right: 0 !important;
 }
 
 .deliRecipeBodyFirstRow h1,
@@ -607,26 +615,10 @@
         max-width: 1024px;
     }
 
-    .simpleAndTastyCardListOne {
-        flex: 1;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin: 40px 0;
-    }
-
-    .simpleAndTastyCardListTwo {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin: 40px 0;
-    }
-
+    .simpleAndTastyCardListOne,
+    .simpleAndTastyCardListTwo,
     .simpleAndTastyCardListThree {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-top: 20px;
+        --card-image-height: 200px;
     }
 
     /* Learn More Container */
@@ -664,9 +656,79 @@
     }
 
     .learnMoreSecColBackGround {
-        
         width: 560px;
         height: 450px;
-       
+    }
+
+    /* Check Out Container */
+    .checkOutContainer {
+        padding: 0 calc(50vw - 520px);
+    }
+
+    .checkOutContainer h1 {
+        font-size: 44px;
+    }
+
+    .checkOutContainer p {
+        font-size: 14px;
+    }
+
+    .checkOutInstagram img {
+        width: 230px;
+    }
+
+    /* Delicious Recipe Container */
+    .deliRecipeContainer {
+        width: 1024px;
+        margin: 160px auto 0;
+    }
+
+    .deliRecipeTopic {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 80px;
+        gap: 153px;
+    }
+
+    .deliRecipeTopic h1 {
+        font-size: 44px;
+    }
+
+    .deliRecipeTopic p {
+        font-size: 16px;
+        color: rgba(0, 0, 0, 0.6);
+
+    }
+
+    .deliRecipeBodyFirstRow,
+    .deliRecipeBodySecRow {
+        gap: 20px;
+        --card-image-height: 150px;
+    }
+
+    .deliRecipeBodyFirstRow {
+        margin-bottom: 40px;
+    }
+
+    .deliRecipeBodyFirstRow>div,
+    .deliRecipeBodySecRow>div {
+        min-height: 276px !important;
+    }
+
+    .deliRecipeBodyFirstRow h1,
+    .deliRecipeBodySecRow h1 {
+        font-size: 16px !important;
+    }
+
+    .deliRecipeBodyFirstRow div,
+    .deliRecipeBodySecRow div {
+        font-size: 14px !important;
+    }
+
+    /* Inbox Container */
+    .inbox_Container {
+        margin: 160px auto 180px;
+        width: 1024px;
     }
 }

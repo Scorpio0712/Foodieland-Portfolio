@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-    width: 1280px;
+    max-width: 1280px;
 }
 
 .navContainer {
@@ -78,6 +78,5 @@
 @media screen and (max-width: 1280px) {
     .footerMain {
         width: 1024px;
-        margin: 0 80px;
     }
 }
