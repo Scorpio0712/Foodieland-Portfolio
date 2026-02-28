@@ -355,28 +355,28 @@ function RecipeDetailPage() {
         </h1>
         <div className={style.rd_RecipeTooDetail}>
           <CardComp
-            title="Rainbow Chicken Salad with Almond Honey Mustard Dressing"
-            image="/images/food/rainbowchick-image.png"
+            title="Mixed Tropical Fruit Salad with Superfood Boosts"
+            image="/images/food/mixedtropifruit-image.png"
             typeOne="30 Minutes"
             typeTwo="Healthy"
           />
           <CardComp
-            title="Barbeque Spicy Sandwiches with Chips"
-            image="/images/food/spicysandwiches-image.png"
+            title="Big and Juicy Wagyu Beef Cheeseburger"
+            image="/images/food/wagyucheese-image.png"
             typeOne="30 Minutes"
-            typeTwo="Snack"
+            typeTwo="Western"
           />
           <CardComp
-            title="Firecracker Vegan Lettuce Wraps - Spicy!"
-            image="/images/food/spicysandwiches-image.png"
+            title="Healthy Japanese Fried Rice with Asparagus"
+            image="/images/food/japanesefiredrice-image.png"
             typeOne="30 Minutes"
-            typeTwo="Seafood"
-          />{" "}
+            typeTwo="Healthy"
+          />
           <CardComp
-            title="Chicken Ramen Soup with Mushroom "
-            image="/images/food/chick-ramen.png"
+            title="Cauliflower Walnut Vegetarian Taco Meat"
+            image="/images/food/vegantaco-image.png"
             typeOne="30 Minutes"
-            typeTwo="Noodles"
+            typeTwo="Eastern"
           />
         </div>
       </section>

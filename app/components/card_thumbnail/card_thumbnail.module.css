@@ -26,3 +26,24 @@
     font-size: 14px;
     color: rgba(0, 0, 0, 0.6);
 }
+
+@media screen and (max-width: 1280px) {
+    .cardThumbnail_Container {
+        gap: 20px;
+    }
+
+    .cardThumbnail_Image {
+        width: 165px;
+        height: 105px;
+    }
+
+    .cardThumbnail_Topic {
+        font-size: 16px;
+        margin-bottom: 14px;
+    }
+
+    .cardThumbnail_Author {
+        font-size: 12px;
+        color: rgba(0, 0, 0, 0.6);
+    }
+}

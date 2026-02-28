@@ -23,7 +23,7 @@
     border-color: black;
 }
 
-.checkBox:checked + span {
+.checkBox:checked+span {
     color: rgba(0, 0, 0, 0.2);
     text-decoration: line-through;
 }
@@ -36,4 +36,26 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 1280px) {
+    .labelCheckBox {
+        font-size: 16px;
+        gap: 20px;
+        padding: 26px 0;
+    }
+
+    .checkBox {
+        width: 20px;
+        height: 20px;
+    }
+
+    .checkBox:checked {
+        background-color: black;
+        border-color: black;
+    }
+
+    .checkBox:checked::after {
+        font-size: 12px;
+    }
 }
