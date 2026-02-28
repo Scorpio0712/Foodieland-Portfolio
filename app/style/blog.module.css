@@ -18,6 +18,8 @@
 }
 
 .blogList_Header p {
+    text-align: center;
+    max-width: 900px;
     font-size: 16px;
     margin-bottom: 80px;
     color: rgba(0, 0, 0, 0.6);
@@ -49,7 +51,7 @@
 
 .blogList_TastyRecipesContent {
     margin: 32px 0 80px;
-    
+
 }
 
 .blogList_TastyRecipesPagination {
@@ -58,4 +60,54 @@
 
 .blogList_InboxContainer {
     margin: 160px 0;
+}
+
+@media screen and (max-width: 1280px) {
+    .blogList_Container {
+        max-width: 1024px;
+    }
+
+    .blogList_Header {
+        margin-top: 80px;
+    }
+
+    .blogList_Header h1 {
+        font-size: 60px;
+    }
+
+    .blogList_Header p {
+        font-size: 14px;
+      max-width: 800px;
+    }
+
+    .blogList_Body {
+        margin-top: 80px;
+        display: flex;
+        gap: 40px;
+    }
+
+    .blogList_BodyList {
+        max-width: 684px;
+        gap: 24px;
+    }
+
+    .blogList_TastyRecipes {
+        max-width: 300px;
+    }
+
+    .blogList_TastyRecipes h1 {
+        font-size: 28px;
+    }
+
+    .blogList_TastyRecipesContent {
+        margin: 32px 0 80px;
+
+    }
+    .blogList_TastyRecipesPagination {
+        margin-top: 70px;
+    }
+
+    .blogList_InboxContainer {
+        margin: 160px 0;
+    }
 }

@@ -45,3 +45,21 @@
 .searchButton:hover {
   color: #E7f9fd;
 }
+
+@media screen and (max-width: 1280px) {
+  .searchContainer {
+    max-width: 600px;
+  }
+
+  .searchInput {
+    height: 60px;
+    border-radius: 22px;
+  }
+
+  .searchButton {
+    padding: 17px 53px;
+    border-radius: 16px;
+  }
+
+  
+}

@@ -91,6 +91,7 @@
     max-width: 840px;
     align-items: center;
     gap: 40px;
+    min-height: 200px;    
 }
 
 .cardHorizontal_Image {
@@ -106,21 +107,40 @@
     object-fit: cover;
 }
 
+.cardHorizontal_Content {
+    display: flex;             
+    flex-direction: column;    
+    justify-content: center;   
+    height: 200px;             
+}
+
 .cardHorizontal_Topic {
     font-size: 24px;
     font-weight: 600;
     margin-bottom: 16px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    min-height: 60px;
 }
 
 .cardHorizontal_Detail {
     font-size: 16px;
     color: rgba(0, 0, 0, 0.6);
     margin-bottom: 32px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    flex: 1;
+    margin-bottom: 0;
 }
 
 .cardHorizontal_Footer {
     display: flex;
     align-items: center;
+    margin-top: auto;
 }
 
 .cardHorizontal_Author {
@@ -130,6 +150,12 @@
     border-right: 1px solid rgba(0, 0, 0, 0.1);
     padding-right: 24px;
 }
+
+.cardHorizontal_Author img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+    }
 
 .cardHorizontal_Author span {
     font-size: 16px;
@@ -170,6 +196,54 @@
 
     .cardInfo {
         margin-bottom: 16px;
+    }
+
+    /* Horizontal */
+    .cardHorizontal {
+        max-width: 684px;
+        gap: 32px;
+        min-height: 180px;
+    }
+
+    .cardHorizontal_Image {
+        width: 260px;
+        height: 180px;
+    }
+
+    .cardHorizontal_Content {
+        height: 180px;
+    }
+
+    .cardHorizontal_Topic {
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 14px;
+        min-height: 24px;
+    }
+
+    .cardHorizontal_Detail {
+        font-size: 14px;
+        color: rgba(0, 0, 0, 0.6);
+        margin-bottom: 28px;
+    }
+
+    .cardHorizontal_Author {
+        padding-right: 20px;
+    }
+
+    .cardHorizontal_Author img {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+    }
+
+    .cardHorizontal_Author span {
+        font-size: 14px;
+    }
+
+    .cardHorizontal_Date {
+        padding-Left: 20px;
+        font-size: 14px;
     }
 
 }

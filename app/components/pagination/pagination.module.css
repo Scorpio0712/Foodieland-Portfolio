@@ -34,7 +34,7 @@
 }
 
 .pagination_PageBtn {
-   width: 64px;
+    width: 64px;
     height: 64px;
     cursor: pointer;
     border: 1px solid rgba(0, 0, 0, 0.6);
@@ -48,11 +48,13 @@
     cursor: not-allowed;
     background: black;
 }
+
 .pagination_PageBtn:disabled {
     color: white;
     cursor: not-allowed;
     background: black;
 }
+
 .pagination_NextBtn {
     cursor: pointer;
     width: 64px;
@@ -61,8 +63,24 @@
     border-radius: 16px;
     font-size: 18px;
     font-weight: bold;
-} 
+}
+
 .pagination_NextBtn:disabled {
     visibility: hidden;
     cursor: not-allowed;
+}
+
+@media screen and (max-width: 1280px) {
+    .pagination_Container {
+        gap: 14px;
+    }
+
+    .pagination_PrevBtn,
+    .pagination_Dots,
+    .pagination_PageBtn,
+    .pagination_NextBtn {
+        width: 54px;
+        height: 54px;
+        font-size: 16px;
+    }
 }

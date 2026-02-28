@@ -62,7 +62,6 @@ function Card({
                     alt={author}
                     width={40}
                     height={40}
-                    style={{ borderRadius: "50%" }}
                   />
                 )}
                 <span>{author}</span>
