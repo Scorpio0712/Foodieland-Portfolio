@@ -2,10 +2,7 @@
 .card {
     padding: 16px;
     background: linear-gradient(180deg, white 0%, #E7F9FD 100%);
-    border-radius: 30px;
-    min-width: 400px;
     height: auto;
-    margin-right: 40px;
     display: flex;
     flex-direction: column;
 }
@@ -19,7 +16,6 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    margin-bottom: 24px;
     width: 100%;
 }
 
@@ -53,7 +49,6 @@
 }
 
 .cardContent {
-    margin-bottom: 24px;
     flex: 1;
 }
 
@@ -67,7 +62,6 @@
 .cardInfo {
     display: flex;
     gap: 24px;
-    margin-bottom: 32px;
 }
 
 .cardInfoTypeOne,
@@ -172,12 +166,6 @@
 @media screen and (max-width: 1280px) {
 
     /* Vertical */
-    .card {
-        min-width: 320px;
-        height: auto;
-        margin-right: 40px;
-    }
-
     .cardImage {
         height: var(--card-image-height);
         max-height: var(--card-image-height);
@@ -192,10 +180,6 @@
 
     .cardContent h1 {
         font-size: 20px;
-    }
-
-    .cardInfo {
-        margin-bottom: 16px;
     }
 
     /* Horizontal */

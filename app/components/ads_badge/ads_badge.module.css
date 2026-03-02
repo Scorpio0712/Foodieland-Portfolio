@@ -7,8 +7,6 @@
     justify-content: center;
     text-align: center;
     position: relative;
-    min-width: 400px;
-    height: 434px;
     padding: 40px;
     background: linear-gradient(180deg, #357355 0%, #1D483B 100%);
     overflow: hidden;

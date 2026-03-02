@@ -188,8 +188,11 @@
 }
 
 .blogPost_DeliciousRecipeContent {
+    --card-image-height: 200px;
     display: flex;
     align-items: center;
+    width: 100%;
+    gap: 40px;
 }
 
 .blogPost_DeliciousRecipeContent > div{
@@ -202,7 +205,7 @@
 .blogPost_DeliciousRecipeContent h1{ 
     font-size: 18px !important;
     font-weight: 600 !important;
-    margin-bottom: 24px !important;
+    margin: 16px 0 24px !important;
 }
 
 .blogPost_DeliciousRecipeContent div{ 
