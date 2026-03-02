@@ -316,6 +316,10 @@
 .simpleAndTastyCardListOne>div,
 .simpleAndTastyCardListTwo>div,
 .simpleAndTastyCardListThree>div {
+    --card-heart-height: 48px;
+    --card-heart-width: 48px;
+    --card-heart-svg-width: 24px;
+    --card-heart-svg-height: 24px;
     border-radius: 30px !important;
     width: 400px !important;
     height: 434px !important;
@@ -323,12 +327,16 @@
 
 .simpleAndTastyCardListTwo>div:last-child {
     border-radius: 0 !important;
+    padding: 50px !important;
 }
 
 .simpleAndTastyCardListOne h1,
 .simpleAndTastyCardListTwo h1,
 .simpleAndTastyCardListThree h1 {
-    margin: 24px 0;
+    font-size: 24px !important;
+    font-weight: 600 !important;
+    line-height: 1.25 !important;
+    margin-top: 24px !important;
 }
 
 .simpleAndTastyCardListTwo {
@@ -524,7 +532,8 @@
 .deliRecipeBodyFirstRow h1,
 .deliRecipeBodySecRow h1 {
     font-size: 18px !important;
-    margin: 16px 0 24px;
+    font-weight: 600;
+    margin: 16px 0 24px !important;
 }
 
 .deliRecipeBodyFirstRow div,
@@ -645,36 +654,41 @@
         font-size: 16px;
     }
 
-
-
     .simpleAndTastyCardListOne>div,
     .simpleAndTastyCardListTwo>div,
     .simpleAndTastyCardListThree>div {
+        padding: 12px !important;
         border-radius: 30px !important;
         width: 333px !important;
-        height: 367px !important;
+        height: 347px !important;
+        padding-bottom: 24px !important;
+        --card-heart-height: 40px;
+        --card-heart-width: 40px;
+        --card-heart-svg-width: 20px;
+        --card-heart-svg-height: 20px;
     }
 
     .simpleAndTastyCardListOne h1,
     .simpleAndTastyCardListTwo h1,
     .simpleAndTastyCardListThree h1 {
-        margin: 16px 0;
+        font-size: 20px !important;
+        margin-top: 12px !important;
     }
 
     .simpleAndTastyCardListOne {
-        --card-image-height: 180px;
+        --card-image-height: 190px;
         gap: 40px;
         margin-bottom: 40px;
     }
 
     .simpleAndTastyCardListTwo {
-        --card-image-height: 180px;
+        --card-image-height: 190px;
         gap: 40px;
         margin-bottom: 40px;
     }
 
     .simpleAndTastyCardListThree {
-        --card-image-height: 180px;
+        --card-image-height: 190px;
         gap: 40px;
     }
 
@@ -690,7 +704,7 @@
 
     .learnMoreSecCol {
         max-width: 660px;
-        height: 547px;
+        height: 520px;
     }
 
     .learnMoreFirstCol h1 {
@@ -760,8 +774,12 @@
 
     .deliRecipeBodyFirstRow,
     .deliRecipeBodySecRow {
-        gap: 20px;
+        gap: 25px;
         --card-image-height: 150px;
+        --card-heart-height: 40px;
+        --card-heart-width: 40px;
+        --card-heart-svg-width: 20px;
+        --card-heart-svg-height: 20px;
     }
 
     .deliRecipeBodyFirstRow {
@@ -770,12 +788,14 @@
 
     .deliRecipeBodyFirstRow>div,
     .deliRecipeBodySecRow>div {
-        min-height: 276px !important;
+        min-height: 246px !important;
+        min-width: 220px !important;
     }
 
     .deliRecipeBodyFirstRow h1,
     .deliRecipeBodySecRow h1 {
         font-size: 16px !important;
+        margin: 12px 0 20px !important;
     }
 
     .deliRecipeBodyFirstRow div,

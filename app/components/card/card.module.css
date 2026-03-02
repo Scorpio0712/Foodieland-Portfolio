@@ -27,8 +27,8 @@
     cursor: pointer;
     top: 16px;
     right: 16px;
-    width: 48px;
-    height: 48px;
+    width: var(--card-heart-width);
+    height: var(--card-heart-height);
     background: white;
     border-radius: 50%;
     transition: all 0.3s ease;
@@ -44,19 +44,15 @@
 
 .cardImageHeart svg {
     fill: #DBE2E5;
-    width: 24px;
-    height: 24px;
+    width: var(--card-heart-svg-width);
+    height: var(--card-heart-svg-height);
 }
 
 .cardContent {
     flex: 1;
-}
-
-.cardContent h1 {
-    font-size: 24px;
-    line-height: 1.25;
-    font-weight: bold;
-    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
 }
 
 .cardInfo {
@@ -85,7 +81,7 @@
     max-width: 840px;
     align-items: center;
     gap: 40px;
-    min-height: 200px;    
+    min-height: 200px;
 }
 
 .cardHorizontal_Image {
@@ -102,10 +98,10 @@
 }
 
 .cardHorizontal_Content {
-    display: flex;             
-    flex-direction: column;    
-    justify-content: center;   
-    height: 200px;             
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 200px;
 }
 
 .cardHorizontal_Topic {
@@ -146,10 +142,10 @@
 }
 
 .cardHorizontal_Author img {
-        width: 40px;
-        height: 40px;
-        border-radius: 50%;
-    }
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
 
 .cardHorizontal_Author span {
     font-size: 16px;
@@ -161,73 +157,4 @@
     align-items: center;
     color: rgba(0, 0, 0, 0.6);
     padding-Left: 24px;
-}
-
-@media screen and (max-width: 1280px) {
-
-    /* Vertical */
-    .cardImage {
-        height: var(--card-image-height);
-        max-height: var(--card-image-height);
-    }
-
-    .cardImageHeart {
-        top: 12px;
-        right: 12px;
-        width: 42px;
-        height: 42px;
-    }
-
-    .cardContent h1 {
-        font-size: 20px;
-    }
-
-    /* Horizontal */
-    .cardHorizontal {
-        max-width: 684px;
-        gap: 32px;
-        min-height: 180px;
-    }
-
-    .cardHorizontal_Image {
-        width: 260px;
-        height: 180px;
-    }
-
-    .cardHorizontal_Content {
-        height: 180px;
-    }
-
-    .cardHorizontal_Topic {
-        font-size: 20px;
-        font-weight: 600;
-        margin-bottom: 14px;
-        min-height: 24px;
-    }
-
-    .cardHorizontal_Detail {
-        font-size: 14px;
-        color: rgba(0, 0, 0, 0.6);
-        margin-bottom: 28px;
-    }
-
-    .cardHorizontal_Author {
-        padding-right: 20px;
-    }
-
-    .cardHorizontal_Author img {
-        width: 30px;
-        height: 30px;
-        border-radius: 50%;
-    }
-
-    .cardHorizontal_Author span {
-        font-size: 14px;
-    }
-
-    .cardHorizontal_Date {
-        padding-Left: 20px;
-        font-size: 14px;
-    }
-
 }

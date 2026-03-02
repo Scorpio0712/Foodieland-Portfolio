@@ -52,18 +52,3 @@
     font-size: 14px !important;
     color: rgba(255, 255, 255, 0.6);
 }
-
-@media screen and (max-width: 1280px) {
-    .adsBadge {
-        min-width: 320px;
-        height: 364px;
-    }
-
-    .adsBadge h1 {
-        font-size: 20px !important;
-    }
-
-    .adsBadge p {
-        font-size: 12px !important;
-    }
-}
