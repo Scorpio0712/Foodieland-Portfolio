@@ -7,16 +7,17 @@
     justify-content: center;
     text-align: center;
     position: relative;
-    padding: 40px;
+    
     background: linear-gradient(180deg, #357355 0%, #1D483B 100%);
     overflow: hidden;
+    height: 100%;  
 }
 
-.adsBadge>img {
+.adsBadge_Img {
     z-index: 2;
     position: relative;
-    width: 100%;
-    height: 100%;
+    width: var(--ads-badge-Img-width, 100%);
+    height: var(--ads-badge-Img-height, 100%);
     object-fit: cover;
 }
 
@@ -30,9 +31,9 @@
     z-index: 0;
 }
 
-.adsBadgeBackGround img {
-    width: 100%;
-    height: 100%;
+.adsBadgeBackGround_Img {
+    width: var(--ads-badge-bgImg-width, 100%);
+    height: var(--ads-badge-bgImg-height, 100%);
     object-fit: contain;
 }
 

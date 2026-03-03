@@ -320,6 +320,7 @@
     --card-heart-width: 48px;
     --card-heart-svg-width: 24px;
     --card-heart-svg-height: 24px;
+    padding-bottom: 24px !important;
     border-radius: 30px !important;
     width: 400px !important;
     height: 434px !important;
@@ -327,7 +328,7 @@
 
 .simpleAndTastyCardListTwo>div:last-child {
     border-radius: 0 !important;
-    padding: 50px !important;
+    padding: 40px !important;
 }
 
 .simpleAndTastyCardListOne h1,
@@ -336,7 +337,7 @@
     font-size: 24px !important;
     font-weight: 600 !important;
     line-height: 1.25 !important;
-    margin-top: 24px !important;
+    padding-top: 24px !important;
 }
 
 .simpleAndTastyCardListTwo {
@@ -668,11 +669,19 @@
         --card-heart-svg-height: 20px;
     }
 
+    .simpleAndTastyCardListTwo>div:last-child {
+        --ads-badge-bgImg-width: 350px !important;
+        --ads-badge-bgImg-height: 350px !important;
+        --ads-badge-Img-width: 300px !important;
+        --ads-badge-Img-height: 300px !important;
+        padding: 35px !important;
+    }
+
     .simpleAndTastyCardListOne h1,
     .simpleAndTastyCardListTwo h1,
     .simpleAndTastyCardListThree h1 {
         font-size: 20px !important;
-        margin-top: 12px !important;
+        padding-top: 12px !important;
     }
 
     .simpleAndTastyCardListOne {

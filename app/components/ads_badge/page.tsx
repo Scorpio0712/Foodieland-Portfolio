@@ -7,9 +7,10 @@ function AdsBadge() {
     <div className={style.adsBadge}>
       <div className={style.adsBadgeBackGround}>
         <Image
+        className={style.adsBadgeBackGround_Img}
           src="/images/icon/star-image.png"
-          width={600}
-          height={600}
+          width={400}
+          height={400}
           alt=""
         />
       </div>
@@ -18,9 +19,10 @@ function AdsBadge() {
         <br /> healthy food
       </h1>
       <Image
+        className={style.adsBadge_Img}
         src="/images/food/salmonsalad-image.png"
-        width={600}
-        height={600}
+        width={400}
+        height={400}
         alt=""
       />
       <p>www.foodieland.com</p>
