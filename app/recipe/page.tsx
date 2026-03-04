@@ -267,7 +267,7 @@ function RecipeDetailPage() {
               authorCard="By Andreas Paula"
             />
           </div>
-          <AdsBadgeComp className={style.rd_OtherRecipeAdsBadge}/>
+          <AdsBadgeComp className={style.rd_OtherRecipeAdsBadge} />
         </div>
       </section>
       <section className={style.rd_SectionThree}>
@@ -355,24 +355,28 @@ function RecipeDetailPage() {
         </h1>
         <div className={style.rd_RecipeTooDetail}>
           <CardComp
+            className={style.verticalCard}
             title="Mixed Tropical Fruit Salad with Superfood Boosts"
             image="/images/food/mixedtropifruit-image.png"
             typeOne="30 Minutes"
             typeTwo="Healthy"
           />
           <CardComp
+            className={style.verticalCard}
             title="Big and Juicy Wagyu Beef Cheeseburger"
             image="/images/food/wagyucheese-image.png"
             typeOne="30 Minutes"
             typeTwo="Western"
           />
           <CardComp
+            className={style.verticalCard}
             title="Healthy Japanese Fried Rice with Asparagus"
             image="/images/food/japanesefiredrice-image.png"
             typeOne="30 Minutes"
             typeTwo="Healthy"
           />
           <CardComp
+            className={style.verticalCard}
             title="Cauliflower Walnut Vegetarian Taco Meat"
             image="/images/food/vegantaco-image.png"
             typeOne="30 Minutes"

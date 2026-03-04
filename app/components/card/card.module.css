@@ -1,12 +1,13 @@
 /* ── Vertical ─────────────────────────────────── */
 .card {
-  padding: 16px;
+  padding: var(--card-padding, 16px);
   background: var(--card-bg, linear-gradient(180deg, white 0%, #E7F9FD 100%));
   border-radius: var(--card-border-radius, 20px);
-  height: var(--card-height, auto);;
+  height: var(--card-height, auto);
+  width: var(--card-width, 100%);
   display: flex;
   flex-direction: column;
-  width: var(--card-width, 100%);
+  overflow: hidden;
 }
 
 .cardImage {
@@ -59,14 +60,20 @@
 }
 
 .cardTitle {
-  font-size: var(--card-title-font-size, 1.2rem);
-  font-weight: var(--card-title-font-weight, 700);
+  font-size: var(--card-title-font-size, 24px);
+  font-weight: var(--card-title-font-weight, 600);
   color: var(--card-title-color, #000);
+  /* ── clamp title ── */
+    display: -webkit-box;
+    -webkit-line-clamp: var(--card-title-line-clamp, 2); /* ← กำหนดได้จากภายนอก */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 
 .cardInfo {
   display: flex;
   gap: 24px;
+  padding: var(--card-info-padding, 24px 0 32px);
 }
 
 .cardInfoTypeOne,
@@ -75,7 +82,7 @@
   justify-content: center;
   align-items: center;
   gap: 8px;
-  font-size: var(--card-info-font-size, 0.9rem);
+  font-size: var(--card-info-font-size, 14px);
   color: var(--card-info-color, rgba(0, 0, 0, 0.6));
 }
 

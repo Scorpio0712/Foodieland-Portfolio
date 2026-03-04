@@ -272,7 +272,6 @@
 .rd_ForMainDish h1,
 .rd_ForTheSauce h1 {
     font-size: 24px;
-
 }
 
 .rd_ForTheSauce {
@@ -293,6 +292,11 @@
 
 .rd_OtherRecipeList {
     margin: 32px 0 80px;
+}
+
+.rd_OtherRecipeAdsBadge {
+    width: 400px;
+    height: 434px;
 }
 
 /* Recipe Detail Section Three */
@@ -356,26 +360,26 @@
 }
 
 .rd_RecipeTooDetail {
-    --card-image-height: 200px;
     display: flex;
     margin-top: 80px;
+    gap: 40px;
 }
 
-.rd_RecipeTooDetail>div {
-    min-width: 290px !important;
-    height: 316px !important;
-    background: white !important;
-    padding: 0 !important;
+.rd_RecipeTooDetail .verticalCard {
+    --card-width: 290px;
+    --card-height: 316px;
+    --card-padding: 0px;
+    --card-image-height: 200px;
+    --card-bg: white;
+    --card-border-radius: 0px;
+    --card-title-font-size: 18px;
+    --card-title-font-weight: 600;
+    --card-info-font-size: 14px;
+    --card-heart-size: 48px;
+    --card-heart-svg-size: 24px;
+    --card-info-icon-size: 24px;
 }
 
-.rd_RecipeTooDetail h1 {
-    font-size: 18px !important;
-    font-weight: 600 !important;
-}
-
-.rd_RecipeTooDetail div {
-    font-size: 14px !important;
-}
 
 @media screen and (max-width: 1280px) {
     .rd_Container {
