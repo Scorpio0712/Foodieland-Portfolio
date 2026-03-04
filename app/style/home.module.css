@@ -308,27 +308,23 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    --card-image-height: 250px;
     gap: 40px;
     margin-bottom: 40px;
 }
 
-.simpleAndTastyCardListOne>div,
-.simpleAndTastyCardListTwo>div,
-.simpleAndTastyCardListThree>div {
-    --card-heart-height: 48px;
-    --card-heart-width: 48px;
-    --card-heart-svg-width: 24px;
-    --card-heart-svg-height: 24px;
-    padding-bottom: 24px !important;
-    border-radius: 30px !important;
-    width: 400px !important;
-    height: 434px !important;
-}
-
-.simpleAndTastyCardListTwo>div:last-child {
-    border-radius: 0 !important;
-    padding: 40px !important;
+.simpleAndTastyCardListOne .verticalCard,
+.simpleAndTastyCardListTwo .verticalCard,
+.simpleAndTastyCardListThree .verticalCard {
+    --card-width: 400px;
+    --card-height: 434px;
+    --card-image-height: 250px;
+    --card-bg: linear-gradient(180deg, white 0%, #E7F9FD 100%);
+    --card-border-radius: 20px;
+    --card-title-font-size: 24px;
+    --card-title-font-weight: 600;
+    --card-info-font-size: 16px;
+    --card-heart-size: 48px;
+    --card-heart-svg-size: 24px;
 }
 
 .simpleAndTastyCardListOne h1,
@@ -344,16 +340,19 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    --card-image-height: 250px;
     gap: 40px;
     margin-bottom: 40px;
+}
+
+.simpleAndTastyCardAdsBadge {
+    --ads-badge-width: 400px;
+    --ads-badge-height: 434px
 }
 
 .simpleAndTastyCardListThree {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    --card-image-height: 250px;
     gap: 40px;
 }
 
@@ -509,7 +508,6 @@
     display: flex;
     justify-content: space-between;
     align-items: stretch;
-    --card-image-height: 200px;
     gap: 40px;
 }
 
@@ -528,6 +526,22 @@
     flex: 1;
     flex-shrink: 1;
     margin-right: 0 !important;
+}
+
+.deliRecipeBodyFirstRow .verticalCard,
+.deliRecipeBodySecRow .verticalCard {
+    --card-width: 290px;
+    --card-height: 316px;
+    --card-image-height: 200px;
+    --card-bg: white;
+    --card-border-radius: 0px;
+    --card-title-font-size: 18px;
+    --card-title-font-weight: 600;
+    --card-info-font-size: 14px;
+    --card-heart-size: 48px;
+    --card-heart-svg-size: 24px;
+    --card-info-icon-size: 24px;
+
 }
 
 .deliRecipeBodyFirstRow h1,

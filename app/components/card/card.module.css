@@ -1,160 +1,177 @@
-/* Vertical */
+/* ── Vertical ─────────────────────────────────── */
 .card {
-    padding: 16px;
-    background: linear-gradient(180deg, white 0%, #E7F9FD 100%);
-    height: auto;
-    display: flex;
-    flex-direction: column;
+  padding: 16px;
+  background: var(--card-bg, linear-gradient(180deg, white 0%, #E7F9FD 100%));
+  border-radius: var(--card-border-radius, 20px);
+  height: var(--card-height, auto);;
+  display: flex;
+  flex-direction: column;
+  width: var(--card-width, 100%);
 }
 
 .cardImage {
-    height: var(--card-image-height);
-    max-height: var(--card-image-height);
-    flex-shrink: 0;
-    position: relative;
-    border-radius: 20px;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 100%;
+  height: var(--card-image-height, 280px);
+  flex-shrink: 0;
+  position: relative;
+  border-radius: var(--card-image-border-radius, 20px);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
 }
 
 .cardImageHeart {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    cursor: pointer;
-    top: 16px;
-    right: 16px;
-    width: var(--card-heart-width);
-    height: var(--card-heart-height);
-    background: white;
-    border-radius: 50%;
-    transition: all 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  cursor: pointer;
+  top: 16px;
+  right: 16px;
+  width: var(--card-heart-size, 40px);
+  height: var(--card-heart-size, 40px);
+  background: white;
+  border-radius: 50%;
+  border: none;
+  transition: all 0.3s ease;
 }
 
 .cardImageHeart:hover svg {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .cardImageHeart.liked svg {
-    fill: #FF6363;
+  fill: #FF6363;
 }
 
 .cardImageHeart svg {
-    fill: #DBE2E5;
-    width: var(--card-heart-svg-width);
-    height: var(--card-heart-svg-height);
+  fill: #DBE2E5;
+  width: var(--card-heart-svg-size, 18px);
+  height: var(--card-heart-svg-size, 18px);
 }
 
 .cardContent {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between; 
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: var(--card-content-padding, 12px 0);
+}
+
+.cardTitle {
+  font-size: var(--card-title-font-size, 1.2rem);
+  font-weight: var(--card-title-font-weight, 700);
+  color: var(--card-title-color, #000);
 }
 
 .cardInfo {
-    display: flex;
-    gap: 24px;
+  display: flex;
+  gap: 24px;
 }
 
 .cardInfoTypeOne,
 .cardInfoTypeTwo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 8px;
-    color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  font-size: var(--card-info-font-size, 0.9rem);
+  color: var(--card-info-color, rgba(0, 0, 0, 0.6));
 }
 
 .cardInfoTypeOne svg,
 .cardInfoTypeTwo svg {
-    width: 20px;
-    height: 20px;
+  width: var(--card-info-icon-size, 20px);
+  height: var(--card-info-icon-size, 20px);
 }
 
-/* Horizontal */
+
+/* ── Horizontal ───────────────────────────────── */
 .cardHorizontal {
-    display: flex;
-    max-width: 840px;
-    align-items: center;
-    gap: 40px;
-    min-height: 200px;
+  display: flex;
+  align-items: center;
+  gap: var(--cardH-gap, 40px);
+  width: var(--cardH-width, 100%);
+  min-height: var(--cardH-min-height, 200px);
+  background: var(--cardH-bg, transparent);
+  border-radius: var(--cardH-border-radius, 0px);
+  padding: var(--cardH-padding, 0px);
 }
 
 .cardHorizontal_Image {
-    position: relative;
-    width: 290px;
-    height: 200px;
-    flex-shrink: 0;
-    border-radius: 20px;
-    overflow: hidden;
+  position: relative;
+  width: var(--cardH-image-width, 290px);
+  height: var(--cardH-image-height, 200px);
+  flex-shrink: 0;
+  border-radius: var(--cardH-image-border-radius, 20px);
+  overflow: hidden;
 }
 
 .cardHorizontal_Image img {
-    object-fit: cover;
+  object-fit: cover;
 }
 
 .cardHorizontal_Content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
 }
 
 .cardHorizontal_Topic {
-    font-size: 24px;
-    font-weight: 600;
-    margin-bottom: 16px;
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    min-height: 60px;
+  font-size: var(--cardH-title-font-size, 1.5rem);
+  font-weight: var(--cardH-title-font-weight, 600);
+  color: var(--cardH-title-color, #000);
+  margin-bottom: 16px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 .cardHorizontal_Detail {
-    font-size: 16px;
-    color: rgba(0, 0, 0, 0.6);
-    margin-bottom: 32px;
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    flex: 1;
-    margin-bottom: 0;
+  font-size: var(--cardH-detail-font-size, 1rem);
+  color: var(--cardH-detail-color, rgba(0, 0, 0, 0.6));
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  margin-bottom: 0;
+  flex: 1;
 }
 
 .cardHorizontal_Footer {
-    display: flex;
-    align-items: center;
-    margin-top: auto;
+  display: flex;
+  align-items: center;
+  margin-top: auto;
+  padding-top: 16px;
 }
 
 .cardHorizontal_Author {
-    display: flex;
-    align-items: center;
-    gap: 16px;
-    border-right: 1px solid rgba(0, 0, 0, 0.1);
-    padding-right: 24px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+  padding-right: 24px;
 }
 
 .cardHorizontal_Author img {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
+  width: var(--cardH-author-img-size, 40px);
+  height: var(--cardH-author-img-size, 40px);
+  border-radius: 50%;
+  object-fit: cover;
 }
 
 .cardHorizontal_Author span {
-    font-size: 16px;
-    font-weight: bold;
+  font-size: var(--cardH-author-font-size, 1rem);
+  font-weight: bold;
+  color: var(--cardH-author-color, #000);
 }
 
 .cardHorizontal_Date {
-    display: flex;
-    align-items: center;
-    color: rgba(0, 0, 0, 0.6);
-    padding-Left: 24px;
+  display: flex;
+  align-items: center;
+  padding-left: 24px;
+  font-size: var(--cardH-date-font-size, 0.9rem);
+  color: var(--cardH-date-color, rgba(0, 0, 0, 0.6));
 }

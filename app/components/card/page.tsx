@@ -36,7 +36,7 @@ function Card({
     setIsLiked(!isLiked);
   };
 
-  //Horizontal
+  //----Horizontal-------------------------------------------
   if (variant === "horizontal") {
     return (
       <div className={`${style.cardHorizontal} ${className || ""}`}>
@@ -74,7 +74,7 @@ function Card({
     );
   }
 
-  //Vertical
+  //---Vertical-------------------------------------------
   return (
     <div className={`${style.card} ${className || ""}`}>
       <div
@@ -91,7 +91,7 @@ function Card({
         </button>
       </div>
       <div className={style.cardContent}>
-        <h1>{title}</h1>
+        <h1 className={style.cardTitle}>{title}</h1>
       </div>
       <div className={style.cardInfo}>
         {typeOne && (

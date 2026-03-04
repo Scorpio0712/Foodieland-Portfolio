@@ -267,7 +267,7 @@ function RecipeDetailPage() {
               authorCard="By Andreas Paula"
             />
           </div>
-          <AdsBadgeComp />
+          <AdsBadgeComp className={style.rd_OtherRecipeAdsBadge}/>
         </div>
       </section>
       <section className={style.rd_SectionThree}>

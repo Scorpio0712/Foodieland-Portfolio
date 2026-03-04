@@ -76,15 +76,15 @@ export default function Home() {
     }
   }, [currentSlide, recipes.length]);
 
-  const nextSlide = () => {
-    setIsTransitioning(true);
-    setCurrentSlide((prev) => prev + 1);
-  };
+  // const nextSlide = () => {
+  //   setIsTransitioning(true);
+  //   setCurrentSlide((prev) => prev + 1);
+  // };
 
-  const prevSlide = () => {
-    setIsTransitioning(true);
-    setCurrentSlide((prev) => prev - 1);
-  };
+  // const prevSlide = () => {
+  //   setIsTransitioning(true);
+  //   setCurrentSlide((prev) => prev - 1);
+  // };
 
   return (
     <main className={style.homeContainer}>
@@ -269,18 +269,21 @@ export default function Home() {
         </div>
         <div className={style.simpleAndTastyCardListOne}>
           <CardComp
+            className={style.verticalCard}
             title="Big and Juicy Wagyu Beef Cheeseburger"
             image="/images/food/hamburger-image.png"
             typeOne="30 Minutes"
             typeTwo="Snack"
           />
           <CardComp
+            className={style.verticalCard}
             title="Fresh Lime Roasted Salmon with Ginger Sauce"
             image="/images/food/roastsalmon-image.png"
             typeOne="30 Minutes"
             typeTwo="Fish"
           />
           <CardComp
+            className={style.verticalCard}
             title="Strawberry Oatmeal Pancake with Honey Syrup"
             image="/images/food/oatmealpancake-image.png"
             typeOne="30 Minutes"
@@ -289,21 +292,24 @@ export default function Home() {
         </div>
         <div className={style.simpleAndTastyCardListTwo}>
           <CardComp
+            className={style.verticalCard}
             title="Fresh and Healthy Mixed Mayonnaise Salad"
             image="/images/food/mixedsalad-image.png"
             typeOne="30 Minutes"
             typeTwo="Healthy"
           />
           <CardComp
+            className={style.verticalCard}
             title="Chicken Meatballs with Cream Cheese"
             image="/images/food/meatball-image.png"
             typeOne="30 Minutes"
             typeTwo="Meat"
           />
-          <AdsBadgeComp />
+          <AdsBadgeComp className={style.simpleAndTastyCardAdsBadge} />
         </div>
         <div className={style.simpleAndTastyCardListThree}>
           <CardComp
+            className={style.verticalCard}
             title="Fruity Pancake with Orange & Blueberry"
             image="/images/food/orangepancake-image.png"
             typeOne="30 Minutes"
@@ -311,12 +317,14 @@ export default function Home() {
             imageHeight="250px"
           />
           <CardComp
+            className={style.verticalCard}
             title="The Best Easy One Pot Chicken and Rice"
             image="/images/food/chickandrice-image.png"
             typeOne="30 Minutes"
             typeTwo="Snack"
           />
           <CardComp
+            className={style.verticalCard}
             title="The Creamiest Creamy Chicken and Bacon Pasta"
             image="/images/food/orangepancake-image.png"
             typeOne="30 Minutes"
@@ -401,24 +409,28 @@ export default function Home() {
         <div className={style.deliRecipeBody}>
           <div className={style.deliRecipeBodyFirstRow}>
             <CardComp
+              className={style.verticalCard}
               title="Mixed Tropical Fruit Salad with Superfood Boots"
               image="/images/food/mixedtropifruit-image.png"
               typeOne="30 Minutes"
               typeTwo="Healthy"
             />
             <CardComp
+              className={style.verticalCard}
               title="Big and Juicy Wagyu Beef Cheeseburger"
               image="/images/food/wagyucheese-image.png"
               typeOne="30 Minutes"
               typeTwo="Western"
             />
             <CardComp
+              className={style.verticalCard}
               title="Healthy Japanese Fried Rice with Asparagus"
               image="/images/food/japanesefiredrice-image.png"
               typeOne="30 Minutes"
               typeTwo="Healthy"
             />
             <CardComp
+              className={style.verticalCard}
               title="Cauliflower Walnut Vegetarian Taco Meat"
               image="/images/food/vegantaco-image.png"
               typeOne="30 Minutes"
@@ -427,24 +439,28 @@ export default function Home() {
           </div>
           <div className={style.deliRecipeBodySecRow}>
             <CardComp
+              className={style.verticalCard}
               title="Rainbow Chicken Salad with Almond Honey Mustard Dressing"
               image="/images/food/rainbowchick-image.png"
               typeOne="30 Minutes"
               typeTwo="Healthy"
             />
             <CardComp
+              className={style.verticalCard}
               title="Barbeque Spicy Sandwiches with Chips"
               image="/images/food/spicysandwiches-image.png"
               typeOne="30 Minutes"
               typeTwo="Snack"
             />
             <CardComp
+              className={style.verticalCard}
               title="Firecracker Vegan Lettuce Wraps - Spicy!"
               image="/images/food/spicysandwiches-image.png"
               typeOne="30 Minutes"
               typeTwo="Seafood"
             />
             <CardComp
+              className={style.verticalCard}
               title="Chicken Ramen Soup with Mushroom "
               image="/images/food/chick-ramen.png"
               typeOne="30 Minutes"

@@ -552,6 +552,16 @@
         font-size: 28px;
     }
 
+    .rd_OtherRecipeAdsBadge {
+        width: 320px;
+        height: 354px;
+    }
+
+    .rd_OtherRecipeAdsBadge img:last-of-type {
+        width: 350px;
+        height: 350px;
+    }
+
     /* Recipe Detail Section Three */
     .rd_SectionThree {
         margin-top: 48;

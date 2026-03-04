@@ -2,9 +2,13 @@ import React from "react";
 import Image from "next/image";
 import style from "./ads_badge.module.css";
 
-function AdsBadge() {
+interface AdsBadgeProps {
+  className?: string;
+}
+
+function AdsBadge({className} : AdsBadgeProps) {
   return (
-    <div className={style.adsBadge}>
+    <div className={`${style.adsBadge} ${className || ""}`}>
       <div className={style.adsBadgeBackGround}>
         <Image
         className={style.adsBadgeBackGround_Img}
