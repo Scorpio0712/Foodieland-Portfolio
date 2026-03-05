@@ -164,9 +164,12 @@ function BlogPostPage() {
         <EmailInput />
       </section>
       <section className={style.blogPost_DeliciousRecipe}>
-        <h1>Check out the delicious recipe</h1>
+        <h1 className={style.blogPost_DeliciousRecipeTopic}>
+          Check out the delicious recipe
+        </h1>
         <div className={style.blogPost_DeliciousRecipeContent}>
           <CardComp
+            className={style.verticalCard}
             title="Mixed Tropical Fruit Salad with Superfood Boots"
             image="/images/food/mixedtropifruit-image.png"
             typeOne="30 Minutes"
@@ -174,6 +177,7 @@ function BlogPostPage() {
             imageHeight="200px"
           />
           <CardComp
+            className={style.verticalCard}
             title="Big and Juicy Wagyu Beef Cheeseburger"
             image="/images/food/wagyucheese-image.png"
             typeOne="30 Minutes"
@@ -181,6 +185,7 @@ function BlogPostPage() {
             imageHeight="200px"
           />
           <CardComp
+            className={style.verticalCard}
             title="Healthy Japanese Fried Rice with Asparagus"
             image="/images/food/japanesefiredrice-image.png"
             typeOne="30 Minutes"
@@ -188,6 +193,7 @@ function BlogPostPage() {
             imageHeight="200px"
           />
           <CardComp
+            className={style.verticalCard}
             title="Cauliflower Walnut Vegetarian Taco Meat"
             image="/images/food/vegantaco-image.png"
             typeOne="30 Minutes"

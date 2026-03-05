@@ -361,8 +361,8 @@
 
 .rd_RecipeTooDetail {
     display: flex;
+    justify-content: space-between;
     margin-top: 80px;
-    gap: 40px;
 }
 
 .rd_RecipeTooDetail .verticalCard {
@@ -373,8 +373,9 @@
     --card-bg: white;
     --card-border-radius: 0px;
     --card-title-font-size: 18px;
-    --card-title-font-weight: 600;
+    --card-content-padding: 16px 0 0;
     --card-info-font-size: 14px;
+    --card-info-padding: 24px 0 0;
     --card-heart-size: 48px;
     --card-heart-svg-size: 24px;
     --card-info-icon-size: 24px;
@@ -613,22 +614,20 @@
     }
 
     .rd_RecipeTooDetail {
-        --card-image-height: 160px;
         margin-top: 70px;
     }
 
-    .rd_RecipeTooDetail>div {
-        min-width: 225px !important;
-        height: 300px !important;
-    }
-
-    .rd_RecipeTooDetail h1 {
-        font-size: 16px !important;
-        font-weight: 600 !important;
-    }
-
-    .rd_RecipeTooDetail div {
-        font-size: 12px !important;
+    .rd_RecipeTooDetail .verticalCard {
+        --card-width: 230px;
+        --card-height: 256px;
+        --card-image-height: 150px;
+        --card-title-font-size: 16px;
+        --card-content-padding: 16px 0 0;
+        --card-info-font-size: 12px;
+        --card-info-padding: 24px 0 0;
+        --card-heart-size: 40px;
+        --card-heart-svg-size: 20px;
+        --card-info-icon-size: 20px;
     }
 
 }

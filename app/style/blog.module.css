@@ -28,15 +28,15 @@
 .blogList_Body {
     margin-top: 80px;
     display: flex;
-    gap: 40px;
+    justify-content: space-between;
 }
 
 .blogList_BodyList {
     flex: 1;
     display: flex;
+    gap: 32px;
     flex-direction: column;
     max-width: 840px;
-    gap: 32px;
 }
 
 .blogList_TastyRecipes {
@@ -51,7 +51,11 @@
 
 .blogList_TastyRecipesContent {
     margin: 32px 0 80px;
+}
 
+.blogList_TastyRecipes .blogList_TastyRecipesAdsBadge {
+    --ads-badge-height: 434px;
+    --ads-badge-width: 400px;
 }
 
 .blogList_TastyRecipesPagination {
@@ -62,6 +66,7 @@
     margin: 160px 0;
 }
 
+/* Max Screen width 1280px */
 @media screen and (max-width: 1280px) {
     .blogList_Container {
         max-width: 1024px;
@@ -77,18 +82,32 @@
 
     .blogList_Header p {
         font-size: 14px;
-      max-width: 800px;
+        max-width: 800px;
     }
 
     .blogList_Body {
         margin-top: 80px;
         display: flex;
-        gap: 40px;
     }
 
     .blogList_BodyList {
         max-width: 684px;
         gap: 24px;
+    }
+
+    .blogList_BodyList .horizontalCard {
+        --cardH-gap: 28px;
+        --cardH-image-width: 250px;
+        --cardH-image-height: 170px;
+        --cardH-min-height: 170px;
+        --cardH-image-border-radius: 16px;
+        --cardH-title-font-size: 20px;
+        --cardH-topic-padding: 0 0 12px;
+        --cardH-detail-font-size: 14px;
+        --cardH-footer-padding: 26px 0 0;
+        --cardH-author-img-size: 32px;
+        --cardH-author-font-size: 14px;
+        --cardH-date-font-size: 12px;
     }
 
     .blogList_TastyRecipes {
@@ -101,10 +120,23 @@
 
     .blogList_TastyRecipesContent {
         margin: 32px 0 80px;
-
     }
-    .blogList_TastyRecipesPagination {
-        margin-top: 70px;
+
+    .blogList_TastyRecipes .blogList_TastyRecipesAdsBadge {
+        --ads-badge-width: 300px;
+        --ads-badge-height: 334px;
+    }
+
+    .blogList_TastyRecipes .blogList_TastyRecipesAdsBadge img {
+        width: 325px;
+        height: 325px;
+    }
+
+    .blogList_BodyContainer .blogList_TastyRecipesPagination {
+        --pagination-width: 54px;
+        --pagination-height: 54px;
+        --pagination-border-radius: 12px;
+        --pagination-font-size: 16px;
     }
 
     .blogList_InboxContainer {

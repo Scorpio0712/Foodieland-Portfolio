@@ -11,7 +11,7 @@
     overflow: hidden;
     width: var(--ads-badge-width, 100%);
     height: var(--ads-badge-height, 100%);
-    padding: 32px;
+    padding: 40px;
 }
 
 .adsBadge_Img {

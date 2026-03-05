@@ -77,7 +77,7 @@
     margin-top: 80px;
     display: flex;
     justify-self: center;
-    gap: 48px;
+    gap: 49px;
 }
 
 .blogPost_Content {
@@ -114,7 +114,6 @@
     margin-bottom: 48px;
     width: 24px;
     height: 24px;
-    
 }
 
 .blogPost_FacebookIcon svg,
@@ -170,6 +169,7 @@
     font-style: italic;
 }
 
+/* Inbox Container */
 .blogPost_EmailInbox {
     margin: 160px 0;
 }
@@ -179,7 +179,7 @@
     margin-bottom: 160px;
 }
 
-.blogPost_DeliciousRecipe h1 {
+.blogPost_DeliciousRecipeTopic {
     font-size: 36px;
     font-weight: 600;
     display: flex;
@@ -188,26 +188,159 @@
 }
 
 .blogPost_DeliciousRecipeContent {
-    --card-image-height: 200px;
     display: flex;
     align-items: center;
-    width: 100%;
-    gap: 40px;
+    justify-content: space-between;
 }
 
-.blogPost_DeliciousRecipeContent > div{
-    min-width: 290px !important;
-    height: 316px !important;
-    background: white !important;
-    padding: 0 !important;
+.blogPost_DeliciousRecipeContent .verticalCard {
+    --card-width: 290px;
+    --card-height: 316px;
+    --card-padding: 0px;
+    --card-image-height: 200px;
+    --card-bg: white;
+    --card-border-radius: 0px;
+    --card-title-font-size: 18px;
+    --card-content-padding: 16px 0 0;
+    --card-info-font-size: 14px;
+    --card-info-padding: 24px 0 0;
+    --card-heart-size: 48px;
+    --card-heart-svg-size: 24px;
+    --card-info-icon-size: 24px;
 }
 
-.blogPost_DeliciousRecipeContent h1{ 
-    font-size: 18px !important;
-    font-weight: 600 !important;
-    margin: 16px 0 24px !important;
-}
+@media screen and (max-width: 1280px) {
+    .blogPost_Container {
+        max-width: 1024px;
+    }
 
-.blogPost_DeliciousRecipeContent div{ 
-    font-size: 14px !important;
+    /* Blog Post Header */
+    .blogPost_Header h1 {
+        font-size: 48px;
+    }
+
+    .blogPost_Author {
+        margin-top: 24px;
+    }
+
+    .blogPost_AuthorInfo img {
+        width: 32px;
+        height: 32px;
+    }
+
+    .blogPost_AuthorName {
+        font-size: 14px;
+    }
+
+    .blogPost_Date {
+        font-size: 12px;
+    }
+
+    .blogPost_DeScript {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        max-width: 1000px;
+        margin-top: 48px;
+    }
+
+    .blogPost_DeScript span {
+        font-size: 14px;
+    }
+
+    .blogPost_HeaderImage {
+        width: 1024px;
+        height: 500px;
+    }
+
+    /* Blog Post Body */
+
+    .blogPost_Content {
+        max-width: 700px;
+    }
+
+    .blogPost_Content h1 {
+        font-size: 20px;
+    }
+
+    .blogPost_Content p {
+        font-size: 14px;
+        margin-top: 16px;
+    }
+
+    .blogPost_SocialBtn {
+
+        max-width: 131px;
+    }
+
+    .blogPost_SocialBtn span {
+        font-size: 12px;
+    }
+
+    .blogPost_FacebookIcon,
+    .blogPost_TwitterIcon,
+    .blogPost_InstagramIcon {
+        margin-bottom: 40px;
+        width: 20px;
+        height: 20px;
+
+    }
+
+    .blogPost_FacebookIcon svg,
+    .blogPost_TwitterIcon svg,
+    .blogPost_InstagramIcon svg {
+        width: 20px;
+        height: 20px;
+    }
+
+    .blogPost_ContentOne,
+    .blogPost_ContentTwo,
+    .blogPost_ContentThree,
+    .blogPost_ContentFour,
+    .blogPost_ContentSix {
+        margin-right: 30px;
+        margin-left: 30px;
+    }
+
+    .blogPost_ContentTwo,
+    .blogPost_ContentThree,
+    .blogPost_ContentFour,
+    .blogPost_ContentFive,
+    .blogPost_ContentSix {
+        margin-top: 54px;
+    }
+
+    .blogPost_ContentThreeImage {
+        width: 640px;
+        height: 300px;
+    }
+
+    .blogPost_ContentFive {
+        padding: 40px 30px;
+    }
+
+    .blogPost_ContentFive h1 {
+        font-size: 26px;
+    }
+
+    /* Delicious Recipe Content */
+    .blogPost_DeliciousRecipeTopic {
+        font-size: 32px;
+        
+    }
+
+    .blogPost_DeliciousRecipeContent .verticalCard {
+        --card-width: 236px;
+        --card-height: 250px;
+        --card-padding: 0px;
+        --card-image-height: 150px;
+        --card-title-font-size: 16px;
+        --card-content-padding: 14px 0 0;
+        --card-info-font-size: 12px;
+        --card-info-padding: 20px 0 0;
+        --card-heart-size: 40px;
+        --card-heart-svg-size: 20px;
+        --card-info-icon-size: 20px;
+    }
 }

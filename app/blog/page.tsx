@@ -37,8 +37,9 @@ function BlogListPage() {
         <div className={style.blogList_Body}>
           <div className={style.blogList_BodyList}>
             <CardComp
+              className={style.horizontalCard}
               variant="horizontal"
-              title="Chicken Ramen Soup with Mushroom"
+              title="Crochet Projects for Noodle Lovers"
               image="/images/food/chick-ramen.png"
               detail="Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqut enim "
               author="Wade Warren"
@@ -46,6 +47,7 @@ function BlogListPage() {
               date="12 November 2021"
             />
             <CardComp
+              className={style.horizontalCard}
               variant="horizontal"
               title="10 Vegetarian Recipes To Eat This Month"
               image="/images/food/mixedtropifruit-image.png"
@@ -55,6 +57,7 @@ function BlogListPage() {
               date="12 November 2021"
             />
             <CardComp
+              className={style.horizontalCard}
               variant="horizontal"
               title="Full Guide to Becoming a Professional Chef"
               image="/images/design/fullguide-image.png"
@@ -64,6 +67,7 @@ function BlogListPage() {
               date="12 November 2021"
             />
             <CardComp
+              className={style.horizontalCard}
               variant="horizontal"
               title="Simple & Delicious Vegetarian Lasagna"
               image="/images/food/veganlasagna-image.png"
@@ -73,6 +77,7 @@ function BlogListPage() {
               date="12 November 2021"
             />
             <CardComp
+              className={style.horizontalCard}
               variant="horizontal"
               title="Plantain and Pinto Stew with Aji Verde"
               image="/images/food/pintostew-image.png"
@@ -82,6 +87,7 @@ function BlogListPage() {
               date="12 November 2021"
             />
             <CardComp
+              className={style.horizontalCard}
               variant="horizontal"
               title="We’re Hiring a Communications Assistant!"
               image="/images/design/comassis-image.png"
@@ -113,17 +119,15 @@ function BlogListPage() {
                 authorCard="By Andreas Paula"
               />
             </div>
-            <AdsBadge />
+            <AdsBadge className={style.blogList_TastyRecipesAdsBadge} />
           </div>
         </div>
-        <div className={style.blogList_TastyRecipesPagination}>
-          <PaginationComp
-            totalPages={totalPages}
-            currentPage={currentPage}
-            onPageChange={handlePageChange}
-            className={style.blogList_Pagination}
-          />
-        </div>
+        <PaginationComp
+          className={style.blogList_TastyRecipesPagination}
+          totalPages={totalPages}
+          currentPage={currentPage}
+          onPageChange={handlePageChange}
+        />
       </section>
       <section className={style.blogList_InboxContainer}>
         <EmailInput />

@@ -648,6 +648,11 @@
         --ads-badge-height: 354px;
     }
 
+    .simpleAndTastyCardAdsBadge img{
+        width: 350px;
+        height: 350px;
+    }
+
     .simpleAndTastyCardListOne,
     .simpleAndTastyCardListTwo {
         margin-bottom: 30px;
