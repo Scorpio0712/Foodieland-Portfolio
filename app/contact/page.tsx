@@ -77,9 +77,9 @@ function ContactPage() {
                       id="category"
                       name="category"
                       required
-                      
+                      defaultValue="Select a category"
                     >
-                      <option disabled selected>
+                      <option value="Select a category" disabled>
                         Select a category
                       </option>
                       <option value="general">General Inquiry</option>
