@@ -332,10 +332,14 @@
     --card-heart-svg-size: 24px;
 }
 
+.simpleAndTastyCardListTwo .simpleAndTastyCardAdsBadge {
+    width: 400px;
+    height: 434px;
+}
 
-.simpleAndTastyCardAdsBadge {
-    --ads-badge-width: 400px;
-    --ads-badge-height: 434px;
+.simpleAndTastyCardListTwo .simpleAndTastyCardAdsBadge img {
+    width: 400px;
+    height: 400px;
 }
 
 
@@ -643,12 +647,12 @@
         --card-info-icon-size: 20px;
     }
 
-    .simpleAndTastyCardAdsBadge {
-        --ads-badge-width: 320px;
-        --ads-badge-height: 354px;
+    .simpleAndTastyCardListTwo .simpleAndTastyCardAdsBadge {
+        width: 320px;
+        height: 354px;
     }
 
-    .simpleAndTastyCardAdsBadge img{
+    .simpleAndTastyCardListTwo .simpleAndTastyCardAdsBadge img {
         width: 350px;
         height: 350px;
     }

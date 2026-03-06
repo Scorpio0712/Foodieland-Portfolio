@@ -54,8 +54,13 @@
 }
 
 .blogList_TastyRecipes .blogList_TastyRecipesAdsBadge {
-    --ads-badge-height: 434px;
-    --ads-badge-width: 400px;
+    height: 434px;
+    width: 400px;
+}
+
+.blogList_TastyRecipes .blogList_TastyRecipesAdsBadge img {
+    height: 400px;
+    width: 400px;
 }
 
 .blogList_TastyRecipesPagination {
@@ -123,13 +128,13 @@
     }
 
     .blogList_TastyRecipes .blogList_TastyRecipesAdsBadge {
-        --ads-badge-width: 300px;
-        --ads-badge-height: 334px;
+        width: 320px;
+        height: 354px;
     }
 
     .blogList_TastyRecipes .blogList_TastyRecipesAdsBadge img {
-        width: 325px;
-        height: 325px;
+        width: 330px;
+        height: 330px;
     }
 
     .blogList_BodyContainer .blogList_TastyRecipesPagination {

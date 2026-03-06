@@ -77,8 +77,9 @@ function ContactPage() {
                       id="category"
                       name="category"
                       required
+                      
                     >
-                      <option value="" disabled selected>
+                      <option disabled selected>
                         Select a category
                       </option>
                       <option value="general">General Inquiry</option>
@@ -114,9 +115,10 @@ function ContactPage() {
         <EmailInboxComp />
       </section>
       <section className={style.contact_DeliciousRecipe}>
-        <h1>Check out the delicious recipe</h1>
+        <h1 className={style.contact_DeliciousRecipeTopic} >Check out the delicious recipe</h1>
         <div className={style.contact_DeliciousRecipeContent}>
           <CardComp
+            className={style.verticalCard}
             title="Mixed Tropical Fruit Salad with Superfood Boots"
             image="/images/food/mixedtropifruit-image.png"
             typeOne="30 Minutes"
@@ -124,6 +126,7 @@ function ContactPage() {
             imageHeight="200px"
           />
           <CardComp
+            className={style.verticalCard}
             title="Big and Juicy Wagyu Beef Cheeseburger"
             image="/images/food/wagyucheese-image.png"
             typeOne="30 Minutes"
@@ -131,6 +134,7 @@ function ContactPage() {
             imageHeight="200px"
           />
           <CardComp
+            className={style.verticalCard}
             title="Healthy Japanese Fried Rice with Asparagus"
             image="/images/food/japanesefiredrice-image.png"
             typeOne="30 Minutes"
@@ -138,6 +142,7 @@ function ContactPage() {
             imageHeight="200px"
           />
           <CardComp
+            className={style.verticalCard}
             title="Cauliflower Walnut Vegetarian Taco Meat"
             image="/images/food/vegantaco-image.png"
             typeOne="30 Minutes"

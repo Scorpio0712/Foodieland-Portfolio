@@ -294,7 +294,7 @@
     margin: 32px 0 80px;
 }
 
-.rd_OtherRecipeAdsBadge {
+.rd_OtherRecipe .rd_OtherRecipeAdsBadge {
     width: 400px;
     height: 434px;
 }
@@ -557,14 +557,14 @@
         font-size: 28px;
     }
 
-    .rd_OtherRecipeAdsBadge {
+    .rd_OtherRecipe .rd_OtherRecipeAdsBadge {
         width: 320px;
         height: 354px;
     }
 
-    .rd_OtherRecipeAdsBadge img:last-of-type {
-        width: 350px;
-        height: 350px;
+    .rd_OtherRecipe .rd_OtherRecipeAdsBadge img {
+        width: 330px;
+        height: 330px;
     }
 
     /* Recipe Detail Section Three */
