@@ -12,12 +12,37 @@
   --font-mono: var(--font-geist-mono);
 }
 
-body, html{
-  overflow-x: hidden;
-  max-width: 100vw;
-  margin: 0;
+/* 1. ปรับการคำนวณขนาดกล่องให้ตรงไปตรงมา */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
+/* 2. ล้างค่า Margin/Padding ส่วนเกินที่ Browser ให้มา */
 * {
-  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* 3. ตั้งค่าพื้นฐานให้ HTML และ Body */
+html {
+  font-size: 16px; /* รากฐานของหน่วย rem */
+  scroll-behavior: smooth; /* ทำให้การเลื่อนหน้าเว็บนุ่มนวล */
+}
+
+body {
+  line-height: 1.5; /* ระยะบรรทัดที่อ่านง่าย */
+  -webkit-font-smoothing: antialiased; /* ทำให้ฟอนต์บน Mac ดูเนียนขึ้น */
+}
+
+/* 4. จัดการ Media พื้นฐานให้ Responsive */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
