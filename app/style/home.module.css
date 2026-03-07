@@ -175,7 +175,7 @@
 
    /* Categories Container */
    .categoriesContainer {
-       margin: 160px auto 0;
+       margin: 10rem auto 0;
    }
 
    .categoriesTopic {
@@ -265,12 +265,9 @@
        display: block;
    }
 
-
    /* Simple and tasty recipes */
    .simpleAndTastyContainer {
-       margin: 183px auto 0;
-       justify-content: center;
-       align-items: center;
+       margin: 11.4rem auto 0;
    }
 
    .simpleAndTastyHeader {
@@ -278,15 +275,15 @@
    }
 
    .simpleAndTastyHeader h1 {
-       font-size: 48px;
+       font-size: 3rem;
        font-weight: 600;
-       margin-bottom: 24px;
+       margin-bottom: 1.5rem;
    }
 
    .simpleAndTastyHeader p {
-       font-size: 16px;
+       font-size: 1rem;
        color: rgba(0, 0, 0, 0.6);
-       margin-bottom: 96px;
+       margin-bottom: 6rem;
    }
 
    .simpleAndTastyCardListOne,
@@ -299,32 +296,32 @@
 
    .simpleAndTastyCardListOne,
    .simpleAndTastyCardListTwo {
-       margin-bottom: 40px;
+       margin-bottom: 2.5rem;
    }
 
    .simpleAndTastyCardListOne .verticalCard,
    .simpleAndTastyCardListTwo .verticalCard,
    .simpleAndTastyCardListThree .verticalCard {
-       --card-width: 400px;
-       --card-height: 434px;
-       --card-image-height: 250px;
+       --card-width: 25rem;
+       --card-height: 27.12rem;
+       --card-image-height: 15.62rem;
        --card-bg: linear-gradient(180deg, white 0%, #E7F9FD 100%);
        --card-border-radius: 20px;
-       --card-title-font-size: 24px;
+       --card-title-font-size: 1.5rem;
        --card-title-font-weight: 600;
-       --card-info-font-size: 16px;
+       --card-info-font-size: 1rem;
        --card-heart-size: 48px;
        --card-heart-svg-size: 24px;
    }
 
    .simpleAndTastyCardListTwo .simpleAndTastyCardAdsBadge {
-       width: 400px;
-       height: 434px;
+       width: 25rem;
+       height: 27.12rem;
    }
 
    .simpleAndTastyCardListTwo .simpleAndTastyCardAdsBadge img {
-       width: 400px;
-       height: 400px;
+       width: 25rem;
+       height: 25rem;
    }
 
    /* Learn More Container */
@@ -332,44 +329,41 @@
        display: flex;
        justify-content: space-between;
        align-items: center;
-       margin: 143px auto 0;
-       width: 1280px;
+       margin: 8.93rem auto 0;
    }
 
    .learnMoreFirstCol {
        position: relative;
-       transform: translateY(50px);
+       transform: translateY(3.12rem);
        flex: 1;
-       max-width: 530px;
        width: 100%;
-       height: 100%;
+       max-width: 530px;
    }
 
    .learnMoreSecCol {
        flex: 1;
        position: relative;
-       height: 100%;
        width: 100%;
        max-width: 710px;
-       height: 597px;
+       height: 37.31rem;
    }
 
    .learnMoreFirstCol h1 {
-       font-size: 48px;
+       font-size: 3rem;
        font-weight: 600;
        line-height: 1.2;
-       margin-bottom: 24px;
+       margin-bottom: 1.5rem;
    }
 
    .learnMoreFirstCol p {
-       font-size: 16px;
-       margin-bottom: 72px;
+       font-size: 1rem;
+       margin-bottom: 4.5rem;
        color: rgba(0, 0, 0, 0.6);
    }
 
    .learnMoreFirstCol button {
-       padding: 21px 53px;
-       font-size: 14px;
+       padding: 1.31rem 3.31rem;
+       font-size: 0.87rem;
        font-weight: 600;
        background: black;
        color: white;
@@ -378,8 +372,7 @@
 
    .learnMoreSecCol img {
        position: absolute;
-       bottom: 0;
-       right: 50px;
+       right: 3.12rem;
        z-index: 2;
        height: 100%;
    }
@@ -389,8 +382,8 @@
        position: absolute;
        bottom: 0;
        right: 0;
-       width: 651px;
-       height: 500px;
+       width: 40.68rem;
+       height: 31.25rem;
        border-radius: 30px;
        z-index: 1;
    }
@@ -400,53 +393,51 @@
        background: linear-gradient(180deg, white 0%, #E7F9FD 100%);
        text-align: center;
        width: 100vw;
-       margin-top: 240px;
+       margin-top: 10rem;
        margin-left: calc(-50vw + 50%);
-       padding: 0 calc(50vw - 640px);
+       padding: 5rem calc(50vw - 40rem);
    }
 
    .checkOutContainer h1 {
-       font-size: 48px;
+       font-size: 3rem;
        font-weight: 600;
+       margin-bottom: 1.5rem;
    }
 
    .checkOutContainer p {
-       font-size: 16px;
+       font-size: 1rem;
        color: rgba(0, 0, 0, 0.6);
    }
 
    .checkOutInstagram {
-       margin: 80px 0;
+       margin: 5rem 0;
        display: flex;
        justify-content: space-between;
        align-items: center;
    }
 
    .checkOutInstagram img {
-       width: 290px;
-       height: auto;
+       width: 100%;
+       max-width: 290px;
    }
 
    .visitInstagramBtn {
        display: inline-flex;
        justify-content: center;
        align-items: center;
-       gap: 12px;
-       font-size: 14px;
-       font-weight: 500;
+       gap: 16px;
+       font-size: 0.87rem;
+       font-weight: 600;
        color: white;
        cursor: pointer;
        background: black;
        border-radius: 16px;
-       width: 230px;
-       padding: 16px 32px;
-       margin-bottom: 80px;
+       padding: 1.18rem 2rem;
    }
 
    .visitInstagramBtn svg {
        fill: white;
-       width: 24px;
-       height: 24px;
+       width: 1.37rem; 
    }
 
    /* Delicious Recipe Container */
