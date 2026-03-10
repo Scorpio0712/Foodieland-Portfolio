@@ -106,15 +106,6 @@ export default function Home() {
                 key={`${recipe.id} - ${index}`}
                 className={style.featureRecipeContainer}
               >
-                {/* Recipes Badge */}
-                <div className={style.recipesBadge}>
-                  <Image
-                    src={recipe.recipeBadge}
-                    width={300}
-                    height={500}
-                    alt="Handpicked Recipes"
-                  />
-                </div>
                 <div className={style.featureRecipeFirstCol}>
                   <div className={style.hotRecipesTopic}>
                     <Image
@@ -176,6 +167,15 @@ export default function Home() {
                   </div>
                 </div>
                 <div className={style.featureRecipeSecCol}>
+                  {/* Recipes Badge */}
+                  <div className={style.recipesBadge}>
+                    <Image
+                      src={recipe.recipeBadge}
+                      width={300}
+                      height={500}
+                      alt="Handpicked Recipes"
+                    />
+                  </div>
                   <div
                     className={style.recipeImageContainer}
                     style={{
@@ -183,7 +183,6 @@ export default function Home() {
                       backgroundSize: "cover",
                       backgroundPosition: "center",
                       backgroundRepeat: "no-repeat",
-                      minHeight: "400px",
                     }}
                   ></div>
                 </div>
