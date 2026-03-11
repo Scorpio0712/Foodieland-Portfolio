@@ -1,20 +1,20 @@
 /* ── Vertical ─────────────────────────────────── */
 .card {
-  padding: var(--card-padding, 16px);
-  background: var(--card-bg, linear-gradient(180deg, white 0%, #E7F9FD 100%));
-  border-radius: var(--card-border-radius, 20px);
-  height: var(--card-height, auto);
-  width: var(--card-width, 100%);
+  padding: var(--card-padding);
+  background: var(--card-bg);
+  border-radius: var(--card-border-radius);
+  height: var(--card-height);
+  width: var(--card-width);
   display: flex;
   flex-direction: column;
   overflow: hidden;
 }
 
 .cardImage {
-  height: var(--card-image-height, 280px);
+  height: var(--card-image-height);
   flex-shrink: 0;
   position: relative;
-  border-radius: var(--card-image-border-radius, 20px);
+  border-radius: var(--card-image-border-radius);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -27,10 +27,10 @@
   align-items: center;
   position: absolute;
   cursor: pointer;
-  top: 16px;
-  right: 16px;
-  width: var(--card-heart-size, 40px);
-  height: var(--card-heart-size, 40px);
+  top: var(--card-heart-position);
+  right: var(--card-heart-position);
+  width: var(--card-heart-size);
+  height: var(--card-heart-size);
   background: white;
   border-radius: 50%;
   border: none;
@@ -47,8 +47,8 @@
 
 .cardImageHeart svg {
   fill: #DBE2E5;
-  width: var(--card-heart-svg-size, 18px);
-  height: var(--card-heart-svg-size, 18px);
+  width: var(--card-heart-svg-size);
+  height: var(--card-heart-svg-size);
 }
 
 .cardContent {
@@ -56,24 +56,26 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: var(--card-content-padding, 12px 0);
+  padding: var(--card-content-padding);
 }
 
 .cardTitle {
-  font-size: var(--card-title-font-size, 24px);
-  font-weight: var(--card-title-font-weight, 600);
+  font-size: var(--card-title-font-size);
+  font-weight: var(--card-title-font-weight);
   color: var(--card-title-color, #000);
   /* ── clamp title ── */
-    display: -webkit-box;
-    -webkit-line-clamp: var(--card-title-line-clamp, 2); /* ← กำหนดได้จากภายนอก */
-    -webkit-box-orient: vertical;
-    overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  /* ← กำหนดได้จากภายนอก */
+  -webkit-box-orient: vertical;
+  line-height: 1.2;
+  overflow: hidden;
 }
 
 .cardInfo {
   display: flex;
   gap: 24px;
-  padding: var(--card-info-padding, 24px 0 32px);
+  padding: var(--card-info-padding);
 }
 
 .cardInfoTypeOne,

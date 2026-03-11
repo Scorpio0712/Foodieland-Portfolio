@@ -270,7 +270,7 @@
 
    /* Simple and tasty recipes */
    .simpleAndTastyContainer {
-       margin: 11.4rem auto 0;
+       margin: clamp(5.625rem, 3.6875rem + 9.6875vw, 11.4375rem) auto 0;
    }
 
    .simpleAndTastyHeader {
@@ -278,15 +278,15 @@
    }
 
    .simpleAndTastyHeader h1 {
-       font-size: 3rem;
+       font-size: clamp(1.5rem, 1rem + 2.5vw, 3rem);
        font-weight: 600;
-       margin-bottom: 1.5rem;
+       margin-bottom: clamp(1rem, 0.8333rem + 0.8333vw, 1.5rem);
    }
 
    .simpleAndTastyHeader p {
        font-size: 1rem;
        color: rgba(0, 0, 0, 0.6);
-       margin-bottom: 6rem;
+       margin-bottom: clamp(3rem, 2rem + 5vw, 6rem);
    }
 
    .simpleAndTastyCardListOne,
@@ -305,21 +305,27 @@
    .simpleAndTastyCardListOne .verticalCard,
    .simpleAndTastyCardListTwo .verticalCard,
    .simpleAndTastyCardListThree .verticalCard {
-       --card-width: 25rem;
-       --card-height: 27.12rem;
-       --card-image-height: 15.62rem;
+       --card-padding: 1rem;
+       --card-width: clamp(18.75rem, 16.6667rem + 10.4167vw, 25rem);
+       --card-height: clamp(20.875rem, 18.7917rem + 10.4167vw, 27.125rem);
+       --card-image-height: clamp(11.25rem, 9.7917rem + 7.2917vw, 15.625rem);
        --card-bg: linear-gradient(180deg, white 0%, #E7F9FD 100%);
        --card-border-radius: 20px;
+       --card-heart-position: clamp(0.5rem, 0.3333rem + 0.8333vw, 1rem);
+       --card-image-border-radius: 20px;
+       --card-content-padding: clamp(1rem, 0.8333rem + 0.8333vw, 1.5rem) 0 0;
        --card-title-font-size: 1.5rem;
        --card-title-font-weight: 600;
        --card-info-font-size: 1rem;
-       --card-heart-size: 48px;
-       --card-heart-svg-size: 24px;
+       --card-info-padding: clamp(1rem, 0.8333rem + 0.8333vw, 1.5rem) 0 clamp(0.5rem, 0.3333rem + 0.8333vw, 1rem);
+       --card-heart-size: clamp(2.5rem, 2.3333rem + 0.8333vw, 3rem);
+       --card-heart-svg-size: clamp(1rem, 0.8333rem + 0.8333vw, 1.5rem);
    }
 
    .simpleAndTastyCardListTwo .simpleAndTastyCardAdsBadge {
        width: 25rem;
        height: 27.12rem;
+
    }
 
    .simpleAndTastyCardListTwo .simpleAndTastyCardAdsBadge img {
@@ -332,7 +338,7 @@
        display: flex;
        justify-content: space-between;
        align-items: center;
-       margin: 8.93rem auto 0;
+       margin: clamp(4.375rem, 2.8542rem + 7.6042vw, 8.9375rem) auto 0;
    }
 
    .learnMoreFirstCol {
@@ -340,33 +346,33 @@
        transform: translateY(3.12rem);
        flex: 1;
        width: 100%;
-       max-width: 530px;
+       max-width: clamp(20rem, 15.625rem + 21.875vw, 33.125rem);
    }
 
    .learnMoreSecCol {
        flex: 1;
        position: relative;
        width: 100%;
-       max-width: 710px;
-       height: 37.31rem;
+       max-width: clamp(20rem, 11.875rem + 40.625vw, 44.375rem);
+       height: clamp(22.5rem, 17.5625rem + 24.6875vw, 37.3125rem);
    }
 
    .learnMoreFirstCol h1 {
-       font-size: 3rem;
+       font-size: clamp(1.625rem, 1.1667rem + 2.2917vw, 3rem);
        font-weight: 600;
        line-height: 1.2;
-       margin-bottom: 1.5rem;
+       margin-bottom: clamp(1rem, 0.8333rem + 0.8333vw, 1.5rem);
    }
 
    .learnMoreFirstCol p {
        font-size: 1rem;
-       margin-bottom: 4.5rem;
+       margin-bottom: clamp(1.5rem, 0.5rem + 5vw, 4.5rem);
        color: rgba(0, 0, 0, 0.6);
    }
 
    .learnMoreFirstCol button {
-       padding: 1.31rem 3.31rem;
-       font-size: 0.87rem;
+       padding: clamp(1rem, 0.8958rem + 0.5208vw, 1.3125rem) clamp(3rem, 2.8958rem + 0.5208vw, 3.3125rem);
+       font-size: clamp(0.875rem, 1.0417rem + -0.2083vw, 1rem);
        font-weight: 600;
        background: black;
        color: white;
@@ -375,7 +381,7 @@
 
    .learnMoreSecCol img {
        position: absolute;
-       right: 3.12rem;
+       right: clamp(0rem, -1.0417rem + 5.2083vw, 3.125rem);
        z-index: 2;
        height: 100%;
    }
@@ -385,10 +391,11 @@
        position: absolute;
        bottom: 0;
        right: 0;
-       width: 40.68rem;
-       height: 31.25rem;
+       width: clamp(20rem, 13.125rem + 34.375vw, 40.625rem);
+       height: clamp(20rem, 16.25rem + 18.75vw, 31.25rem);
        border-radius: 30px;
        z-index: 1;
+
    }
 
    /* Check Out Container */
@@ -396,15 +403,15 @@
        background: linear-gradient(180deg, white 0%, #E7F9FD 100%);
        text-align: center;
        width: 100vw;
-       margin-top: 10rem;
+       margin-top: clamp(5rem, 3.3333rem + 8.3333vw, 10rem);
        margin-left: calc(-50vw + 50%);
-       padding: 5rem calc(50vw - 40rem);
+       padding: clamp(2.5rem, 1.6667rem + 4.1667vw, 5rem) calc(50vw - 40rem);
    }
 
    .checkOutContainer h1 {
-       font-size: 3rem;
+       font-size: clamp(1.625rem, 1.1667rem + 2.2917vw, 3rem);
        font-weight: 600;
-       margin-bottom: 1.5rem;
+       margin-bottom: clamp(1rem, 0.8333rem + 0.8333vw, 1.5rem);
    }
 
    .checkOutContainer p {
@@ -413,7 +420,7 @@
    }
 
    .checkOutInstagram {
-       margin: 5rem 0;
+       margin: clamp(2.5rem, 1.6667rem + 4.1667vw, 5rem) 0;
        display: flex;
        justify-content: space-between;
        align-items: center;
@@ -421,26 +428,26 @@
 
    .checkOutInstagram img {
        width: 100%;
-       max-width: 18.12rem;
+       max-width: clamp(9.375rem, 6.25rem + 15.625vw, 18.75rem);
    }
 
    .visitInstagramBtn {
        display: inline-flex;
        justify-content: center;
        align-items: center;
-       gap: 16px;
-       font-size: 0.87rem;
+       gap: clamp(0.5rem, 0.3333rem + 0.8333vw, 1rem);
+       font-size: clamp(0.875rem, 1.0417rem + -0.2083vw, 1rem);
        font-weight: 600;
        color: white;
        cursor: pointer;
        background: black;
        border-radius: 16px;
-       padding: 1.18rem 2rem;
+       padding: clamp(1rem, 0.9583rem + 0.2083vw, 1.125rem) clamp(1.5rem, 1.3333rem + 0.8333vw, 2rem);
    }
 
    .visitInstagramBtn svg {
        fill: white;
-       width: 1.37rem;
+       width: 1.5rem;
    }
 
    /* Delicious Recipe Container */
@@ -581,11 +588,11 @@
 
        .categoriesTopic {
            display: contents;
-           
+
        }
 
        .categoriesTopic h1 {
-        text-align: center;
+           text-align: center;
            order: 1;
            margin-bottom: 1rem;
        }
@@ -622,5 +629,123 @@
            cursor: none;
        }
 
+       /* Simple and tasty recipes */
+       .simpleAndTastyCardListOne,
+       .simpleAndTastyCardListTwo,
+       .simpleAndTastyCardListThree {
+           display: flex;
+           flex-direction: column;
+       }
 
+       .simpleAndTastyCardListOne,
+       .simpleAndTastyCardListTwo {
+           margin-bottom: 0;
+       }
+
+       .simpleAndTastyCardListOne .verticalCard,
+       .simpleAndTastyCardListTwo .verticalCard,
+       .simpleAndTastyCardListThree .verticalCard {
+           margin: 1rem auto;
+       }
+
+       .simpleAndTastyCardListTwo .simpleAndTastyCardAdsBadge {
+           display: none;
+       }
+
+       /* Learn More Container */
+       .learnMoreContainer {
+           display: grid;
+           grid-template-columns: 1fr;
+       }
+
+       .learnMoreFirstCol {
+           order: 2;
+           transform: none;
+           text-align: center;
+       }
+
+       .learnMoreSecCol {
+           margin-bottom: 1rem;
+       }
+
+       .learnMoreSecCol {
+           order: 1;
+       }
+
+       .learnMoreSecColBackGround {
+           border-radius: 0px;
+       }
+
+       /* Check Out Container */
+       .checkOutInstagram {
+           display: grid;
+           grid-template-columns: repeat(2, 1fr);
+           row-gap: 1rem;
+       }
+
+       .checkOutContainer h1 {
+           text-wrap: balance;
+           line-height: 1.2;
+       }
+
+       .checkOutInstagram img {
+           justify-self: center;
+       }
+
+       .visitInstagramBtn {
+           cursor: none;
+       }
+
+       /* Delicious Recipe Container */
+       .deliRecipeContainer {
+           margin-top: 160px;
+       }
+
+       .deliRecipeTopic {
+           display: flex;
+           justify-content: space-between;
+           align-items: center;
+           margin-bottom: 80px;
+           gap: 153px;
+       }
+
+       .deliRecipeTopic h1 {
+           font-size: 48px;
+           font-weight: 500;
+           line-height: 1.1;
+       }
+
+       .deliRecipeTopic p {
+           font-size: 16px;
+           color: rgba(0, 0, 0, 0.6);
+
+       }
+
+       .deliRecipeBodyFirstRow,
+       .deliRecipeBodySecRow {
+           display: flex;
+           justify-content: space-between;
+           align-items: center;
+       }
+
+       .deliRecipeBodyFirstRow {
+           margin-bottom: 40px;
+       }
+
+       .deliRecipeBodyFirstRow .verticalCard,
+       .deliRecipeBodySecRow .verticalCard {
+           --card-width: 290px;
+           --card-height: 316px;
+           --card-padding: 0px;
+           --card-image-height: 200px;
+           --card-bg: white;
+           --card-border-radius: 0px;
+           --card-title-font-size: 18px;
+           --card-content-padding: 16px 0 0;
+           --card-info-font-size: 14px;
+           --card-info-padding: 24px 0 0;
+           --card-heart-size: 48px;
+           --card-heart-svg-size: 24px;
+           --card-info-icon-size: 24px;
+       }
    }
