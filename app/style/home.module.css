@@ -1,5 +1,5 @@
    .homeContainer {
-       margin: 2.5rem auto 0;
+       margin: 2.5rem auto clamp(5rem, 3.3333rem + 8.3333vw, 10rem);
        max-width: clamp(320px, 90%, 1280px);
    }
 
@@ -452,21 +452,21 @@
 
    /* Delicious Recipe Container */
    .deliRecipeContainer {
-       margin-top: 160px;
+       margin-top: clamp(5rem, 3.3333rem + 8.3333vw, 10rem);
    }
 
    .deliRecipeTopic {
        display: flex;
        justify-content: space-between;
        align-items: center;
-       margin-bottom: 80px;
-       gap: 153px;
+       margin-bottom: clamp(2.5rem, 1.6667rem + 4.1667vw, 5rem);
+       gap: clamp(2.375rem, -0.0208rem + 11.9792vw, 9.5625rem);
    }
 
    .deliRecipeTopic h1 {
-       font-size: 48px;
+       font-size: clamp(1.625rem, 1.1667rem + 2.2917vw, 3rem);
        font-weight: 500;
-       line-height: 1.1;
+       line-height: 1.2;
    }
 
    .deliRecipeTopic p {
@@ -488,25 +488,37 @@
 
    .deliRecipeBodyFirstRow .verticalCard,
    .deliRecipeBodySecRow .verticalCard {
-       --card-width: 290px;
-       --card-height: 316px;
+       --card-width: clamp(18.125rem, 18.9583rem + -1.0417vw, 18.75rem);
+       --card-height: clamp(17.9375rem, 17.3333rem + 3.0208vw, 19.75rem);
        --card-padding: 0px;
-       --card-image-height: 200px;
+       --card-image-height: clamp(11.25rem, 10.8333rem + 2.0833vw, 12.5rem);
+       --card-image-border-radius: 20px;
        --card-bg: white;
        --card-border-radius: 0px;
        --card-title-font-size: 18px;
+       --card-title-font-weight: 600;
        --card-content-padding: 16px 0 0;
        --card-info-font-size: 14px;
        --card-info-padding: 24px 0 0;
-       --card-heart-size: 48px;
-       --card-heart-svg-size: 24px;
+       --card-heart-size: clamp(2.5rem, 2.3333rem + 0.8333vw, 3rem);
+       --card-heart-svg-size: clamp(1.25rem, 1.1667rem + 0.4167vw, 1.5rem);
+       --card-heart-position: clamp(0.5rem, 0.3333rem + 0.8333vw, 1rem);
        --card-info-icon-size: 24px;
    }
 
    /* Inbox Container */
-   .inbox_Container {
-       margin-top: 160px;
-       margin-bottom: 180px;
+   .inbox_Container .inBoxComp {
+       --inbox-border-radius: 60px;
+       --inbox-padding: 80px 0;
+       --inbox-topic-font-size: clamp(1.625rem, 1.1667rem + 2.2917vw, 3rem);
+       --inbox-title-font-size: 16px;
+       --inbox-emailbox-width: clamp(18.75rem, 15rem + 18.75vw, 30rem);
+       --inbox-bgimg: clamp(12.5rem, 9.375rem + 15.625vw, 21.875rem);
+       --inbox-bgimg-border-radius: 60px;
+       --inbox-body-z-index: 2;
+       --inbox-body-margin: clamp(2rem, 1.3333rem + 3.3333vw, 4rem) auto 0;
+       --inbox-emailbox-direction: row;
+       margin-top: clamp(5rem, 3.3333rem + 8.3333vw, 10rem);
    }
 
    @media screen and (min-width: 1281px) and (max-width: 1440px) {}
@@ -517,13 +529,12 @@
 
    @media screen and (min-width: 320px) and (max-width: 480px) {
        .homeContainer {
-           margin: 0 auto;
+           margin-top: 0;
        }
 
        /* Carousel Container */
        .carouselWrapper {
            width: 100%;
-           /* margin-left: calc(-50vw + 50%); */
        }
 
        .carouselContainer {
@@ -697,55 +708,36 @@
        }
 
        /* Delicious Recipe Container */
-       .deliRecipeContainer {
-           margin-top: 160px;
-       }
-
        .deliRecipeTopic {
-           display: flex;
-           justify-content: space-between;
-           align-items: center;
-           margin-bottom: 80px;
-           gap: 153px;
-       }
-
-       .deliRecipeTopic h1 {
-           font-size: 48px;
-           font-weight: 500;
-           line-height: 1.1;
-       }
-
-       .deliRecipeTopic p {
-           font-size: 16px;
-           color: rgba(0, 0, 0, 0.6);
-
+           justify-content: center;
+           flex-direction: column;
+           text-align: center;
+           margin-inline: 0.5rem;
        }
 
        .deliRecipeBodyFirstRow,
        .deliRecipeBodySecRow {
-           display: flex;
-           justify-content: space-between;
-           align-items: center;
+           flex-direction: column;
        }
 
        .deliRecipeBodyFirstRow {
-           margin-bottom: 40px;
+           margin-bottom: 0;
        }
 
        .deliRecipeBodyFirstRow .verticalCard,
        .deliRecipeBodySecRow .verticalCard {
-           --card-width: 290px;
-           --card-height: 316px;
-           --card-padding: 0px;
-           --card-image-height: 200px;
-           --card-bg: white;
-           --card-border-radius: 0px;
-           --card-title-font-size: 18px;
-           --card-content-padding: 16px 0 0;
-           --card-info-font-size: 14px;
-           --card-info-padding: 24px 0 0;
-           --card-heart-size: 48px;
-           --card-heart-svg-size: 24px;
-           --card-info-icon-size: 24px;
+           margin-bottom: 1.5rem;
+       }
+
+       /* Inbox Container */
+       .inbox_Container {
+           margin-top: 160px;
+       }
+
+       /* Inbox Container */
+       .inbox_Container .inBoxComp {
+           --inbox-border-radius: 0;
+           --inbox-emailbox-direction: column;
+           --inbox-bgimg-border-radius: 0;
        }
    }

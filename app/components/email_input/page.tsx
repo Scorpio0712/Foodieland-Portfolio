@@ -7,6 +7,7 @@ import style from "./email_input.module.css";
 interface EmailInputProps {
   placeholder?: string;
   buttonText?: string;
+  className?: string;
   onSubmit?: (email: string) => void;
 }
 
@@ -14,6 +15,7 @@ function EmailInput({
   placeholder = "Your email address...",
   buttonText = "Subscribe",
   onSubmit,
+  className
 }: EmailInputProps) {
   const [email, setEmail] = useState("");
   const [error, setError] = useState("");
@@ -36,7 +38,7 @@ function EmailInput({
   };
 
   return (
-    <section className={style.inBoxContainer}>
+    <section className={`${style.inBoxContainer} ${className || ""}`}>
       <Image
         className={style.inBoxBackGroundLeft}
         src="/images/design/inBox-design-image.png"

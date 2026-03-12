@@ -84,14 +84,14 @@
   justify-content: center;
   align-items: center;
   gap: 8px;
-  font-size: var(--card-info-font-size, 14px);
+  font-size: var(--card-info-font-size);
   color: var(--card-info-color, rgba(0, 0, 0, 0.6));
 }
 
 .cardInfoTypeOne svg,
 .cardInfoTypeTwo svg {
-  width: var(--card-info-icon-size, 20px);
-  height: var(--card-info-icon-size, 20px);
+  width: var(--card-info-icon-size);
+  height: var(--card-info-icon-size);
 }
 
 

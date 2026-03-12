@@ -474,6 +474,7 @@ export default function Home() {
           placeholder="Your email address..."
           buttonText="Subscribe"
           onSubmit={handleEmailSubmit}
+          className={style.inBoxComp}
         />
       </section>
     </main>

@@ -1,23 +1,25 @@
 .inBoxContainer {
     position: relative;
     background: #E7F9FD;
-    border-radius: 60px;
-    padding: 80px 0;
+    border-radius: var(--inbox-border-radius);
+    padding: var(--inbox-padding);
     display: flex;
     flex-direction: column;
 }
 
 .inBoxBackGroundLeft {
-    border-bottom-left-radius: 60px;
+    border-bottom-left-radius: var(--inbox-bgimg-border-radius);
     position: absolute;
+    width: var(--inbox-bgimg);
     left: 0;
     bottom: 0;
     z-index: 1;
 }
 
 .inBoxBackGroundRight {
-    border-bottom-right-radius: 60px;
+    border-bottom-right-radius: var(--inbox-bgimg-border-radius);
     position: absolute;
+    width: var(--inbox-bgimg);
     right: 0;
     bottom: 0;
     z-index: 1;
@@ -25,38 +27,41 @@
 
 .inBoxTopic {
     text-align: center;
-    padding: 80px auto;
 }
 
 .inBoxTopic h1 {
-    font-size: 48px;
+    font-size: var(--inbox-topic-font-size);
     font-weight: 600;
     margin-bottom: 24px;
 }
 
 .inBoxTopic p {
-    font-size: 16px;
+    font-size: var(--inbox-title-font-size);
     color: rgba(0, 0, 0, 0.6);
 }
 
 .inBoxBody {
-    margin: 64px auto 0;
+    margin: var(--inbox-body-margin);
+    display: flex;
+    flex-direction: var(--inbox-body-direction);
+    position: relative;
+    z-index: var(--inbox-body-z-index);
 }
 
 .emailContainer {
     display: flex;
-    flex-direction: column;
     align-items: center;
     width: 100%;
 }
 
 .emailBox {
     display: flex;
+    flex-direction: var(--inbox-emailbox-direction);
     align-items: center;
     background-color: white;
     border-radius: 24px;
     padding: 6px;
-    width: 480px;
+    width: var(--inbox-emailbox-width);
     max-width: 100%;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
@@ -95,26 +100,4 @@
     color: #ef4444;
     font-size: 14px;
     margin-top: 8px;
-}
-
-@media screen and (max-width: 1280px) {
-    .inBoxBackGroundLeft {
-        width: 280px;
-    }
-
-    .inBoxBackGroundRight {
-        width: 280px;
-    }
-
-    .inBoxTopic h1 {
-        font-size: 44px;
-    }
-
-    .inBoxTopic p {
-        font-size: 14px;
-    }
-
-    .emailBox {
-        width: 430px;
-    }
 }
