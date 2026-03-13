@@ -85,7 +85,7 @@
   align-items: center;
   gap: 8px;
   font-size: var(--card-info-font-size);
-  color: var(--card-info-color, rgba(0, 0, 0, 0.6));
+  color: rgba(0, 0, 0, 0.6);
 }
 
 .cardInfoTypeOne svg,

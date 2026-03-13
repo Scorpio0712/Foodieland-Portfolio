@@ -107,11 +107,11 @@
 
     .headerMain {
         position: relative;
+        margin-inline: 0.5rem;
     }
 
     .nav {
         height: 80px;
-        max-width: 20rem;
         justify-content: center;
     }
 

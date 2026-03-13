@@ -2,33 +2,33 @@
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-    max-width: 1280px;
+    max-width: clamp(20rem, 0rem + 100vw, 80rem);
 }
 
 .navContainer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 48px;
+    margin-bottom: clamp(1.5rem, 1rem + 2.5vw, 3rem);
 }
 
 .navFirstCol img {
-    margin-bottom: 16px;
+    margin-bottom: 1rem;
 }
 
 .navFirstCol p {
-    font-size: 14px;
+    font-size: clamp(0.875rem, 1.0417rem + -0.2083vw, 1rem);
 }
 
 .navSecCol ul {
     display: flex;
     text-decoration: none;
-    gap: 48px;
+    gap: clamp(1.5rem, 1rem + 2.5vw, 3rem);
 }
 
 .navSecCol ul li {
     font-weight: 500;
-    font-size: 14px;
+    font-size: clamp(0.875rem, 1.0417rem + -0.2083vw, 1rem);
     transition: all 0.3s ease;
 }
 
@@ -57,7 +57,7 @@
 
 .navSocialList {
     display: flex;
-    gap: 32px;
+    gap: clamp(1.5rem, 1.3333rem + 0.8333vw, 2rem);
 }
 
 .facebookIcon,
@@ -75,3 +75,64 @@
     height: 18px;
 }
 
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+    .navContainer {
+        display: grid;
+        align-items: center;
+    }
+
+    .navFirstCol {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .navFirstCol p {
+        margin-bottom: 0.5rem;
+    }
+
+    .navSecCol ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        text-decoration: underline;
+        justify-self: center;
+        gap: 1rem 3rem;
+    }
+
+    .navSecCol ul li {
+        transition: none;
+        text-align: center;
+    }
+
+    .navSecCol ul li:hover {
+        transform: none;
+    }
+
+    .copyRightContainer {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: unset;
+        margin-bottom: 0.5rem;
+    }
+
+    .footerDetail {
+        left: 0;
+        transform: translateX(0);
+    }
+
+    .facebookIcon,
+    .twitterIcon,
+    .instagramIcon {
+        padding: 0;
+        width: 24px;
+    }
+
+    .facebookIcon svg,
+    .twitterIcon svg,
+    .instagramIcon svg {
+        width: 24px;
+        height: 24px;
+    }
+}

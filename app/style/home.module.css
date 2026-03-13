@@ -318,6 +318,7 @@
        --card-title-font-weight: 600;
        --card-info-font-size: 1rem;
        --card-info-padding: clamp(1rem, 0.8333rem + 0.8333vw, 1.5rem) 0 clamp(0.5rem, 0.3333rem + 0.8333vw, 1rem);
+       --card-info-icon-size: 24px;
        --card-heart-size: clamp(2.5rem, 2.3333rem + 0.8333vw, 3rem);
        --card-heart-svg-size: clamp(1rem, 0.8333rem + 0.8333vw, 1.5rem);
    }
@@ -525,7 +526,220 @@
 
    @media screen and (min-width: 769px) and (max-width: 1024px) {}
 
-   @media screen and (min-width: 481px) and (max-width: 768px) {}
+   @media screen and (min-width: 481px) and (max-width: 768px) {
+    .homeContainer {
+           margin-top: 0;
+       }
+
+       /* Carousel Container */
+       .carouselWrapper {
+           width: 100vw;
+       }
+
+       .carouselContainer {
+           border-radius: 0;
+           box-shadow: none;
+       }
+
+       .featureRecipeContainer {
+           flex-direction: column-reverse;
+           align-items: normal;
+       }
+
+       .recipesBadge {
+           top: unset;
+           left: unset;
+           bottom: 1rem;
+           right: 1rem;
+       }
+
+       .recipesBadge img {
+           width: 6.25rem;
+       }
+
+       .featureRecipeFirstCol {
+           max-width: 100%;
+       }
+
+       .featureRecipeSecCol {
+           max-width: 100%;
+       }
+
+       .recipeImageContainer {
+           border-radius: 0;
+       }
+
+       .featureRecipeBlog {
+           display: flex;
+           flex-direction: column;
+           gap: 1rem;
+       }
+
+       .featureRecipeProfile {
+           display: flex;
+           flex-direction: column;
+           text-align: center;
+       }
+
+       .viewRCButton {
+           cursor: none;
+           transition: none;
+       }
+
+       .viewRCButton:hover {
+           transform: none;
+       }
+
+       /* Categories Container */
+       .categoriesContainer {
+           display: flex;
+           flex-direction: column;
+       }
+
+       .categoriesTopic {
+           display: contents;
+
+       }
+
+       .categoriesTopic h1 {
+           text-align: center;
+           order: 1;
+           margin-bottom: 1rem;
+       }
+
+       .categoriesList {
+           order: 2;
+       }
+
+       .categoriesTopic button {
+           order: 3;
+           align-self: center;
+           max-width: max-content;
+           margin-top: 1rem;
+           transition: none;
+       }
+
+       .categoriesTopic button {
+           transform: none;
+       }
+
+       .categoriesList ul {
+           display: grid;
+           grid-template-columns: 1fr 1fr;
+           gap: 1rem;
+           margin: 0.5rem;
+       }
+
+       .categoriesBreakfast,
+       .categoriesVegan,
+       .categoriesMeat,
+       .categoriesDessert,
+       .categoriesLunch,
+       .categoriesChocolate {
+           cursor: none;
+       }
+
+       /* Simple and tasty recipes */
+       .simpleAndTastyCardListOne,
+       .simpleAndTastyCardListTwo,
+       .simpleAndTastyCardListThree {
+           display: flex;
+           flex-direction: column;
+       }
+
+       .simpleAndTastyCardListOne,
+       .simpleAndTastyCardListTwo {
+           margin-bottom: 0;
+       }
+
+       .simpleAndTastyCardListOne .verticalCard,
+       .simpleAndTastyCardListTwo .verticalCard,
+       .simpleAndTastyCardListThree .verticalCard {
+           margin: 1rem auto;
+       }
+
+       .simpleAndTastyCardListTwo .simpleAndTastyCardAdsBadge {
+           display: none;
+       }
+
+       /* Learn More Container */
+       .learnMoreContainer {
+           display: grid;
+           grid-template-columns: 1fr;
+       }
+
+       .learnMoreFirstCol {
+           order: 2;
+           transform: none;
+           text-align: center;
+       }
+
+       .learnMoreSecCol {
+           margin-bottom: 1rem;
+       }
+
+       .learnMoreSecCol {
+           order: 1;
+       }
+
+       .learnMoreSecColBackGround {
+           border-radius: 0px;
+       }
+
+       /* Check Out Container */
+       .checkOutInstagram {
+           display: grid;
+           grid-template-columns: repeat(2, 1fr);
+           row-gap: 1rem;
+       }
+
+       .checkOutContainer h1 {
+           text-wrap: balance;
+           line-height: 1.2;
+       }
+
+       .checkOutInstagram img {
+           justify-self: center;
+       }
+
+       .visitInstagramBtn {
+           cursor: none;
+       }
+
+       /* Delicious Recipe Container */
+       .deliRecipeTopic {
+           justify-content: center;
+           flex-direction: column;
+           text-align: center;
+           margin-inline: 0.5rem;
+       }
+
+       .deliRecipeBodyFirstRow,
+       .deliRecipeBodySecRow {
+           flex-direction: column;
+       }
+
+       .deliRecipeBodyFirstRow {
+           margin-bottom: 0;
+       }
+
+       .deliRecipeBodyFirstRow .verticalCard,
+       .deliRecipeBodySecRow .verticalCard {
+           margin-bottom: 1.5rem;
+       }
+
+       /* Inbox Container */
+       .inbox_Container {
+           margin-top: 160px;
+       }
+
+       /* Inbox Container */
+       .inbox_Container .inBoxComp {
+           --inbox-border-radius: 0;
+           --inbox-emailbox-direction: column;
+           --inbox-bgimg-border-radius: 0;
+       }
+   }
 
    @media screen and (min-width: 320px) and (max-width: 480px) {
        .homeContainer {
@@ -534,7 +748,8 @@
 
        /* Carousel Container */
        .carouselWrapper {
-           width: 100%;
+           width: 100vw;
+           margin-left: calc((100% - 100vw) / 2);
        }
 
        .carouselContainer {
