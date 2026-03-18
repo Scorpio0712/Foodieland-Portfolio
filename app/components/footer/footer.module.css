@@ -77,19 +77,18 @@
 
 @media only screen and (min-width: 320px) and (max-width: 480px) {
     .navContainer {
-        display: grid;
-        align-items: center;
+        display: flex;
+        flex-direction: column;
     }
 
     .navFirstCol {
         display: flex;
         flex-direction: column;
         align-items: center;
-        text-align: center;
     }
 
     .navFirstCol p {
-        margin-bottom: 0.5rem;
+        margin-bottom: 1rem;
     }
 
     .navSecCol ul {
