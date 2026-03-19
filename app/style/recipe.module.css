@@ -127,7 +127,8 @@
     margin-top: 1.5rem;
 }
 
-.rd_PrintBtn div, .rd_ShareBtn div {
+.rd_PrintBtn div,
+.rd_ShareBtn div {
     background: #E7FAFE;
     border-radius: 50%;
     display: flex;
@@ -139,12 +140,14 @@
     cursor: pointer;
 }
 
-.rd_PrintBtn div svg, .rd_ShareBtn div svg {
+.rd_PrintBtn div svg,
+.rd_ShareBtn div svg {
     width: 24px;
     height: 24px;
 }
 
-.rd_PrintBtn p, .rd_ShareBtn p {
+.rd_PrintBtn p,
+.rd_ShareBtn p {
     font-size: clamp(0.75rem, 1.0833rem + -0.4167vw, 1rem);
     font-weight: 500;
 }
@@ -180,7 +183,6 @@
     margin-bottom: 1.5rem;
 }
 
-
 .nutritionInfo_Calories,
 .nutritionInfo_TotalFat,
 .nutritionInfo_Protein,
@@ -198,7 +200,7 @@
 .nutritionInfo_ProteinTopic,
 .nutritionInfo_CarbohydrateTopic,
 .nutritionInfo_CholesterolTopic {
-    font-size: 18px;
+    font-size: clamp(1rem, 0.9583rem + 0.2083vw, 1.125rem);
     font-weight: 500;
     color: rgba(0, 0, 0, 0.6);
 }
@@ -208,28 +210,28 @@
 .nutritionInfo_ProteinDetail,
 .nutritionInfo_CarbohydrateDetail,
 .nutritionInfo_CholesterolDetail {
-    font-size: 18px;
+    font-size: clamp(1rem, 0.9583rem + 0.2083vw, 1.125rem);
     font-weight: 500;
 }
 
 .nutritionInfo_DetailDeScript {
-    font-size: 16px;
+    font-size: 1rem;
     color: rgba(0, 0, 0, 0.6);
     margin-top: auto;
     text-align: center;
 }
 
 .rd_BodyDetail {
-    margin-top: 80px;
-    font-size: 16px;
+    margin-top: clamp(2.5rem, 1.6667rem + 4.1667vw, 5rem);
+    font-size: 1rem;
     color: rgba(0, 0, 0, 0.6);
 }
 
 /* Recipe Detail Section 2 */
 .rd_SectionTwo {
-    margin-top: 80px;
+    margin-top: 5rem;
     display: flex;
-    gap: 40px;
+    gap: 2.5rem;
 }
 
 .rd_Ingredients {
@@ -238,21 +240,21 @@
 }
 
 .rd_Ingredients h1 {
-    font-size: 36px;
+    font-size: clamp(1.5rem, 1.25rem + 1.25vw, 2.25rem);
     font-weight: 600;
 }
 
 .rd_ForMainDish {
-    margin-top: 48px;
+    margin-top: clamp(1.5rem, 1rem + 2.5vw, 3rem);
 }
 
 .rd_ForMainDish h1,
 .rd_ForTheSauce h1 {
-    font-size: 24px;
+    font-size: clamp(1rem, 0.8333rem + 0.8333vw, 1.5rem);
 }
 
 .rd_ForTheSauce {
-    margin-top: 64px;
+    margin-top: clamp(1.5rem, 0.6667rem + 4.1667vw, 4rem);
     flex: 1;
     max-width: 840px;
 }
@@ -263,12 +265,12 @@
 }
 
 .rd_OtherRecipe h1 {
-    font-size: 32px;
+    font-size: clamp(1.5rem, 1.25rem + 1.25vw, 2.25rem);
     font-weight: 600;
 }
 
 .rd_OtherRecipeList {
-    margin: 32px 0 80px;
+    margin: clamp(1rem, 0.6667rem + 1.6667vw, 2rem) 0 clamp(2.5rem, 1.6667rem + 4.1667vw, 5rem);
 }
 
 .rd_OtherRecipe .rd_OtherRecipeAdsBadge {
@@ -371,7 +373,7 @@
 
     .rd_Author {
         display: grid;
-        grid-template-columns: 2fr 1fr ;
+        grid-template-columns: 2fr 1fr;
     }
 
     .rd_AuthorName {
@@ -400,7 +402,7 @@
         gap: 0.5rem;
     }
 
-    .rd_InfoToggleBtn svg{
+    .rd_InfoToggleBtn svg {
         width: 1.25rem;
     }
 
@@ -430,12 +432,16 @@
         gap: 1rem;
     }
 
-    .rd_PrintBtn div, .rd_ShareBtn div {
+    .rd_PrintBtn div,
+    .rd_ShareBtn div {
         cursor: none;
     }
 
     /* Recipe Detail Body */
     .rd_BodyHeader {
+        width: 100vw;
+        margin-left: 50%;
+        transform: translateX(-50%);
         flex-direction: column;
         gap: 0;
     }
@@ -456,87 +462,49 @@
         text-align: center;
     }
 
-    .nutritionInfo_CaloriesTopic,
-    .nutritionInfo_TotalFatTopic,
-    .nutritionInfo_ProteinTopic,
-    .nutritionInfo_CarbohydrateTopic,
-    .nutritionInfo_CholesterolTopic {
-        font-size: 18px;
-        font-weight: 500;
-        color: rgba(0, 0, 0, 0.6);
-    }
-
-    .nutritionInfo_CaloriesDetail,
-    .nutritionInfo_TotalFatDetail,
-    .nutritionInfo_ProteinDetail,
-    .nutritionInfo_CarbohydrateDetail,
-    .nutritionInfo_CholesterolDetail {
-        font-size: 18px;
-        font-weight: 500;
-    }
-
-    .nutritionInfo_DetailDeScript {
-        font-size: 16px;
-        color: rgba(0, 0, 0, 0.6);
-        margin-top: auto;
-        text-align: center;
-    }
-
     .rd_BodyDetail {
-        margin-top: 80px;
-        font-size: 16px;
-        color: rgba(0, 0, 0, 0.6);
+        text-align: center;
     }
 
     /* Recipe Detail Section 2 */
     .rd_SectionTwo {
-        margin-top: 80px;
-        display: flex;
-        gap: 40px;
+        flex-direction: column;
     }
 
     .rd_Ingredients {
         flex: 1;
-        max-width: 840px;
+        text-align: center;
     }
 
     .rd_Ingredients h1 {
-        font-size: 36px;
         font-weight: 600;
     }
 
-    .rd_ForMainDish {
-        margin-top: 48px;
-    }
-
-    .rd_ForMainDish h1,
-    .rd_ForTheSauce h1 {
-        font-size: 24px;
-    }
-
-    .rd_ForTheSauce {
-        margin-top: 64px;
-        flex: 1;
-        max-width: 840px;
+    .rd_ForMainDishDetail .rd_CircleCheckBoxComp,
+    .rd_ForTheSauceDetail .rd_CircleCheckBoxComp {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 90%;
+        margin: 0 auto;
     }
 
     .rd_OtherRecipe {
-        flex: 1;
-        max-width: 400px;
+        max-width: 90%;
+        justify-content: center;
+        margin: 0 auto;
     }
 
     .rd_OtherRecipe h1 {
-        font-size: 32px;
-        font-weight: 600;
-    }
-
-    .rd_OtherRecipeList {
-        margin: 32px 0 80px;
+        text-align: center;
     }
 
     .rd_OtherRecipe .rd_OtherRecipeAdsBadge {
-        width: 400px;
-        height: 434px;
+        width: 100vw;
+        margin-left: 50%;
+        transform: translateX(-50%);
+        height: 374px;
     }
 
     /* Recipe Detail Section Three */

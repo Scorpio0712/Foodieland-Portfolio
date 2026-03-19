@@ -79,7 +79,8 @@ function RecipeDetailPage() {
                 <button
                   className={style.rd_InfoToggleBtn}
                   onClick={() => setShowInfo(!showInfo)}
-                >Info
+                >
+                  Info
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 640 640"
@@ -242,6 +243,7 @@ function RecipeDetailPage() {
             <h1>For main dish</h1>
             <div className={style.rd_ForMainDishDetail}>
               <CircleCheckBoxComp
+                className={style.rd_CircleCheckBoxComp}
                 label="Lorem ipsum dolor sit amet."
                 id="ingredientOne"
                 checked={ingredients.ingredientOne}
@@ -249,6 +251,7 @@ function RecipeDetailPage() {
               />
 
               <CircleCheckBoxComp
+                className={style.rd_CircleCheckBoxComp}
                 label="Lorem ipsum dolor sit amet."
                 id="ingredientTwo"
                 checked={ingredients.ingredientTwo}
@@ -256,6 +259,7 @@ function RecipeDetailPage() {
               />
 
               <CircleCheckBoxComp
+                className={style.rd_CircleCheckBoxComp}
                 label="Lorem ipsum dolor sit amet."
                 id="ingredientThree"
                 checked={ingredients.ingredientThree}
@@ -263,6 +267,7 @@ function RecipeDetailPage() {
               />
 
               <CircleCheckBoxComp
+                className={style.rd_CircleCheckBoxComp}
                 label="Lorem ipsum dolor sit amet."
                 id="ingredientFour"
                 checked={ingredients.ingredientFour}
@@ -270,6 +275,7 @@ function RecipeDetailPage() {
               />
 
               <CircleCheckBoxComp
+                className={style.rd_CircleCheckBoxComp}
                 label="Lorem ipsum dolor sit amet."
                 id="ingredientFive"
                 checked={ingredients.ingredientFive}
@@ -281,18 +287,21 @@ function RecipeDetailPage() {
             <h1>For the sauce</h1>
             <div className={style.rd_ForTheSauceDetail}>
               <CircleCheckBoxComp
+                className={style.rd_CircleCheckBoxComp}
                 label="Lorem ipsum dolor sit amet."
                 id="sauceOne"
                 checked={sauces.sauceOne}
                 onChange={handleSaucesChange("sauceOne")}
               />
               <CircleCheckBoxComp
+                className={style.rd_CircleCheckBoxComp}
                 label="Lorem ipsum dolor sit amet."
                 id="sauceTwo"
                 checked={sauces.sauceTwo}
                 onChange={handleSaucesChange("sauceTwo")}
               />
               <CircleCheckBoxComp
+                className={style.rd_CircleCheckBoxComp}
                 label="Lorem ipsum dolor sit amet."
                 id="sauceThree"
                 checked={sauces.sauceThree}
