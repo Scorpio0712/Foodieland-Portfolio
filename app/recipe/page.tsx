@@ -19,18 +19,6 @@ function RecipeDetailPage() {
     ingredientFive: false,
   });
 
-  const [sauces, setSauces] = useState({
-    sauceOne: false,
-    sauceTwo: false,
-    sauceThree: false,
-  });
-
-  const [directions, setDirections] = useState({
-    directionOne: false,
-    directionTwo: false,
-    directionThree: false,
-  });
-
   const handleIngredientsChange =
     (name: string) => (e: React.ChangeEvent<HTMLInputElement>) => {
       setIngredients((prev) => ({
@@ -38,6 +26,12 @@ function RecipeDetailPage() {
         [name]: e.target.checked,
       }));
     };
+
+  const [sauces, setSauces] = useState({
+    sauceOne: false,
+    sauceTwo: false,
+    sauceThree: false,
+  });
 
   const handleSaucesChange =
     (name: string) => (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -47,6 +41,12 @@ function RecipeDetailPage() {
       }));
     };
 
+  const [directions, setDirections] = useState({
+    directionOne: false,
+    directionTwo: false,
+    directionThree: false,
+  });
+
   const handleDirectionsChange =
     (name: string) => (e: React.ChangeEvent<HTMLInputElement>) => {
       setDirections((prev) => ({
@@ -54,6 +54,19 @@ function RecipeDetailPage() {
         [name]: e.target.checked,
       }));
     };
+
+  const [openDirections, setOpenDirections] = useState({
+    directionsOne: false,
+    directionsTwo: false,
+    directionsThree: false,
+  });
+
+  const toggleDirection = (name: string) => {
+    setOpenDirections((prev) => ({
+      ...prev,
+      [name]: !prev[name as keyof typeof prev],
+    }));
+  };
 
   return (
     <main className={style.rd_Container}>
@@ -341,14 +354,23 @@ function RecipeDetailPage() {
         <h1 className={style.rd_DirectionsTopic}>Directions</h1>
         <div className={style.rd_DirectionsList}>
           <div className={style.rd_DirectionsListOne}>
-            <CircleCheckBoxComp
-              className={style.checkBox_DirectionOne}
-              label="1. Lorem ipsum dolor sit amet."
-              id="directionOne"
-              checked={directions.directionOne}
-              onChange={handleDirectionsChange("directionOne")}
-            />
-            <div className={style.rd_DirectionsListOneDetail}>
+            {/* ห่อ header ด้วย button ที่ toggle */}
+            <button
+              className={style.rd_DirectionToggleBtn}
+              onClick={() => toggleDirection("directionsOne")}
+            >
+              <CircleCheckBoxComp
+                className={style.checkBox_DirectionOne}
+                label="1. Lorem ipsum dolor sit amet."
+                id="directionOne"
+                checked={directions.directionOne}
+                onChange={handleDirectionsChange("directionOne")}
+              />
+              <span className={style.rd_DirectionArrow}>Info {openDirections.directionsOne ? "▲" : "▼"}</span>
+            </button>
+            <div
+              className={`${style.rd_DirectionsListOneDetail} ${openDirections.directionsOne ? style.open : ""}`}
+            >
               <p>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima
                 debitis sit sed eius impedit quis esse omnis quasi illo, modi
@@ -374,6 +396,10 @@ function RecipeDetailPage() {
             </div>
           </div>
           <div className={style.rd_DirectionsListTwo}>
+            <button
+              className={style.rd_DirectionToggleBtn}
+              onClick={() => toggleDirection("directionsTwo")}
+            >
             <CircleCheckBoxComp
               className={style.checkBox_DirectionTwo}
               label="2. Lorem ipsum dolor sit amet."
@@ -381,7 +407,9 @@ function RecipeDetailPage() {
               checked={directions.directionTwo}
               onChange={handleDirectionsChange("directionTwo")}
             />
-            <div className={style.rd_DirectionsListTwoDetail}>
+            <span className={style.rd_DirectionArrow}>Info {openDirections.directionsTwo ? "▲" : "▼"}</span>
+            </button>
+            <div className={`${style.rd_DirectionsListTwoDetail} ${openDirections.directionsTwo ? style.open : ""}`}>
               <p>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima
                 debitis sit sed eius impedit quis esse omnis quasi illo, modi
@@ -393,6 +421,10 @@ function RecipeDetailPage() {
             </div>
           </div>
           <div className={style.rd_DirectionsListThree}>
+            <button
+              className={style.rd_DirectionToggleBtn}
+              onClick={() => toggleDirection("directionsThree")}
+            >
             <CircleCheckBoxComp
               className={style.checkBox_DirectionThree}
               label="3. Lorem ipsum dolor sit amet."
@@ -400,7 +432,9 @@ function RecipeDetailPage() {
               checked={directions.directionThree}
               onChange={handleDirectionsChange("directionThree")}
             />
-            <div className={style.rd_DirectionsListThreeDetail}>
+            <span className={style.rd_DirectionArrow}>Info {openDirections.directionsThree ? "▲" : "▼"}</span>
+            </button>
+            <div className={`${style.rd_DirectionsListThreeDetail} ${openDirections.directionsThree ? style.open : ""}`}>
               <p>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima
                 debitis sit sed eius impedit quis esse omnis quasi illo, modi
