@@ -1,10 +1,9 @@
 .blogList_Container {
-    margin: 0 auto;
-    max-width: 1280px;
+    margin: 2.5rem auto clamp(5rem, 3.3333rem + 8.3333vw, 10rem);
+       max-width: clamp(320px, 90%, 1280px);
 }
 
 .blogList_Header {
-    margin-top: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -12,16 +11,16 @@
 }
 
 .blogList_Header h1 {
-    font-size: 64px;
+    font-size: clamp(1.5rem, 0.5217rem + 4.3478vw, 4rem);
     font-weight: 600;
-    margin-bottom: 24px;
+    margin-bottom: clamp(1rem, 0.8043rem + 0.8696vw, 1.5rem);
 }
 
 .blogList_Header p {
     text-align: center;
     max-width: 900px;
-    font-size: 16px;
-    margin-bottom: 80px;
+    font-size: 1rem;
+    margin-bottom: clamp(2.5rem, 1.5217rem + 4.3478vw, 5rem);
     color: rgba(0, 0, 0, 0.6);
 }
 
@@ -72,55 +71,38 @@
 }
 
 /* Max Screen width 1280px */
-@media screen and (max-width: 1280px) {
-    .blogList_Container {
-        max-width: 1024px;
-    }
+@media screen and (max-width: 1280px) {}
 
+@media only screen and (max-width: 320px) and (max-width:480px) {
     .blogList_Header {
-        margin-top: 80px;
-    }
-
-    .blogList_Header h1 {
-        font-size: 60px;
-    }
-
-    .blogList_Header p {
-        font-size: 14px;
-        max-width: 800px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
     }
 
     .blogList_Body {
         margin-top: 80px;
         display: flex;
+        justify-content: space-between;
     }
 
     .blogList_BodyList {
-        max-width: 684px;
-        gap: 24px;
-    }
-
-    .blogList_BodyList .horizontalCard {
-        --cardH-gap: 28px;
-        --cardH-image-width: 250px;
-        --cardH-image-height: 170px;
-        --cardH-min-height: 170px;
-        --cardH-image-border-radius: 16px;
-        --cardH-title-font-size: 20px;
-        --cardH-topic-padding: 0 0 12px;
-        --cardH-detail-font-size: 14px;
-        --cardH-footer-padding: 26px 0 0;
-        --cardH-author-img-size: 32px;
-        --cardH-author-font-size: 14px;
-        --cardH-date-font-size: 12px;
+        flex: 1;
+        display: flex;
+        gap: 32px;
+        flex-direction: column;
+        max-width: 840px;
     }
 
     .blogList_TastyRecipes {
-        max-width: 300px;
+        flex: 1;
+        max-width: 400px;
     }
 
     .blogList_TastyRecipes h1 {
-        font-size: 28px;
+        font-size: 32px;
+        font-weight: 600;
     }
 
     .blogList_TastyRecipesContent {
@@ -128,20 +110,17 @@
     }
 
     .blogList_TastyRecipes .blogList_TastyRecipesAdsBadge {
-        width: 320px;
-        height: 354px;
+        height: 434px;
+        width: 400px;
     }
 
     .blogList_TastyRecipes .blogList_TastyRecipesAdsBadge img {
-        width: 330px;
-        height: 330px;
+        height: 400px;
+        width: 400px;
     }
 
-    .blogList_BodyContainer .blogList_TastyRecipesPagination {
-        --pagination-width: 54px;
-        --pagination-height: 54px;
-        --pagination-border-radius: 12px;
-        --pagination-font-size: 16px;
+    .blogList_TastyRecipesPagination {
+        margin-top: 80px;
     }
 
     .blogList_InboxContainer {

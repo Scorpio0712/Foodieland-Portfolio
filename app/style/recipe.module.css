@@ -325,15 +325,29 @@
     margin-top: 160px;
 }
 
+.inBoxComp {
+    --inbox-border-radius: 60px;
+    --inbox-padding: 5rem 0;
+    --inbox-topic-font-size: clamp(1.625rem, 1.1667rem + 2.2917vw, 3rem);
+    --inbox-title-font-size: 16px;
+    --inbox-emailbox-width: clamp(18.75rem, 15rem + 18.75vw, 30rem);
+    --inbox-bgimg: clamp(12.5rem, 9.375rem + 15.625vw, 21.875rem);
+    --inbox-bgimg-border-radius: 60px;
+    --inbox-body-z-index: 2;
+    --inbox-body-margin: clamp(2rem, 1.3333rem + 3.3333vw, 4rem) auto 0;
+    --inbox-emailbox-direction: row;
+    margin-top: clamp(5rem, 3.3333rem + 8.3333vw, 10rem);
+}
+
 /* Recipe Detail Section Five */
 .rd_SectionFive {
-    margin: 160px 0 160px 0;
+    margin: 160px auto;
     align-items: center;
     justify-content: center;
 }
 
 .rd_SectionFiveTopic {
-    font-size: 36px;
+    font-size: clamp(1.5rem, 1.2065rem + 1.3043vw, 2.25rem);
     font-weight: 600;
     text-align: center;
 }
@@ -341,22 +355,25 @@
 .rd_RecipeTooDetail {
     display: flex;
     justify-content: space-between;
-    margin-top: 80px;
+    margin-top: clamp(2.5rem, 1.5217rem + 4.3478vw, 5rem);
 }
 
 .rd_RecipeTooDetail .verticalCard {
-    --card-width: 290px;
-    --card-height: 316px;
+    --card-width: clamp(17.5rem, 17.0109rem + 2.1739vw, 18.75rem);
+    --card-height: clamp(17.9375rem, 17.3333rem + 3.0208vw, 19.75rem);
     --card-padding: 0px;
-    --card-image-height: 200px;
+    --card-image-height: clamp(11.25rem, 10.8333rem + 2.0833vw, 12.5rem);
+    --card-image-border-radius: 20px;
     --card-bg: white;
     --card-border-radius: 0px;
     --card-title-font-size: 18px;
+    --card-title-font-weight: 600;
     --card-content-padding: 16px 0 0;
     --card-info-font-size: 14px;
     --card-info-padding: 24px 0 0;
-    --card-heart-size: 48px;
-    --card-heart-svg-size: 24px;
+    --card-heart-size: clamp(2.5rem, 2.3333rem + 0.8333vw, 3rem);
+    --card-heart-svg-size: clamp(1.25rem, 1.1667rem + 0.4167vw, 1.5rem);
+    --card-heart-position: clamp(0.5rem, 0.3333rem + 0.8333vw, 1rem);
     --card-info-icon-size: 24px;
 }
 
@@ -500,7 +517,7 @@
         width: 100vw;
         margin-left: 50%;
         transform: translateX(-50%);
-        height: 434px;
+        height: 350px;
     }
 
     /* Recipe Detail Section Three */
@@ -517,16 +534,15 @@
         background: none;
         border: none;
         padding: 1rem 0;
-        cursor: pointer;
     }
 
     .rd_DirectionArrow {
-       background: #E7FAFE;
-       border: 1px solid rgba(0, 0, 0, 0.1);
-       border-radius: 2rem;
-       padding: 0.5rem 1rem;
-       font-size: 1rem;
-       font-weight: 600;
+        background: #E7FAFE;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        border-radius: 2rem;
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+        font-weight: 600;
     }
 
     .rd_DirectionsListOneDetail,
@@ -568,39 +584,34 @@
         margin-top: 160px;
     }
 
-    /* Recipe Detail Section Five */
-    .rd_SectionFive {
-        margin: 160px 0 160px 0;
-        align-items: center;
-        justify-content: center;
+    .inBoxComp {
+        width: 100vw;
+        margin-left: calc(-50vw + 50%);
+        --inbox-border-radius: 0;
+        --inbox-padding: 2.5rem 0.5rem;
+        --inbox-emailbox-direction: column;
+        --inbox-bgimg-border-radius: 0;
     }
 
+    /* Recipe Detail Section Five */
+    .rd_SectionFive {}
+
     .rd_SectionFiveTopic {
-        font-size: 36px;
-        font-weight: 600;
-        text-align: center;
+        width: 15rem;
+        justify-self: center;
+        line-height: 1.2;
+        text-wrap: balance;
+        
     }
 
     .rd_RecipeTooDetail {
         display: flex;
-        justify-content: space-between;
-        margin-top: 80px;
+        flex-direction: column;
+        justify-self: center;
     }
 
     .rd_RecipeTooDetail .verticalCard {
-        --card-width: 290px;
-        --card-height: 316px;
-        --card-padding: 0px;
-        --card-image-height: 200px;
-        --card-bg: white;
-        --card-border-radius: 0px;
-        --card-title-font-size: 18px;
-        --card-content-padding: 16px 0 0;
-        --card-info-font-size: 14px;
-        --card-info-padding: 24px 0 0;
-        --card-heart-size: 48px;
-        --card-heart-svg-size: 24px;
-        --card-info-icon-size: 24px;
+        margin-bottom: 1rem;
     }
 
 }

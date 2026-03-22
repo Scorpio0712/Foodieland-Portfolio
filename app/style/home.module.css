@@ -488,7 +488,7 @@
 
    .deliRecipeBodyFirstRow .verticalCard,
    .deliRecipeBodySecRow .verticalCard {
-       --card-width: clamp(18.125rem, 18.9583rem + -1.0417vw, 18.75rem);
+       --card-width: clamp(17.5rem, 17.0109rem + 2.1739vw, 18.75rem);
        --card-height: clamp(17.9375rem, 17.3333rem + 3.0208vw, 19.75rem);
        --card-padding: 0px;
        --card-image-height: clamp(11.25rem, 10.8333rem + 2.0833vw, 12.5rem);

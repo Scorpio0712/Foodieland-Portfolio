@@ -10,6 +10,9 @@ import style from "../style/recipe.module.css";
 
 function RecipeDetailPage() {
   const [showInfo, setShowInfo] = useState(false);
+  const handleEmailSubmit = (email: string) => {
+    console.log("Email submitted: ", email);
+  };
 
   const [ingredients, setIngredients] = useState({
     ingredientOne: false,
@@ -366,7 +369,9 @@ function RecipeDetailPage() {
                 checked={directions.directionOne}
                 onChange={handleDirectionsChange("directionOne")}
               />
-              <span className={style.rd_DirectionArrow}>Info {openDirections.directionsOne ? "▲" : "▼"}</span>
+              <span className={style.rd_DirectionArrow}>
+                Info {openDirections.directionsOne ? "▲" : "▼"}
+              </span>
             </button>
             <div
               className={`${style.rd_DirectionsListOneDetail} ${openDirections.directionsOne ? style.open : ""}`}
@@ -400,16 +405,20 @@ function RecipeDetailPage() {
               className={style.rd_DirectionToggleBtn}
               onClick={() => toggleDirection("directionsTwo")}
             >
-            <CircleCheckBoxComp
-              className={style.checkBox_DirectionTwo}
-              label="2. Lorem ipsum dolor sit amet."
-              id="directionTwo"
-              checked={directions.directionTwo}
-              onChange={handleDirectionsChange("directionTwo")}
-            />
-            <span className={style.rd_DirectionArrow}>Info {openDirections.directionsTwo ? "▲" : "▼"}</span>
+              <CircleCheckBoxComp
+                className={style.checkBox_DirectionTwo}
+                label="2. Lorem ipsum dolor sit amet."
+                id="directionTwo"
+                checked={directions.directionTwo}
+                onChange={handleDirectionsChange("directionTwo")}
+              />
+              <span className={style.rd_DirectionArrow}>
+                Info {openDirections.directionsTwo ? "▲" : "▼"}
+              </span>
             </button>
-            <div className={`${style.rd_DirectionsListTwoDetail} ${openDirections.directionsTwo ? style.open : ""}`}>
+            <div
+              className={`${style.rd_DirectionsListTwoDetail} ${openDirections.directionsTwo ? style.open : ""}`}
+            >
               <p>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima
                 debitis sit sed eius impedit quis esse omnis quasi illo, modi
@@ -425,16 +434,20 @@ function RecipeDetailPage() {
               className={style.rd_DirectionToggleBtn}
               onClick={() => toggleDirection("directionsThree")}
             >
-            <CircleCheckBoxComp
-              className={style.checkBox_DirectionThree}
-              label="3. Lorem ipsum dolor sit amet."
-              id="directionThree"
-              checked={directions.directionThree}
-              onChange={handleDirectionsChange("directionThree")}
-            />
-            <span className={style.rd_DirectionArrow}>Info {openDirections.directionsThree ? "▲" : "▼"}</span>
+              <CircleCheckBoxComp
+                className={style.checkBox_DirectionThree}
+                label="3. Lorem ipsum dolor sit amet."
+                id="directionThree"
+                checked={directions.directionThree}
+                onChange={handleDirectionsChange("directionThree")}
+              />
+              <span className={style.rd_DirectionArrow}>
+                Info {openDirections.directionsThree ? "▲" : "▼"}
+              </span>
             </button>
-            <div className={`${style.rd_DirectionsListThreeDetail} ${openDirections.directionsThree ? style.open : ""}`}>
+            <div
+              className={`${style.rd_DirectionsListThreeDetail} ${openDirections.directionsThree ? style.open : ""}`}
+            >
               <p>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima
                 debitis sit sed eius impedit quis esse omnis quasi illo, modi
@@ -448,7 +461,12 @@ function RecipeDetailPage() {
         </div>
       </section>
       <section className={style.rd_SectionFour}>
-        <EmailInputComp />
+        <EmailInputComp
+          placeholder="Your email address..."
+          buttonText="Subscribe"
+          onSubmit={handleEmailSubmit}
+          className={style.inBoxComp}
+        />
       </section>
       <section className={style.rd_SectionFive}>
         <h1 className={style.rd_SectionFiveTopic}>
