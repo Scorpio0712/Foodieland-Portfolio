@@ -2,44 +2,43 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: var(--pagination-gap, 16px);
+    gap: var(--pagination-gap);
 }
 
 .pagination_PrevBtn {
     cursor: pointer;
-    width: var(--pagination-width, 64px);
-    height: var(--pagination-height, 64px);
+    width: var(--pagination-width);
+    height: var(--pagination-height);
     border: 1px solid rgba(0, 0, 0, 0.6);
-    border-radius: var(--pagination-border-radius, 16px);
-    font-size: var(--pagination-font-size, 18px);
+    border-radius: 1rem;
+    font-size: var(--pagination-font-size);
     font-weight: bold;
 }
 
 .pagination_PrevBtn:disabled {
     cursor: not-allowed;
-    visibility: hidden;
 }
 
 .pagination_Dots {
-    width: var(--pagination-width, 64px);
-    height: var(--pagination-height, 64px);
+    width: var(--pagination-width);
+    height: var(--pagination-height);
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
     border: 1px solid rgba(0, 0, 0, 0.6);
-    border-radius: var(--pagination-border-radius, 16px);
-    font-size: var(--pagination-font-size, 18px);
+    border-radius: 1rem;
+    font-size: var(--pagination-font-size);
     font-weight: bold;
 }
 
 .pagination_PageBtn {
-    width: var(--pagination-width, 64px);
-    height: var(--pagination-height, 64px);
+    width: var(--pagination-width);
+    height: var(--pagination-height);
     cursor: pointer;
     border: 1px solid rgba(0, 0, 0, 0.6);
-    border-radius: var(--pagination-border-radius, 16px);
-    font-size: var(--pagination-font-size, 18px);
+    border-radius: 1rem;
+    font-size: var(--pagination-font-size);
     font-weight: bold;
 }
 
@@ -66,6 +65,5 @@
 }
 
 .pagination_NextBtn:disabled {
-    visibility: hidden;
     cursor: not-allowed;
 }

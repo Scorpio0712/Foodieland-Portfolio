@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import style from "../style/blog.module.css";
 import SearchComp from "../components/search/page";
 import CardComp from "../components/card/page";
@@ -11,6 +11,7 @@ import EmailInput from "../components/email_input/page";
 function BlogListPage() {
   const [currentPage, setCurrentPage] = useState(1);
   const totalPages = 10;
+
 
   const handlePageChange = (page: number) => setCurrentPage(page);
 
@@ -130,7 +131,7 @@ function BlogListPage() {
         />
       </section>
       <section className={style.blogList_InboxContainer}>
-        <EmailInput />
+        <EmailInput className={style.inBoxComp}/>
       </section>
     </main>
   );

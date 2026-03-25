@@ -29,11 +29,13 @@
 html {
   font-size: 16px; /* รากฐานของหน่วย rem */
   scroll-behavior: smooth; /* ทำให้การเลื่อนหน้าเว็บนุ่มนวล */
+  overflow-x: hidden;
 }
 
 body {
   line-height: 1.5; /* ระยะบรรทัดที่อ่านง่าย */
   -webkit-font-smoothing: antialiased; /* ทำให้ฟอนต์บน Mac ดูเนียนขึ้น */
+  overflow-x: hidden;
 }
 
 /* 4. จัดการ Media พื้นฐานให้ Responsive */

@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useState, useEffect } from "react";
 import style from "./pagination.module.css";
 
 interface PaginationProps {
@@ -15,9 +15,29 @@ function Pagination({
   onPageChange,
   className,
 }: PaginationProps) {
+  const [isSmall, setIsSmall] = useState(false);
+
+  useEffect(() => {
+    const check = () => setIsSmall(window.innerWidth <= 480);
+    check(); // check ทันทีตอน mount
+    window.addEventListener("resize", check);
+    return () => window.removeEventListener("resize", check); // cleanup
+  }, []);
 
   const getPageNumbers = () => {
     const pages: (number | string)[] = [];
+
+    if (isSmall) {
+      // compact mode: แสดงสูงสุด 5 ปุ่ม
+      if (currentPage <= 2) {
+        pages.push(1, 2, "...", totalPages);
+      } else if (currentPage >= totalPages - 1) {
+        pages.push(1, "...", totalPages - 1, totalPages);
+      } else {
+        pages.push(1, "...", currentPage, "...", totalPages);
+      }
+      return pages;
+    }
 
     if (totalPages <= 5) {
       for (let i = 1; i <= totalPages; i++) {

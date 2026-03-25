@@ -107,12 +107,12 @@
 
     .headerMain {
         position: relative;
-        margin-inline: 0.5rem;
     }
 
     .nav {
         height: 80px;
-        justify-content: center;
+        justify-content: space-between;
+        margin-inline: 1rem;
     }
 
     .navMenuList {

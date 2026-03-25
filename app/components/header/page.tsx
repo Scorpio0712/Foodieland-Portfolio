@@ -20,19 +20,29 @@ function Header() {
         <div className={isOpen ? style.navMenuOpen : style.menuWrapper}>
           <ul className={style.navMenuList}>
             <li>
-              <Link href={"../"} onClick={() => setIsOpen(false)}>Home</Link>
+              <Link href={"../"} onClick={() => setIsOpen(false)}>
+                Home
+              </Link>
             </li>
             <li>
-              <Link href={"../../recipe/"} onClick={() => setIsOpen(false)}>Recipes</Link>
+              <Link href={"../../recipe/"} onClick={() => setIsOpen(false)}>
+                Recipes
+              </Link>
             </li>
             <li>
-              <Link href={"../../blog/"} onClick={() => setIsOpen(false)}>Blog</Link>
+              <Link href={"../../blog/"} onClick={() => setIsOpen(false)}>
+                Blog
+              </Link>
             </li>
             <li>
-              <Link href={"../../contact/"} onClick={() => setIsOpen(false)}>Contact</Link>
+              <Link href={"../../contact/"} onClick={() => setIsOpen(false)}>
+                Contact
+              </Link>
             </li>
             <li>
-              <Link href={"../"} onClick={() => setIsOpen(false)}>About Us</Link>
+              <Link href={"../"} onClick={() => setIsOpen(false)}>
+                About Us
+              </Link>
             </li>
           </ul>
           <ul className={style.navSocialList}>
@@ -81,15 +91,15 @@ function Header() {
             </li>
           </ul>
         </div>
+        <button
+          className={`${style.hamburgerBtn} ${isOpen ? style.hamburgerOpen : ""}`}
+          onClick={() => setIsOpen(!isOpen)}
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
       </nav>
-      <button
-        className={`${style.hamburgerBtn} ${isOpen ? style.hamburgerOpen : ""}`}
-        onClick={() => setIsOpen(!isOpen)}
-      >
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
     </header>
   );
 }

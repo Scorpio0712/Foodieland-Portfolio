@@ -31,13 +31,17 @@ function SearchComp({
       onSubmit={handleSubmit}
       className={`${style.searchContainer} ${className || ""}`}
     >
-      <input
-        type="text"
-        value={searchTerm}
-        onChange={handleChange}
-        placeholder={placeholder}
-        className={style.searchInput}
-      />
+      <div className={style.searchInputWrapper}>
+        <input
+          type="text"
+          value={searchTerm}
+          onChange={handleChange}
+          className={style.searchInput}
+        />
+        {!searchTerm && (
+          <span className={style.searchPlaceholder}>{placeholder}</span>
+        )}
+      </div>
       <button type="submit" className={style.searchButton}>
         Search
       </button>

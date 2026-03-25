@@ -1,6 +1,6 @@
 .blogList_Container {
     margin: 2.5rem auto clamp(5rem, 3.3333rem + 8.3333vw, 10rem);
-       max-width: clamp(320px, 90%, 1280px);
+    max-width: clamp(320px, 90%, 1280px);
 }
 
 .blogList_Header {
@@ -24,8 +24,15 @@
     color: rgba(0, 0, 0, 0.6);
 }
 
+.blogList_Header .customSearchComp {
+    --search-width: clamp(18.75rem, 10.4167rem + 41.6667vw, 43.75rem);
+    --search-input-height: clamp(3.75rem, 3.3333rem + 2.0833vw, 5rem);
+    --search-input-padding: clamp(1.5rem, 1.3333rem + 0.8333vw, 2rem);
+    --search-btn-padding: clamp(0.5rem, 0.2292rem + 1.3542vw, 1.3125rem) clamp(1.5rem, 0.8125rem + 3.4375vw, 3.5625rem);
+}
+
 .blogList_Body {
-    margin-top: 80px;
+    margin-top: clamp(2.5rem, 1.6667rem + 4.1667vw, 5rem);
     display: flex;
     justify-content: space-between;
 }
@@ -38,18 +45,30 @@
     max-width: 840px;
 }
 
+.blogList_BodyList .horizontalCard {
+    --cardH-gap: clamp(1.25rem, 0.8333rem + 2.0833vw, 2.5rem);
+    --cardH-width: 100%;
+    --cardH-min-height: 200px;
+    --cardH-title-font-size: clamp(1.125rem, 1rem + 0.625vw, 1.5rem);
+    --cardH-topic-padding: 0 0 clamp(0.5rem, 0.3333rem + 0.8333vw, 1rem);
+    --cardH-footer-padding: clamp(1rem, 0.6667rem + 1.6667vw, 2rem) 0 0;
+    --cardH-author-padding: clamp(0.75rem, 0.5rem + 1.25vw, 1.5rem);
+    --cardH-author-gap: clamp(0.5rem, 0.3333rem + 0.8333vw, 1rem);
+    --cardH-footer-justify-content: unset;
+}
+
 .blogList_TastyRecipes {
     flex: 1;
     max-width: 400px;
 }
 
 .blogList_TastyRecipes h1 {
-    font-size: 32px;
+    font-size: clamp(1.5rem, 1.3333rem + 0.8333vw, 2rem);
     font-weight: 600;
 }
 
 .blogList_TastyRecipesContent {
-    margin: 32px 0 80px;
+    margin: clamp(1rem, 0.6667rem + 1.6667vw, 2rem) 0 clamp(2.5rem, 1.6667rem + 4.1667vw, 5rem);
 }
 
 .blogList_TastyRecipes .blogList_TastyRecipesAdsBadge {
@@ -63,36 +82,52 @@
 }
 
 .blogList_TastyRecipesPagination {
-    margin-top: 80px;
+    margin-top: clamp(2.5rem, 1.6667rem + 4.1667vw, 5rem);
+    --pagination-gap: clamp(0.5rem, 0.3333rem + 0.8333vw, 1rem);
+    --pagination-width: clamp(2rem, 1.3333rem + 3.3333vw, 4rem);
+    --pagination-height: clamp(2rem, 1.3333rem + 3.3333vw, 4rem);
+    --pagination-font-size: clamp(1rem, 0.9583rem + 0.2083vw, 1.125rem);
 }
 
-.blogList_InboxContainer {
-    margin: 160px 0;
+.blogList_InboxContainer .inBoxComp {
+    --inbox-border-radius: 60px;
+    --inbox-padding: 5rem 0;
+    --inbox-topic-font-size: clamp(1.625rem, 1.1667rem + 2.2917vw, 3rem);
+    --inbox-title-font-size: 16px;
+    --inbox-emailbox-width: clamp(18.75rem, 15rem + 18.75vw, 30rem);
+    --inbox-bgimg: clamp(12.5rem, 9.375rem + 15.625vw, 21.875rem);
+    --inbox-bgimg-border-radius: 60px;
+    --inbox-body-z-index: 2;
+    --inbox-body-margin: clamp(2rem, 1.3333rem + 3.3333vw, 4rem) auto 0;
+    --inbox-emailbox-direction: row;
+    margin-top: clamp(5rem, 3.3333rem + 8.3333vw, 10rem);
 }
 
 /* Max Screen width 1280px */
 @media screen and (max-width: 1280px) {}
 
-@media only screen and (max-width: 320px) and (max-width:480px) {
-    .blogList_Header {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
+@media screen and (max-width: 480px) {
+
+
+    .blogList_Header p {
+        padding: 1rem;
     }
 
     .blogList_Body {
-        margin-top: 80px;
-        display: flex;
-        justify-content: space-between;
+        flex-direction: column;
+        gap: 2rem;
     }
 
     .blogList_BodyList {
-        flex: 1;
-        display: flex;
-        gap: 32px;
+        align-items: center;
+    }
+
+    .blogList_BodyList .horizontalCard {
         flex-direction: column;
-        max-width: 840px;
+        text-align: center;
+        --cardH-footer-justify-content: center;
+        --cardH-width: 95%;
+        --cardH-min-height: 350px;
     }
 
     .blogList_TastyRecipes {
@@ -101,17 +136,14 @@
     }
 
     .blogList_TastyRecipes h1 {
-        font-size: 32px;
-        font-weight: 600;
-    }
-
-    .blogList_TastyRecipesContent {
-        margin: 32px 0 80px;
+        text-align: center;
     }
 
     .blogList_TastyRecipes .blogList_TastyRecipesAdsBadge {
         height: 434px;
-        width: 400px;
+        width: 100vw;
+        margin-left: 50%;
+        transform: translateX(-50%);
     }
 
     .blogList_TastyRecipes .blogList_TastyRecipesAdsBadge img {
@@ -119,11 +151,12 @@
         width: 400px;
     }
 
-    .blogList_TastyRecipesPagination {
-        margin-top: 80px;
-    }
-
-    .blogList_InboxContainer {
-        margin: 160px 0;
+    .blogList_InboxContainer .inBoxComp {
+        width: 100vw;
+        margin-left: calc(-50vw + 50%);
+        --inbox-border-radius: 0;
+        --inbox-padding: 2.5rem 0.5rem;
+        --inbox-emailbox-direction: column;
+        --inbox-bgimg-border-radius: 0;
     }
 }
