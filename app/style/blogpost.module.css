@@ -1,10 +1,9 @@
 .blogPost_Container {
-    margin: 0 auto;
-    max-width: 1280px;
+    margin: 5rem auto clamp(5rem, 3.3333rem + 8.3333vw, 10rem);
+    max-width: clamp(320px, 90%, 1280px);
 }
 
 .blogPost_Header {
-    margin-top: 80px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -12,12 +11,12 @@
 }
 
 .blogPost_Header h1 {
-    font-size: 64px;
+    font-size: clamp(1.5rem, 0.6667rem + 4.1667vw, 4rem);
     font-weight: 600;
 }
 
 .blogPost_Author {
-    margin-top: 32px;
+    margin-top: clamp(1rem, 0.6667rem + 1.6667vw, 2rem);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -27,19 +26,19 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-right: 24px;
+    padding-right: clamp(0.75rem, 0.5rem + 1.25vw, 1.5rem);
     border-right: 1px solid rgba(0, 0, 0, 0.1);
-    gap: 16px;
+    gap: 1rem;
 }
 
 .blogPost_AuthorName {
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: bold;
 }
 
 .blogPost_Date {
-    padding-left: 24px;
-    font-size: 14px;
+    padding-left: clamp(0.75rem, 0.5rem + 1.25vw, 1.5rem);
+    font-size: 0.875rem;
     color: rgba(0, 0, 0, 0.6);
 }
 
@@ -49,21 +48,21 @@
     align-items: center;
     text-align: center;
     max-width: 1000px;
-    margin-top: 48px;
+    margin-top: clamp(1.5rem, 1rem + 2.5vw, 3rem);
 }
 
 .blogPost_DeScript span {
-    font-size: 16px;
+    font-size: 1rem;
     color: rgba(0, 0, 0, 0.6);
 }
 
 .blogPost_HeaderImage {
-    margin-top: 64px;
+    margin-top: 4rem;
     position: relative;
     overflow: hidden;
-    width: 1280px;
-    height: 600px;
-    border-radius: 30px;
+    width: 80rem;
+    height: clamp(15rem, 7.5rem + 37.5vw, 37.5rem);
+    border-radius: 1.875rem;
 }
 
 .blogPost_HeaderImage img {
@@ -74,53 +73,52 @@
 
 /* Blog Post Body */
 .blogPost_BodyContent {
-    margin-top: 80px;
+    margin-top: clamp(2.5rem, 1.6667rem + 4.1667vw, 5rem);
     display: flex;
     justify-self: center;
-    gap: 49px;
+    gap: clamp(1.875rem, 1.4792rem + 1.9792vw, 3.0625rem);
 }
 
 .blogPost_Content {
-    max-width: 920px;
+    max-width: 57.5rem;
 }
 
 .blogPost_Content h1 {
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 600;
 }
 
 .blogPost_Content p {
-    font-size: 16px;
+    font-size: 1rem;
     color: rgba(0, 0, 0, 0.6);
-    margin-top: 24px;
+    margin-top: clamp(0.75rem, 0.5rem + 1.25vw, 1.5rem);
 }
 
 .blogPost_SocialBtn {
-    max-width: 131px;
+    max-width: 8.1875rem;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .blogPost_SocialBtn span {
-    font-size: 14px;
+    font-size: 0.875rem;
     font-weight: 600;
-    margin-bottom: 32px;
+    margin-bottom: 2rem;
 }
 
 .blogPost_FacebookIcon,
 .blogPost_TwitterIcon,
 .blogPost_InstagramIcon {
-    margin-bottom: 48px;
-    width: 24px;
-    height: 24px;
+    margin-bottom: 3rem;
+    width: 1.5rem;
+    height: 1.5rem;
 }
 
 .blogPost_FacebookIcon svg,
 .blogPost_TwitterIcon svg,
 .blogPost_InstagramIcon svg {
-    width: 24px;
-    height: 24px;
+    width: 1.5rem;
 }
 
 .blogPost_ContentOne,
@@ -128,8 +126,8 @@
 .blogPost_ContentThree,
 .blogPost_ContentFour,
 .blogPost_ContentSix {
-    margin-right: 40px;
-    margin-left: 40px;
+    margin-right: clamp(1rem, 0.5rem + 2.5vw, 2.5rem);
+    margin-left: clamp(1rem, 0.5rem + 2.5vw, 2.5rem);
 }
 
 .blogPost_ContentTwo,
@@ -137,7 +135,7 @@
 .blogPost_ContentFour,
 .blogPost_ContentFive,
 .blogPost_ContentSix {
-    margin-top: 64px;
+    margin-top: clamp(2rem, 1.3333rem + 3.3333vw, 4rem);
 }
 
 .blogPost_ContentThreeImage {
@@ -145,7 +143,7 @@
     height: 400px;
     position: relative;
     overflow: hidden;
-    margin: 32px 0;
+    margin: clamp(1rem, 0.6667rem + 1.6667vw, 2rem) 0;
     border-radius: 20px;
 }
 
@@ -160,31 +158,44 @@
     background: linear-gradient(90deg, rgba(0, 0, 0, 0.1), white);
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     border-top: 1px solid rgba(0, 0, 0, 0.1);
-    padding: 48px 40px;
+    padding: clamp(1.5rem, 1rem + 2.5vw, 3rem) clamp(1.25rem, 0.8333rem + 2.0833vw, 2.5rem);
 }
 
 .blogPost_ContentFive h1 {
-    font-size: 36px;
+    font-size: clamp(1.5rem, 1.25rem + 1.25vw, 2.25rem);
     font-weight: 500;
     font-style: italic;
 }
 
 /* Inbox Container */
 .blogPost_EmailInbox {
-    margin: 160px 0;
+    margin: clamp(5rem, 3.3333rem + 8.3333vw, 10rem) 0;
+}
+
+.blogPost_EmailInbox .inBoxComp {
+    --inbox-border-radius: 60px;
+    --inbox-padding: 5rem 0;
+    --inbox-topic-font-size: clamp(1.625rem, 1.1667rem + 2.2917vw, 3rem);
+    --inbox-title-font-size: 16px;
+    --inbox-emailbox-width: clamp(18.75rem, 15rem + 18.75vw, 30rem);
+    --inbox-bgimg: clamp(12.5rem, 9.375rem + 15.625vw, 21.875rem);
+    --inbox-bgimg-border-radius: 60px;
+    --inbox-body-z-index: 2;
+    --inbox-body-margin: clamp(2rem, 1.3333rem + 3.3333vw, 4rem) auto 0;
+    --inbox-emailbox-direction: row;
 }
 
 /* Check out the delicious recipe Container */
 .blogPost_DeliciousRecipe {
-    margin-bottom: 160px;
+    margin-bottom: clamp(5rem, 3.3333rem + 8.3333vw, 10rem);
 }
 
 .blogPost_DeliciousRecipeTopic {
-    font-size: 36px;
+    font-size: clamp(1.5rem, 1.25rem + 1.25vw, 2.25rem);
     font-weight: 600;
     display: flex;
     justify-content: center;
-    margin-bottom: 80px;
+    margin-bottom: clamp(2.5rem, 1.6667rem + 4.1667vw, 5rem);
 }
 
 .blogPost_DeliciousRecipeContent {
@@ -194,153 +205,99 @@
 }
 
 .blogPost_DeliciousRecipeContent .verticalCard {
-    --card-width: 290px;
-    --card-height: 316px;
+    --card-width: clamp(17.5rem, 17.0109rem + 2.1739vw, 18.75rem);
+    --card-height: clamp(17.9375rem, 17.3333rem + 3.0208vw, 19.75rem);
     --card-padding: 0px;
-    --card-image-height: 200px;
+    --card-image-height: clamp(11.25rem, 10.8333rem + 2.0833vw, 12.5rem);
+    --card-image-border-radius: 20px;
     --card-bg: white;
     --card-border-radius: 0px;
     --card-title-font-size: 18px;
+    --card-title-font-weight: 600;
     --card-content-padding: 16px 0 0;
     --card-info-font-size: 14px;
     --card-info-padding: 24px 0 0;
-    --card-heart-size: 48px;
-    --card-heart-svg-size: 24px;
+    --card-heart-size: clamp(2.5rem, 2.3333rem + 0.8333vw, 3rem);
+    --card-heart-svg-size: clamp(1.25rem, 1.1667rem + 0.4167vw, 1.5rem);
+    --card-heart-position: clamp(0.5rem, 0.3333rem + 0.8333vw, 1rem);
     --card-info-icon-size: 24px;
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 480px) {
     .blogPost_Container {
-        max-width: 1024px;
+        margin-top: 0;
     }
 
-    /* Blog Post Header */
+    .blogPost_Header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
     .blogPost_Header h1 {
-        font-size: 48px;
+        margin-top: 1rem;
+        order: 2;
+        text-align: center;
     }
 
     .blogPost_Author {
-        margin-top: 24px;
-    }
-
-    .blogPost_AuthorInfo img {
-        width: 32px;
-        height: 32px;
-    }
-
-    .blogPost_AuthorName {
-        font-size: 14px;
-    }
-
-    .blogPost_Date {
-        font-size: 12px;
+        order: 3;
     }
 
     .blogPost_DeScript {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        max-width: 1000px;
-        margin-top: 48px;
-    }
-
-    .blogPost_DeScript span {
-        font-size: 14px;
+        order: 4;
+        margin-inline: 0.5rem;
     }
 
     .blogPost_HeaderImage {
-        width: 1024px;
-        height: 500px;
+        margin-top: 0;
+        order: 1;
+        width: 100vw;
+        border-radius: 0;
     }
 
     /* Blog Post Body */
 
     .blogPost_Content {
-        max-width: 700px;
-    }
-
-    .blogPost_Content h1 {
-        font-size: 20px;
-    }
-
-    .blogPost_Content p {
-        font-size: 14px;
-        margin-top: 16px;
+        max-width: 100vw;
+        text-align: center;
     }
 
     .blogPost_SocialBtn {
-
-        max-width: 131px;
-    }
-
-    .blogPost_SocialBtn span {
-        font-size: 12px;
-    }
-
-    .blogPost_FacebookIcon,
-    .blogPost_TwitterIcon,
-    .blogPost_InstagramIcon {
-        margin-bottom: 40px;
-        width: 20px;
-        height: 20px;
-
-    }
-
-    .blogPost_FacebookIcon svg,
-    .blogPost_TwitterIcon svg,
-    .blogPost_InstagramIcon svg {
-        width: 20px;
-        height: 20px;
-    }
-
-    .blogPost_ContentOne,
-    .blogPost_ContentTwo,
-    .blogPost_ContentThree,
-    .blogPost_ContentFour,
-    .blogPost_ContentSix {
-        margin-right: 30px;
-        margin-left: 30px;
-    }
-
-    .blogPost_ContentTwo,
-    .blogPost_ContentThree,
-    .blogPost_ContentFour,
-    .blogPost_ContentFive,
-    .blogPost_ContentSix {
-        margin-top: 54px;
+        display: none;
     }
 
     .blogPost_ContentThreeImage {
-        width: 640px;
-        height: 300px;
+        width: 100vw;
+        height: 250px;
+        margin-left: 50%;
+        transform: translateX(-50%);
+        border-radius: 0;
     }
 
-    .blogPost_ContentFive {
-        padding: 40px 30px;
+    /* Inbox Container */
+    .blogPost_EmailInbox .inBoxComp {
+        width: 100vw;
+        margin-left: calc(-50vw + 50%);
+        --inbox-border-radius: 0;
+        --inbox-padding: 2.5rem 0.5rem;
+        --inbox-emailbox-direction: column;
+        --inbox-bgimg-border-radius: 0;
     }
 
-    .blogPost_ContentFive h1 {
-        font-size: 26px;
-    }
+    /* Check out the delicious recipe Container */
 
-    /* Delicious Recipe Content */
+
     .blogPost_DeliciousRecipeTopic {
-        font-size: 32px;
-        
+        text-align: center;
+    }
+
+    .blogPost_DeliciousRecipeContent {
+        flex-direction: column;
     }
 
     .blogPost_DeliciousRecipeContent .verticalCard {
-        --card-width: 236px;
-        --card-height: 250px;
-        --card-padding: 0px;
-        --card-image-height: 150px;
-        --card-title-font-size: 16px;
-        --card-content-padding: 14px 0 0;
-        --card-info-font-size: 12px;
-        --card-info-padding: 20px 0 0;
-        --card-heart-size: 40px;
-        --card-heart-svg-size: 20px;
-        --card-info-icon-size: 20px;
+        margin-bottom: 1rem;
     }
 }

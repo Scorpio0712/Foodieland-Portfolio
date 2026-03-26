@@ -161,7 +161,7 @@ function BlogPostPage() {
         </div>
       </section>
       <section className={style.blogPost_EmailInbox}>
-        <EmailInput />
+        <EmailInput className={style.inBoxComp}/>
       </section>
       <section className={style.blogPost_DeliciousRecipe}>
         <h1 className={style.blogPost_DeliciousRecipeTopic}>
