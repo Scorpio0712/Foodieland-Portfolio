@@ -112,7 +112,7 @@ function ContactPage() {
         </div>
       </section>
       <section className={style.contact_EmailInbox}>
-        <EmailInboxComp />
+        <EmailInboxComp className={style.inBoxComp}/>
       </section>
       <section className={style.contact_DeliciousRecipe}>
         <h1 className={style.contact_DeliciousRecipeTopic} >Check out the delicious recipe</h1>

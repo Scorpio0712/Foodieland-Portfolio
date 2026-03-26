@@ -117,6 +117,7 @@
         align-items: center;
         justify-content: unset;
         margin-bottom: 0.5rem;
+        gap: 1rem;
     }
 
     .footerDetail {
