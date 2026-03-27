@@ -378,9 +378,234 @@
 }
 
 
-@media screen and (max-width: 1280px) {}
 
-@media only screen and (min-width: 320px) and (max-width: 480px) {
+@media screen and (min-width: 769px) and (max-width: 1024px) {}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+
+    /* Recipe Detail */
+    .rd_Header {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .rd_Topic h1{
+        text-align: center;
+    }
+
+    .rd_AuthorName {
+        padding-right: 1rem;
+        border-right: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+    .rd_PrepTime,
+    .rd_CookTime,
+    .rd_Category {
+        display: flex;
+    }
+
+    .rd_InfoDropdown {
+        display: none;
+    }
+
+    .rd_InfoToggleBtn svg {
+        width: 1.25rem;
+    }
+
+    .rd_InfoDropdownMenu {
+        position: absolute;
+        right: 0;
+        top: 100%;
+        background: white;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        border-radius: 0.75rem;
+        padding: 0.5rem;
+        z-index: 10;
+        min-width: 10rem;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .rd_InfoDropdownMenu .rd_PrepTime,
+    .rd_InfoDropdownMenu .rd_CookTime,
+    .rd_InfoDropdownMenu .rd_Category {
+        display: flex;
+        border-left: none;
+        justify-content: start;
+        padding: 0.5rem;
+        gap: 1rem;
+    }
+
+    .rd_PrintBtn div,
+    .rd_ShareBtn div {
+        cursor: none;
+    }
+
+    /* Recipe Detail Body */
+    .rd_BodyHeader {
+        width: 100vw;
+        margin-left: 50%;
+        transform: translateX(-50%);
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .rd_BodyHeader img {
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+    }
+
+    .nutritionInfo {
+        width: 100%;
+        height: 400px;
+        border-radius: 0;
+    }
+
+    .nutritionInfo h1 {
+        text-align: center;
+    }
+
+    .rd_BodyDetail {
+        text-align: center;
+    }
+
+    /* Recipe Detail Section 2 */
+    .rd_SectionTwo {
+        flex-direction: column;
+    }
+
+    .rd_Ingredients {
+        flex: 1;
+        text-align: center;
+    }
+
+    .rd_ForMainDishDetail .rd_CircleCheckBoxComp,
+    .rd_ForTheSauceDetail .rd_CircleCheckBoxComp {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 90%;
+        margin: 0 auto;
+    }
+
+    .rd_OtherRecipe {
+        max-width: 90%;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    .rd_OtherRecipe h1 {
+        text-align: center;
+    }
+
+    .rd_OtherRecipe .rd_OtherRecipeAdsBadge {
+        width: 100vw;
+        margin-left: 50%;
+        transform: translateX(-50%);
+        height: 350px;
+    }
+
+    /* Recipe Detail Section Three */
+    .rd_SectionThree {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .rd_DirectionToggleBtn {
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        background: none;
+        border: none;
+        padding: 1rem 0;
+    }
+
+    .rd_DirectionArrow {
+        background: #E7FAFE;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        border-radius: 2rem;
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+        font-weight: 600;
+    }
+
+    .rd_DirectionsListOneDetail,
+    .rd_DirectionsListTwoDetail,
+    .rd_DirectionsListThreeDetail {
+        display: none;
+        /* ซ่อน default */
+        padding-left: 0.75rem;
+        padding-right: 0.75rem;
+    }
+
+    /* เมื่อ open class ถูก add */
+    .rd_DirectionsListOneDetail.open,
+    .rd_DirectionsListTwoDetail.open,
+    .rd_DirectionsListThreeDetail.open {
+        display: block;
+    }
+
+    .checkBox_DirectionOne,
+    .checkBox_DirectionTwo,
+    .checkBox_DirectionThree {
+        justify-content: center;
+    }
+
+    .rd_DirectionsListOneDetail p,
+    .rd_DirectionsListTwoDetail p,
+    .rd_DirectionsListThreeDetail p {
+        text-wrap: balance;
+        text-align: center;
+    }
+
+    .rd_DirectionsListOneDetail img {
+        margin: clamp(1.5rem, 1rem + 2.5vw, 3rem) 0 clamp(1.5rem, 1rem + 2.5vw, 3rem) 0;
+        max-width: 100%;
+    }
+
+    /* Recipe Detail Section Four */
+    .rd_SectionFour {
+        margin-top: 160px;
+    }
+
+    .inBoxComp {
+        width: 100vw;
+        margin-left: calc(-50vw + 50%);
+        --inbox-border-radius: 0;
+        --inbox-padding: 2.5rem 0.5rem;
+        --inbox-emailbox-direction: column;
+        --inbox-bgimg-border-radius: 0;
+    }
+
+    /* Recipe Detail Section Five */
+
+
+    .rd_SectionFiveTopic {
+        width: 15rem;
+        justify-self: center;
+        line-height: 1.2;
+        text-wrap: balance;
+
+    }
+
+    .rd_RecipeTooDetail {
+        display: flex;
+        flex-direction: column;
+        justify-self: center;
+    }
+
+    .rd_RecipeTooDetail .verticalCard {
+        margin-bottom: 1rem;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
 
     /* Recipe Detail */
     .rd_Header {
@@ -594,14 +819,14 @@
     }
 
     /* Recipe Detail Section Five */
-    
+
 
     .rd_SectionFiveTopic {
         width: 15rem;
         justify-self: center;
         line-height: 1.2;
         text-wrap: balance;
-        
+
     }
 
     .rd_RecipeTooDetail {
