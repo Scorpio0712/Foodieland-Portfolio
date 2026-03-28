@@ -106,6 +106,52 @@
 /* Max Screen width 1280px */
 @media screen and (max-width: 1280px) {}
 
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .blogList_Header p {
+        padding: 1rem;
+    }
+
+    .blogList_Body {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .blogList_BodyList {
+        order: 2;
+        align-items: center;
+    }
+
+    .blogList_BodyList .horizontalCard {
+        --cardH-footer-justify-content: center;
+        --cardH-width: 100%;
+    }
+
+    .blogList_TastyRecipes {
+        justify-content: center;
+        margin: 0 auto;
+        flex: 1;
+        max-width: 400px;
+    }
+
+    .blogList_TastyRecipes h1 {
+        text-align: center;
+    }
+
+    .blogList_TastyRecipes .blogList_TastyRecipesAdsBadge {
+        height: 434px;
+        width: 100%;
+    }
+
+    .blogList_TastyRecipes .blogList_TastyRecipesAdsBadge img {
+        height: 400px;
+        width: 400px;
+    }
+
+    .blogList_InboxContainer .inBoxComp {
+        --inbox-padding: 2.5rem 0.5rem;
+    }
+}
+
 @media screen and (max-width: 480px) {
     .blogList_Header p {
         padding: 1rem;
