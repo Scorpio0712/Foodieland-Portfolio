@@ -76,7 +76,7 @@
     height: 18px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 481px) and (max-width: 768px) {
     .navContainer {
         display: flex;
         flex-direction: column;
@@ -126,7 +126,6 @@
     .facebookIcon,
     .twitterIcon,
     .instagramIcon {
-        padding: 0;
         width: 24px;
     }
 

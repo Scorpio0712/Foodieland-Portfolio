@@ -103,7 +103,7 @@
     display: contents;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 481px) and (max-width: 768px) {
     .headerMain {
         position: relative;
     }
@@ -116,6 +116,7 @@
 
     .navMenuList {
         display: none;
+        margin-top: 1rem;
         gap: 1rem;
     }
 
@@ -216,6 +217,7 @@
 
     .navMenuList {
         display: none;
+        margin-top: 1rem;
         gap: 1rem;
     }
 
