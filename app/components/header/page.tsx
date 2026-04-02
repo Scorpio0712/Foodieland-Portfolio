@@ -15,7 +15,7 @@ function Header() {
           width={1000}
           height={500}
           alt="Foodieland Logo"
-          style={{ width: "100px", height: "30" }}
+          style={{ width: "100px", height: "20px" }}
         />
         <div className={isOpen ? style.navMenuOpen : style.menuWrapper}>
           <ul className={style.navMenuList}>

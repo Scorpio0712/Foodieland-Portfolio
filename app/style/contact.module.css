@@ -170,6 +170,55 @@
     --card-info-icon-size: 24px;
 }
 
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+
+    /* Contact Header & Form */
+    .contact_Content {
+        flex-direction: column;
+    }
+
+    .contact_ContentImageBG {
+        width: 100vw;
+        height: 400px;
+        border-radius: 0px;
+        bottom: 0px;
+    }
+
+    .contact_ContentImage img {
+        bottom: 0;
+    }
+
+    .contact_FormContainerOne {
+        gap: 1rem;
+    }
+
+    .contact_SubmitBtn {
+        display: block;
+        margin-inline: auto;
+    }
+
+    /* Email Inbox Container */
+    .contact_EmailInbox .inBoxComp {
+        --inbox-padding: 2.5rem 0.5rem;
+    }
+
+    /* Delicious Recipe Container */
+    .contact_DeliciousRecipeTopic {
+        text-align: center;
+    }
+
+    .contact_DeliciousRecipeContent {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 1rem;
+        justify-self: center;
+    }
+
+    .contact_DeliciousRecipeContent .verticalCard {
+        margin-bottom: 1.5rem;
+    }
+}
+
 @media screen and (min-width: 481px) and (max-width: 768px) {
 
     /* Contact Header & Form */
@@ -220,6 +269,7 @@
 }
 
 @media screen and (max-width: 480px) {
+
     /* Contact Header & Form */
     .contact_Content {
         flex-direction: column;

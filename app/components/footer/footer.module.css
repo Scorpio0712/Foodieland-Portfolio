@@ -76,6 +76,39 @@
     height: 18px;
 }
 
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .footerMain {
+        margin: 0 1rem;
+    }
+
+    .navSecCol ul {
+        gap: 1.5rem
+    }
+
+    .navSecCol ul li {
+        transition: none;
+        text-align: center;
+    }
+
+    .navSecCol ul li:hover {
+        transform: none;
+    }
+
+    .facebookIcon,
+    .twitterIcon,
+    .instagramIcon {
+        width: 24px;
+    }
+
+    .facebookIcon svg,
+    .twitterIcon svg,
+    .instagramIcon svg {
+        width: 24px;
+        height: 24px;
+    }
+}
+
+
 @media screen and (min-width: 481px) and (max-width: 768px) {
     .navContainer {
         display: flex;
@@ -91,7 +124,7 @@
     .navFirstCol p {
         margin-bottom: 1rem;
         text-align: center;
-        
+
     }
 
     .navSecCol ul {
@@ -152,7 +185,7 @@
     .navFirstCol p {
         margin-bottom: 1rem;
         text-align: center;
-        
+
     }
 
     .navSecCol ul {
@@ -178,7 +211,7 @@
         align-items: center;
         justify-content: unset;
         margin-bottom: 0.5rem;
-        
+
     }
 
     .footerDetail {

@@ -304,7 +304,9 @@ export default function Home() {
             typeOne="30 Minutes"
             typeTwo="Meat"
           />
-          <AdsBadgeComp className={style.simpleAndTastyCardAdsBadge} />
+          <div className={style.simpleAndTastyCardAdsBadge}>
+            <AdsBadgeComp />
+          </div>
         </div>
         <div className={style.simpleAndTastyCardListThree}>
           <CardComp

@@ -31,9 +31,7 @@
    .recipesBadge {
        position: absolute;
        top: 5%;
-       left: 44%;
-       bottom: unset;
-       right: unset;
+       right: 5%;
        z-index: 10;
    }
 
@@ -83,7 +81,7 @@
    }
 
    .featureRecipeTopic {
-       font-size: clamp(1.5rem, 0.6667rem + 4.1667vw, 4rem);
+       font-size: 4rem;
        font-weight: 600;
        line-height: 1.2;
        margin-bottom: clamp(1rem, 0.8333rem + 0.8333vw, 1.5rem);
@@ -132,7 +130,7 @@
    }
 
    .featureRecipeProfile img {
-       width: clamp(3.125rem, 4.2917rem + -1.4583vw, 4rem);
+       width: 4rem;
        border-radius: 50%;
        object-fit: cover;
    }
@@ -156,7 +154,7 @@
    .viewRCButton {
        display: flex;
        align-items: center;
-       padding: clamp(1rem, 0.9583rem + 0.2083vw, 1.125rem) clamp(1.5rem, 1.25rem + 1.25vw, 2.25rem);
+       padding: 1.125rem 2.25rem;
        gap: clamp(0.5rem, 0.3333rem + 0.8333vw, 1rem);
        background-color: black;
        color: white;
@@ -318,20 +316,19 @@
        --card-title-font-weight: 600;
        --card-info-font-size: 1rem;
        --card-info-padding: clamp(1rem, 0.8333rem + 0.8333vw, 1.5rem) 0 clamp(0.5rem, 0.3333rem + 0.8333vw, 1rem);
-       --card-info-icon-size: 24px;
+       --card-info-icon-size: 1.5rem;
        --card-heart-size: clamp(2.5rem, 2.3333rem + 0.8333vw, 3rem);
        --card-heart-svg-size: clamp(1rem, 0.8333rem + 0.8333vw, 1.5rem);
    }
 
    .simpleAndTastyCardListTwo .simpleAndTastyCardAdsBadge {
-       width: 25rem;
-       height: 27.12rem;
-
+       width: clamp(18.75rem, 16.6667rem + 10.4167vw, 25rem);
+       height: clamp(20.875rem, 18.7917rem + 10.4167vw, 27.125rem);
    }
 
    .simpleAndTastyCardListTwo .simpleAndTastyCardAdsBadge img {
-       width: 25rem;
-       height: 25rem;
+       width: clamp(18.75rem, 16.6667rem + 10.4167vw, 25rem);
+       height: clamp(18.75rem, 16.6667rem + 10.4167vw, 25rem);
    }
 
    /* Learn More Container */
@@ -347,14 +344,14 @@
        transform: translateY(3.12rem);
        flex: 1;
        width: 100%;
-       max-width: clamp(20rem, 15.625rem + 21.875vw, 33.125rem);
+       max-width: 33.125rem;
    }
 
    .learnMoreSecCol {
        flex: 1;
        position: relative;
        width: 100%;
-       max-width: clamp(20rem, 11.875rem + 40.625vw, 44.375rem);
+       max-width: 44.375rem;
        height: clamp(22.5rem, 17.5625rem + 24.6875vw, 37.3125rem);
    }
 
@@ -396,7 +393,6 @@
        height: 31.25rem;
        border-radius: 30px;
        z-index: 1;
-
    }
 
    /* Check Out Container */
@@ -436,7 +432,7 @@
        display: inline-flex;
        justify-content: center;
        align-items: center;
-       gap: clamp(0.5rem, 0.3333rem + 0.8333vw, 1rem);
+       gap: 1rem;
        font-size: clamp(0.875rem, 1.0417rem + -0.2083vw, 1rem);
        font-weight: 600;
        color: white;
@@ -471,7 +467,7 @@
    }
 
    .deliRecipeTopic p {
-       font-size: 16px;
+       font-size: 1rem;
        color: rgba(0, 0, 0, 0.6);
    }
 
@@ -483,7 +479,7 @@
    }
 
    .deliRecipeBodyFirstRow {
-       margin-bottom: 40px;
+       margin-bottom: 2.5rem;
    }
 
    .deliRecipeBodyFirstRow .verticalCard,
@@ -499,7 +495,7 @@
        --card-title-font-weight: 600;
        --card-content-padding: 16px 0 0;
        --card-info-font-size: 14px;
-       --card-info-padding: 24px 0 0;
+       --card-info-padding: 1.5rem 0 0;
        --card-heart-size: clamp(2.5rem, 2.3333rem + 0.8333vw, 3rem);
        --card-heart-svg-size: clamp(1.25rem, 1.1667rem + 0.4167vw, 1.5rem);
        --card-heart-position: clamp(0.5rem, 0.3333rem + 0.8333vw, 1rem);
@@ -521,7 +517,147 @@
        margin-top: clamp(5rem, 3.3333rem + 8.3333vw, 10rem);
    }
 
-   @media screen and (min-width: 769px) and (max-width: 1024px) {}
+   @media screen and (min-width: 769px) and (max-width: 1024px) {
+
+       /* Carousel Container */
+       .firstTypeButton svg,
+       .secondTypeButton svg {
+           width: 1rem;
+       }
+
+       .featureRecipeTopic {
+           font-size: 2.5rem;
+       }
+
+       .featureRecipeProfile img {
+           width: 3rem;
+           border-radius: 50%;
+           object-fit: cover;
+       }
+
+       .viewRCButton {
+           padding: 0.75rem 1.25rem;
+           gap: 0.25rem;
+           cursor: none;
+           transition: none;
+       }
+
+       .viewRCButton:hover {
+           transform: none;
+       }
+
+       /* Categories Container */
+       .categoriesTopic button {
+           transition: none;
+       }
+
+       .categoriesTopic button {
+           transform: none;
+       }
+
+       .categoriesList ul {
+           gap: 1rem;
+           margin: 0.5rem;
+       }
+
+       .categoriesBreakfast,
+       .categoriesVegan,
+       .categoriesMeat,
+       .categoriesDessert,
+       .categoriesLunch,
+       .categoriesChocolate {
+           cursor: none;
+       }
+
+       /* Simple and tasty recipes */
+       .simpleAndTastyCardListOne,
+       .simpleAndTastyCardListTwo,
+       .simpleAndTastyCardListThree {
+           gap: 1rem;
+       }
+
+       .simpleAndTastyCardListOne,
+       .simpleAndTastyCardListTwo {
+           margin-bottom: 0;
+       }
+
+       .simpleAndTastyCardListOne .verticalCard,
+       .simpleAndTastyCardListTwo .verticalCard,
+       .simpleAndTastyCardListThree .verticalCard {
+           flex: 1;
+           --card-width: 100%;
+           --card-height: 300px;
+           --card-image-height: 150px;
+           --card-padding: 0.5rem;
+           margin: 0.5rem auto;
+       }
+
+       .simpleAndTastyCardListTwo .simpleAndTastyCardAdsBadge {
+           height: 300px;
+           flex: 1;
+       }
+
+       /* Learn More Container */
+       .learnMoreContainer {
+           gap: 2rem;
+       }
+
+       .learnMoreFirstCol {
+           max-width: clamp(20rem, 4.9216rem + 31.3725vw, 25rem);
+       }
+
+       .learnMoreSecColBackGround {
+           width: clamp(23rem, -7.1569rem + 62.7451vw, 33rem);
+       }
+
+       /* Check Out Container */
+       .checkOutInstagram {
+           margin-inline: clamp(1rem, -0.5078rem + 3.1373vw, 1.5rem);
+       }
+
+       .checkOutInstagram img {
+           max-width: clamp(11rem, 1.9529rem + 18.8235vw, 14rem);
+       }
+
+       .visitInstagramBtn {
+           cursor: none;
+       }
+
+       /* Delicious Recipe Container */
+       .deliRecipeBody {
+           display: grid;
+           grid-template-columns: repeat(3, 1fr);
+           gap: 1.5rem;
+       }
+
+       .deliRecipeTopic {
+           justify-content: center;
+           flex-direction: column;
+           text-align: center;
+           gap: 1rem;
+       }
+
+       .deliRecipeBodyFirstRow,
+       .deliRecipeBodySecRow {
+           display: contents;
+       }
+
+       .deliRecipeBodyFirstRow .verticalCard,
+       .deliRecipeBodySecRow .verticalCard {
+           margin-bottom: 1rem;
+       }
+
+       .deliRecipeBodyFirstRow .verticalCard:last-child,
+       .deliRecipeBodySecRow .verticalCard:last-child {
+           justify-self: center;
+       }
+
+       /* Inbox Container */
+       .inbox_Container .inBoxComp {
+           width: 100%;
+           --inbox-padding: 2.5rem 0.5rem;
+       }
+   }
 
    @media screen and (min-width: 481px) and (max-width: 768px) {
        .homeContainer {

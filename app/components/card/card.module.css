@@ -83,7 +83,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 8px;
+  gap: 0.5rem;
   font-size: var(--card-info-font-size);
   color: rgba(0, 0, 0, 0.6);
 }

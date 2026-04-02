@@ -11,12 +11,23 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
+}
+
+.menuWrapper {
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 .navMenuList {
     list-style: none;
     display: flex;
     gap: 2rem;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .navMenuList li {
@@ -101,6 +112,62 @@
 
 .navWrapper {
     display: contents;
+}
+
+@media screen and (min-width:769px) and (max-width:1024px) {
+    .nav {
+        height: 80px;
+        justify-content: space-between;
+        margin-inline: 1rem;
+    }
+
+    .navMenuList {
+        display: flex;
+    }
+
+    .navMenuList li {
+        color: black;
+        font-size: 0.87rem;
+        transition: none;
+    }
+
+    .navMenuList li:hover {
+        transform: none;
+    }
+
+    .navSocialList {
+        display: flex;
+    }
+
+    /* สไตล์สำหรับ Social Icon button */
+    .facebookIcon,
+    .twitterIcon,
+    .instagramIcon {
+        width: 24px;
+        height: 24px;
+        color: black;
+        text-decoration: none;
+        transition: none;
+    }
+
+    /* เมื่อ hover (เลื่อนเมาส์ไปที่ปุ่ม) */
+    .facebookIcon:hover,
+    .twitterIcon:hover,
+    .instagramIcon:hover {
+        transform: none;
+    }
+
+    /* SVG icon styling */
+    .facebookIcon svg,
+    .twitterIcon svg,
+    .instagramIcon svg {
+        width: 24px;
+        height: 24px;
+    }
+
+    .hamburgerBtn {
+        display: none;
+    }
 }
 
 @media screen and (min-width: 481px) and (max-width: 768px) {

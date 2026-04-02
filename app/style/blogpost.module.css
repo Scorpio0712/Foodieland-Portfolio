@@ -224,6 +224,66 @@
     --card-info-icon-size: 24px;
 }
 
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .blogPost_Container {
+        margin-top: 1rem;
+    }
+
+    .blogPost_Header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .blogPost_Header h1 {
+        line-height: 1.2;
+        text-align: center;
+    }
+
+    .blogPost_DeScript {
+        margin-inline: 0.5rem;
+    }
+
+    /* Blog Post Body */
+    .blogPost_Content {
+        max-width: 100vw;
+        text-align: center;
+    }
+
+    .blogPost_SocialBtn {
+        display: none;
+    }
+
+    .blogPost_ContentThreeImage {
+        width: 100%;
+        height: 300px;
+        margin-left: 50%;
+        transform: translateX(-50%);
+    }
+
+    /* Inbox Container */
+    .blogPost_EmailInbox .inBoxComp {
+        --inbox-padding: 2.5rem 0.5rem;
+    }
+
+    /* Check out the delicious recipe Container */
+    .blogPost_DeliciousRecipeTopic {
+        text-align: center;
+    }
+
+    .blogPost_DeliciousRecipeContent {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-self: center;
+        column-gap: 2rem;
+    }
+
+    .blogPost_DeliciousRecipeContent .verticalCard {
+        margin-bottom: 1rem;
+    }
+}
+
 @media screen and (min-width: 481px) and (max-width: 768px) {
     .blogPost_Container {
         margin-top: 1rem;
